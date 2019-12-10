@@ -6,7 +6,7 @@
 
 module.exports = {
   siteMetadata: {
-    title: `Title from meta file`,
+    title: `Rooster Design`,
     description: `This is the site description metadata.`,
     author: `Neil Dewing`,
   },
@@ -14,6 +14,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-typography`,
       options: {
+        omitGoogleFont: true,
         pathToConfigModule: `src/utils/typography`,
       },
     },
@@ -36,6 +37,30 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    { resolve: `gatsby-source-filesystem`, options: { path: `./src/data/` } },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: "images",
+        path: `./src/data/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: "fonts",
+        path: `${__dirname}/static/fonts/`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Alegreya Sans`,
+            variants: [`100`, `300`, `400`, `500`, `700`, `800`],
+          },
+        ],
+      },
+    },
   ],
 }

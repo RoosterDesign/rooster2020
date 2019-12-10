@@ -1,0 +1,26 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.Masthead {
+  // height: calc(100vh - 8px);
+  padding: 32px 16px 0;
+  text-align: center;
+}
+
+.MastheadTitle {
+  color: #bb54bb;
+  font-size: 3rem;
+}
+
+.MastheadIntro {
+  // font-size: 1.6rem;
+}
+
+.Logo {
+  background: yellow;
+  width: 100px;
+  height: 150px;
+
+  display: block;
+  margin: 0 auto 30px;
+}

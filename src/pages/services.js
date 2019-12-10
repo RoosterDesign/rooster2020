@@ -1,12 +1,12 @@
 import React from "react"
 
-import SEO from "../components/seo"
-import Header from "../components/header"
-import Layout from "../components/layout"
+import SEO from "../components/Seo/seo"
+import Header from "../components/Header/header"
+import Layout from "../components/Layout/layout"
 
 export default () => (
   <Layout>
     <SEO title="Services" description="This is the service page description!" />
-    <Header headerText="Services Page" />
+    <h1>Services</h1>
   </Layout>
 )

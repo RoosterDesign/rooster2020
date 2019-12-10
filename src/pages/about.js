@@ -1,9 +1,9 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import SEO from "../components/seo"
-import Header from "../components/header"
-import Layout from "../components/layout"
+import SEO from "../components/Seo/seo"
+import Header from "../components/Header/header"
+import Layout from "../components/Layout/layout"
 
 export default ({ data }) => (
   <Layout>
@@ -11,8 +11,7 @@ export default ({ data }) => (
       title="About Page1"
       description="This is the about page description!"
     />
-    <Header headerText="About Page" />
-    <h1>About {data.site.siteMetadata.title}</h1>
+    <h1>About</h1>
   </Layout>
 )
 
