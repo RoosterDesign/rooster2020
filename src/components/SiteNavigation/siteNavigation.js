@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import styles from "./siteNavigation.module.scss"
+import styles from "./SiteNavigation.module.scss"
 
 export default () => {
   const LinkList = props => (
@@ -11,8 +11,8 @@ export default () => {
   )
 
   return (
-    <nav role="navigation" class={styles.SiteNavigation}>
-      <ul style={{ textShadow: `none`, backgroundImage: `none` }}>
+    <nav role="navigation" className={styles.siteNavigation}>
+      <ul>
         <LinkList to="/">Homepage</LinkList>
         <LinkList to="/about">About</LinkList>
         <LinkList to="/services">Services</LinkList>

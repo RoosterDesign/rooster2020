@@ -1,0 +1,7 @@
+.blockTitle {
+  font-size: 3.4rem;
+  letter-spacing: -0.1rem;
+  margin-bottom: 40px;
+
+  @include mq(mobile-lg) {}
+}

@@ -1,33 +1,21 @@
 import React from "react"
-// import { useStaticQuery, Link, graphql } from "gatsby"
+import "../../styles/main.scss"
+import HomeMasthead from "../HomeMasthead/HomeMasthead"
+import Masthead from "../Masthead/Masthead"
+import Footer from "../Footer/Footer"
+import styles from "./Layout.module.scss"
 
-import "../../styles/global.scss"
-import HomeHeader from "../HomeHeader/homeHeader"
-import Header from "../Header/header"
-import Footer from "../Footer/footer"
-
-import styles from "./layout.module.scss"
-
-export default ({ children, location }) => {
-  // const data = useStaticQuery(
-  //   graphql`
-  //     query {
-  //       site {
-  //         siteMetadata {
-  //           title
-  //         }
-  //       }
-  //     }
-  //   `
-  // )
-
-  const header = window.location.pathname === "/" ? <HomeHeader /> : <Header />
-
+const Layout = ({ children, location }) => {
+  const header = location === "home" ? <HomeMasthead /> : <Masthead />
   return (
-    <div className={styles.PageWrap}>
-      {header}
-      {children}
+    <>
+      <div className={styles.pageWrap}>
+        {header}
+        {children}
+      </div>
       <Footer />
-    </div>
+    </>
   )
 }
+
+export default Layout

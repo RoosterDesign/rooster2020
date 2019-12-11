@@ -1,0 +1,18 @@
+.clientLogo {
+    border-radius: $borderRadius;
+    display: block;
+    margin-top: 16px;
+    overflow: hidden;
+    width: calc(50% - 8px);
+
+    &:nth-child(-n+2) {
+        margin-top: 0;
+    }
+
+    img {
+        display: block;
+        height: auto;
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,10 @@
+.clientLogosBlock {
+    @include blockMargin;
+    text-align: center;
+}
+
+.clientLogos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

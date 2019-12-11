@@ -1,0 +1,24 @@
+$breakpoints: (mobile-lg: 375px,
+  mobile-xlg: 414px,
+  tablet: 768px,
+  tablet-lg: 992px,
+  desktop: 1250px,
+  desktop-md: 1500px,
+  desktop-lg: 1920px,
+  full: 2561px);
+
+@mixin mq($breakpoint) {
+  $breakpoint-value: map-get($breakpoints, $breakpoint);
+
+  @media (min-width: $breakpoint-value) {
+    @content;
+  }
+}
+
+@mixin blockMargin() {
+  margin-bottom: 75px;
+
+  @include mq(mobile-lg) {
+    margin-bottom: 100px;
+  }
+}

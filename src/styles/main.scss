@@ -1,0 +1,51 @@
+@import "variables";
+@import "mixins";
+
+::selection {
+  background: green;
+  color: #fff;
+}
+
+html.touch * {
+  text-rendering: optimizeSpeed;
+}
+
+html {
+  -webkit-font-smoothing: "antialiased";
+}
+
+body {
+  background: #211721;
+  // padding: 8px;
+}
+
+.wf-loading {
+  visibility: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 16px;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+img {
+  margin: 0;
+}
+
+ul,
+ol {
+  // font-size: 0
+}
+
+p,
+li {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+}

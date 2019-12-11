@@ -1,0 +1,36 @@
+.serviceItem {
+  display: block;
+  margin-bottom: 50px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+}
+
+.serviceItemImg {
+  border-radius: $borderRadius;
+  display: block;
+  height: auto;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.serviceItemTitle {
+  font-size: 2.6rem;
+  margin-bottom: 15px;
+}
+
+.serviceItemBody {
+  margin: 0;
+}
+
+@include mq(mobile-lg) {
+  .serviceItemImg {
+    margin-bottom: 40px;
+  }
+
+  .serviceItemTitle {
+    margin-bottom: 20px;
+  }
+}

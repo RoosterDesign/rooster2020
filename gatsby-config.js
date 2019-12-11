@@ -35,6 +35,15 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-sass-resources`,
+      options: {
+        resources: [
+          "./src/styles/_variables.scss",
+          "./src/styles/_mixins.scss",
+        ],
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -45,21 +54,12 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: "gatsby-plugin-web-font-loader",
       options: {
-        name: "fonts",
-        path: `${__dirname}/static/fonts/`,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
-      options: {
-        fonts: [
-          {
-            family: `Alegreya Sans`,
-            variants: [`100`, `300`, `400`, `500`, `700`, `800`],
-          },
-        ],
+        custom: {
+          families: ["HalisR-Bold", "HalisR-Book"],
+          urls: [`fonts/fonts.css`],
+        },
       },
     },
   ],
