@@ -8,6 +8,7 @@ export default props => {
   const logos = props.content.logos.map((logo, index) => (
     <ClientLogo key={index} logoContent={logo} />
   ))
+
   return (
     <section className={styles.clientLogosBlock}>
       <div className="container">

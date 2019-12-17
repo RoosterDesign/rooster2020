@@ -53,6 +53,13 @@ module.exports = {
         path: `./src/data/`,
       },
     },
+    `gatsby-transformer-json`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `./src/data/`,
+      },
+    },
     {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
