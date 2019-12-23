@@ -58,7 +58,7 @@
       }
     ]
   },
-  "skillsOverview": {
+  "whyChooseMe": {
     "title": "Why choose me?",
     "intro": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi natus itaque consequatur labore, nostrum hic suscipit, distinctio temporibus quod ipsum voluptatum incidunt quisquam sit dignissimos, quia autem doloribus esse quas?",
     "articles": [
@@ -76,6 +76,80 @@
         "title": "Pioneering",
         "img": "https://via.placeholder.com/366x210",
         "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi natus itaque consequatur labore."
+      }
+    ]
+  },
+  "whatIUse": {
+    "title": "What I use",
+    "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sollicitudin interdum turpis, sed rutrum mauris varius sit amet. Nulla commodo nunc nec lorem venenatis, non consequat nulla elementum. Integer at erat rhoncus, varius mi sed.",
+    "skills": [
+      {
+        "img": "https://via.placeholder.com/146",
+        "alt": "Adaptable"
+      },
+      {
+        "img": "https://via.placeholder.com/146",
+        "alt": "Adaptable"
+      },
+      {
+        "img": "https://via.placeholder.com/146",
+        "alt": "Adaptable"
+      },
+      {
+        "img": "https://via.placeholder.com/146",
+        "alt": "Adaptable"
+      },
+      {
+        "img": "https://via.placeholder.com/146",
+        "alt": "Adaptable"
+      },
+      {
+        "img": "https://via.placeholder.com/146",
+        "alt": "Adaptable"
+      },
+      {
+        "img": "https://via.placeholder.com/146",
+        "alt": "Adaptable"
+      },
+      {
+        "img": "https://via.placeholder.com/146",
+        "alt": "Adaptable"
+      },
+      {
+        "img": "https://via.placeholder.com/146",
+        "alt": "Adaptable"
+      },
+      {
+        "img": "https://via.placeholder.com/146",
+        "alt": "Adaptable"
+      },
+      {
+        "img": "https://via.placeholder.com/146",
+        "alt": "Adaptable"
+      },
+      {
+        "img": "https://via.placeholder.com/146",
+        "alt": "Adaptable"
+      },
+      {
+        "img": "https://via.placeholder.com/146",
+        "alt": "Adaptable"
+      },
+      {
+        "img": "https://via.placeholder.com/146",
+        "alt": "Adaptable"
+      },
+      {
+        "img": "https://via.placeholder.com/146",
+        "alt": "Adaptable"
+      },
+      {
+        "img": "https://via.placeholder.com/146",
+        "alt": "Adaptable"
+      },
+      {
+        "img": "https://via.placeholder.com/146",
+        "alt": "Adaptable"
       }
     ]
   }
