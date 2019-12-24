@@ -1,12 +1,3 @@
-.masthead {
-  // height: calc(100vh - 8px);
-  display: flex;
-  align-items: center;
-  height: 100vh;
-  margin-bottom: 50px;
-  text-align: center;
-}
-
 .mastheadTitle {
   color: $lightPurple;
   font-size: 3.8rem;
@@ -19,8 +10,7 @@
     font-size: 4.4rem;
     margin-bottom: 30px;
   }
+}
 
-  .mastheadIntro {
-    font-size: 1.8rem
-  }
+@include mq(tablet) {
 }

@@ -1,0 +1,10 @@
+.mastheadTop {
+}
+
+@include mq(tablet) {
+  .mastheadTop {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+}

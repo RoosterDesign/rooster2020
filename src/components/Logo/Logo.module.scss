@@ -1,15 +1,22 @@
 .logo {
-    background: yellow;
-    width: 80px;
-    height: 120px;
-    display: block;
-    margin: 0 auto 30px;
+  background: yellow;
+  width: 80px;
+  height: 120px;
+  display: block;
+  margin: 0 auto 30px;
 }
 
 @include mq(mobile-lg) {
-    .logo {
-        height: 150px;
-        margin-bottom: 40px;
-        width: 100px;
-    }
+  .logo {
+    height: 150px;
+    margin-bottom: 40px;
+    width: 100px;
+  }
+}
+
+@include mq(tablet) {
+  .logo {
+    display: flex;
+    margin: 0;
+  }
 }

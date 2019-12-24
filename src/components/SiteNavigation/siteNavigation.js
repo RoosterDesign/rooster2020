@@ -5,7 +5,7 @@ import styles from "./SiteNavigation.module.scss"
 
 export default () => {
   const LinkList = props => (
-    <li style={{ display: `inline-block`, marginRight: `1rem` }}>
+    <li>
       <Link to={props.to}>{props.children}</Link>
     </li>
   )
