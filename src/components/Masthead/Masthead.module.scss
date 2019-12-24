@@ -1,12 +1,15 @@
+.masthead,
+.homeMasthead {
+  align-items: center;
+  display: flex;
+  margin-bottom: 50px;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+
 .masthead {
   background: blue;
-  // height: calc(100vh - 8px);
-
-  display: flex;
-  align-items: center;
-  //   height: 100vh;
-  margin-bottom: 50px;
-  text-align: center;
 }
 
 @include mq(mobile-lg) {
@@ -18,11 +21,7 @@
 // HOME MASTHEAD
 
 .homeMasthead {
-  display: flex;
-  align-items: center;
   height: 100vh;
-  margin-bottom: 50px;
-  text-align: center;
 }
 
 // Media Queries

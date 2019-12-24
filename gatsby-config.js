@@ -72,14 +72,22 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: "images",
-        path: `./src/data/`,
+        path: `src/images/`,
       },
     },
     `gatsby-transformer-json`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `./src/data/`,
+        path: `src/data/`,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: `${__dirname}/src/images/svgs/`,
+        },
       },
     },
     {

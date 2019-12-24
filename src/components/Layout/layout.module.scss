@@ -1,6 +1,8 @@
 .pageWrap,
 .homePageWrap {
     padding-bottom: 20px;
+    position: relative;
+    overflow: hidden;
 }
 
 .pageWrap {
@@ -15,6 +17,18 @@
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#161318', endColorstr='#302140', GradientType=0);
 }
 
+.roosterBg {
+    display: block;
+    height: auto;
+    left: 50%;
+    max-width: none;
+    opacity: .02;
+    position: absolute;
+    transform: translateX(-50%);
+    top: -100px;
+    z-index: 0;
+    width: 900px;
+}
 
 
 // Media Queries
