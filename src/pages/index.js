@@ -9,14 +9,14 @@ export default ({ data }) => {
   const {
     clientLogos,
     serviceOverview,
-    skillsOverview,
+    whyChooseMe,
   } = data.allDataJson.nodes[0]
 
   return (
     <Layout location="home">
       <ArticlesBlock content={serviceOverview} />
       <ClientLogosBlock content={clientLogos} />
-      <ArticlesBlock content={skillsOverview} />
+      <ArticlesBlock content={whyChooseMe} />
     </Layout>
   )
 }
@@ -42,7 +42,7 @@ export const query = graphql`
             body
           }
         }
-        skillsOverview {
+        whyChooseMe {
           title
           intro
           articles {
