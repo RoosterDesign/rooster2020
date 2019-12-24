@@ -1,0 +1,58 @@
+.masthead {
+  // height: calc(100vh - 8px);
+  background: green;
+  display: flex;
+  align-items: center;
+  //   height: 100vh;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+@include mq(mobile-lg) {
+  .mastheadIntro {
+    font-size: 1.8rem;
+  }
+}
+
+// HOME MASTHEAD
+
+.homeMasthead {
+  // height: calc(100vh - 8px);
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+// Media Queries
+
+@include mq(mobile-lg) {
+  .mastheadIntro {
+    font-size: 1.8rem;
+  }
+}
+
+@include mq(tablet) {
+  .masthead {
+    align-items: flex-start;
+    margin-bottom: 0;
+  }
+
+  .masthead > div {
+    height: 100%;
+  }
+
+  .mastheadTop {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .mastheadBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: calc(100% - 150px);
+  }
+}
