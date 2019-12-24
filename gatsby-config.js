@@ -9,6 +9,28 @@ module.exports = {
     title: `Rooster Design`,
     description: `This is the site description metadata.`,
     author: `Neil Dewing`,
+    menuLinks: [
+      {
+        name: "Homepage",
+        link: "",
+      },
+      {
+        name: "About",
+        link: "/about",
+      },
+      {
+        name: "Services",
+        link: "/services",
+      },
+      {
+        name: "Portfolio",
+        link: "/portfolio",
+      },
+      {
+        name: "Contact",
+        link: "/contact",
+      },
+    ],
   },
   plugins: [
     {

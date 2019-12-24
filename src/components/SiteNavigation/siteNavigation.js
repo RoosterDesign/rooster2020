@@ -1,24 +1,32 @@
 import React from "react"
-import { Link } from "gatsby"
-
+import { useStaticQuery, graphql } from "gatsby"
+import SiteNavigationItem from "./SiteNavigationItem/SiteNavigationItem"
 import styles from "./SiteNavigation.module.scss"
 
-export default () => {
-  const LinkList = props => (
-    <li>
-      <Link to={props.to}>{props.children}</Link>
-    </li>
-  )
+const SiteNavigation = () => {
+  const data = useStaticQuery(graphql`
+    query siteNavQuery {
+      site {
+        siteMetadata {
+          description
+          menuLinks {
+            name
+            link
+          }
+        }
+      }
+    }
+  `)
+
+  const siteLinks = data.site.siteMetadata.menuLinks.map((item, index) => (
+    <SiteNavigationItem key={index} item={item} />
+  ))
 
   return (
-    <nav role="navigation" className={styles.siteNavigation}>
-      <ul>
-        <LinkList to="/">Homepage</LinkList>
-        <LinkList to="/about">About</LinkList>
-        <LinkList to="/services">Services</LinkList>
-        <LinkList to="/portfolio">Portfolio</LinkList>
-        <LinkList to="/contact">Contact</LinkList>
-      </ul>
-    </nav>
+    <div className={styles.siteNavigation}>
+      <ul className={styles.siteNavigationList}>{siteLinks}</ul>
+    </div>
   )
 }
+
+export default SiteNavigation

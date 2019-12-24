@@ -10,7 +10,7 @@ const Layout = ({ children, location }) => {
       <div
         className={location === "home" ? styles.homePageWrap : styles.pageWrap}
       >
-        <Masthead />
+        <Masthead location={location} />
         {children}
       </div>
       <Footer />

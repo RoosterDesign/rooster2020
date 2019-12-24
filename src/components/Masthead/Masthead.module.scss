@@ -1,6 +1,7 @@
 .masthead {
+  background: blue;
   // height: calc(100vh - 8px);
-  background: green;
+
   display: flex;
   align-items: center;
   //   height: 100vh;
@@ -17,7 +18,6 @@
 // HOME MASTHEAD
 
 .homeMasthead {
-  // height: calc(100vh - 8px);
   display: flex;
   align-items: center;
   height: 100vh;
@@ -34,13 +34,24 @@
 }
 
 @include mq(tablet) {
+
+  .masthead,
+  .homeMasthead {
+    text-align: left;
+  }
+
+  .masthead>div,
+  .homeMasthead>div {
+    height: 100%;
+  }
+
   .masthead {
     align-items: flex-start;
     margin-bottom: 0;
   }
 
-  .masthead > div {
-    height: 100%;
+  .homeMasthead {
+    height: calc(100vh - 32px);
   }
 
   .mastheadTop {
@@ -55,4 +66,5 @@
     justify-content: center;
     height: calc(100% - 150px);
   }
+
 }

@@ -2,20 +2,10 @@
   display: none;
 }
 
-.siteNavigation ul {
+.siteNavigationList {
   list-style: none;
   margin: 0;
   padding: 0;
-}
-
-.siteNavigation li {
-  display: inline-block;
-  margin: 0 20px 0 0;
-  padding: 0;
-}
-
-.siteNavigation li:last-child {
-  margin-right: 0;
 }
 
 @include mq(tablet) {

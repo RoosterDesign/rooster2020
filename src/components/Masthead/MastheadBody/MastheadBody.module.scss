@@ -1,0 +1,17 @@
+.mastheadIntro {
+    margin-top: 20px;
+}
+
+@include mq(mobile-lg) {
+    .mastheadIntro {
+        margin-top: 30px;
+    }
+}
+
+
+@include mq(tablet) {
+    .mastheadIntro {
+        font-size: 2rem;
+        margin-top: 30px;
+    }
+}

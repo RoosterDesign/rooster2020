@@ -1,0 +1,14 @@
+.siteNavigationItem {
+    display: inline-block;
+    margin: 0 20px 0 0;
+    padding: 0;
+}
+
+.siteNavigationItem:last-child {
+    margin-right: 0;
+}
+
+.siteNavigationLink {
+    color: #fff;
+    text-decoration: none;
+}
