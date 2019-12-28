@@ -95,7 +95,7 @@ module.exports = {
       options: {
         custom: {
           families: ["HalisR-Bold", "HalisR-Book"],
-          urls: [`fonts/fonts.css`],
+          urls: [`/fonts/fonts.css`],
         },
       },
     },

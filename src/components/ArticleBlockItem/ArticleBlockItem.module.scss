@@ -1,4 +1,4 @@
-.serviceItem {
+.articleItem {
   display: block;
   margin-bottom: 50px;
 
@@ -8,7 +8,7 @@
 
 }
 
-.serviceItemImg {
+.articleItemImg {
   border-radius: $borderRadius;
   display: block;
   height: auto;
@@ -16,22 +16,71 @@
   width: 100%;
 }
 
-.serviceItemTitle {
+.articleItemTitle {
   font-size: 2.6rem;
   margin-bottom: 15px;
 }
 
-.serviceItemBody {
-  color: $bodyColour;
+.articleItemBody {
   margin: 0;
 }
 
 @include mq(mobile-lg) {
-  .serviceItemImg {
+  .articleItemImg {
     margin-bottom: 40px;
   }
 
-  .serviceItemTitle {
+  .articleItemTitle {
+    margin-bottom: 20px;
+  }
+}
+
+@include mq(tablet) {
+  .articleItem {
+    margin-bottom: 0;
+    width: calc(33.333333% - 16px);
+  }
+
+  .articleItemImg {
+    margin-bottom: 30px;
+  }
+
+  .articleItemTitle {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+  }
+
+}
+
+@include mq(tablet-lg) {
+
+  .articleItem {
+    width: calc(33.333333% - 24px);
+  }
+
+  .articleItemTitle {
+    font-size: 2.6rem;
+    margin-bottom: 15px;
+  }
+
+}
+
+@include mq(desktop) {
+  .articleItem {
+    width: calc(33.333333% - 25px);
+  }
+}
+
+@include mq(desktop-md) {
+  .articleItem {
+    width: calc(33.333333% - 32px);
+  }
+
+  .articleItemImg {
+    margin-bottom: 40px;
+  }
+
+  .articleItemTitle {
     margin-bottom: 20px;
   }
 }

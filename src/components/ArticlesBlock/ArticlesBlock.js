@@ -12,8 +12,14 @@ export default props => {
   return (
     <section className={styles.articlesBlock}>
       <div className="container">
-        <BlockTitle titleContent={props.content.title} />
-        <BlockIntro introContent={props.content.intro} />
+        <BlockTitle
+          location={props.location}
+          titleContent={props.content.title}
+        />
+        <BlockIntro
+          location={props.location}
+          introContent={props.content.intro}
+        />
 
         <div className={styles.articles}>{articles}</div>
       </div>

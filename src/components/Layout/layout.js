@@ -5,17 +5,18 @@ import Masthead from "../Masthead/Masthead"
 import Footer from "../Footer/Footer"
 import styles from "./Layout.module.scss"
 
-import roosterBg from "../../images/svgs/roosterBg.svg"
-
-const Layout = ({ children, location }) => {
+const Layout = ({ children, location, mastheadContent }) => {
   return (
     <>
       <div
-        className={location === "home" ? styles.homePageWrap : styles.pageWrap}
+        className={
+          location === "isHomepage"
+            ? [styles.pageWrap, styles.isHome].join(" ")
+            : styles.pageWrap
+        }
       >
-        <Masthead location={location} />
-        {children}
-        <img src={roosterBg} alt="img" className={styles.roosterBg} />
+        <Masthead location={location} mastheadContent={mastheadContent} />
+        <div className={styles.contentWrap}>{children}</div>
       </div>
       <Footer />
     </>

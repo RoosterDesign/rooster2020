@@ -6,10 +6,9 @@ import ClientLogosBlock from "../components/ClientLogosBlock/ClientLogosBlock"
 import WhatIUseBlock from "../components/WhatIUseBlock/WhatIUseBlock"
 
 export default ({ data }) => {
-  const { clientLogos, whatIUse } = data.allDataJson.nodes[0]
+  const { aboutPageContent, clientLogos, whatIUse } = data.allDataJson.nodes[0]
   return (
-    <Layout>
-      <h1>About</h1>
+    <Layout mastheadContent={aboutPageContent}>
       <WhatIUseBlock content={whatIUse} />
       <ClientLogosBlock content={clientLogos} />
     </Layout>
@@ -20,6 +19,10 @@ export const query = graphql`
   query aboutContentQuery {
     allDataJson {
       nodes {
+        aboutPageContent {
+          mastheadTitle
+          mastheadBody
+        }
         clientLogos {
           title
           intro

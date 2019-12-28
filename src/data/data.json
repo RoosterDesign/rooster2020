@@ -152,5 +152,25 @@
         "alt": "Adaptable"
       }
     ]
+  },
+  "homePageContent": {
+    "mastheadTitle": "UI/UX Designer & Front End Developer",
+    "mastheadBody": "Based in Leamington Spa, Warwickshire, Rooster Design Ltd offer digital services for agencies looking to outsource projects, in-house contract opportunities as well as individuals and businesses looking to create a web presence."
+  },
+  "aboutPageContent": {
+    "mastheadTitle": "About",
+    "mastheadBody": "Lorem ipsum..."
+  },
+  "servicesPageContent": {
+    "mastheadTitle": "Services",
+    "mastheadBody": "Lorem ipsum..."
+  },
+  "portfolioPageContent": {
+    "mastheadTitle": "Portfolio",
+    "mastheadBody": "Lorem ipsum..."
+  },
+  "contactPageContent": {
+    "mastheadTitle": "Contact",
+    "mastheadBody": "Lorem ipsum..."
   }
 }

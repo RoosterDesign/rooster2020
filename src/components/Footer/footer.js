@@ -8,8 +8,12 @@ export default () => (
     <div className="container">
       <p>
         ©2019 Rooster Design <br />
-        <Link to="/privacy">Privacy &amp; Legal</Link>
-        <Link to="/cookies">Cookie Policy</Link>
+        <Link to="/privacy" className={styles.siteFooterLink}>
+          Privacy &amp; Legal
+        </Link>
+        <Link to="/cookies" className={styles.siteFooterLink}>
+          Cookie Policy
+        </Link>
       </p>
       <p>
         Rooster Design is registered in England and Wales, No. 07335844. VAT No.

@@ -1,22 +1,69 @@
 .siteFooter {
-    color: $bodyColour;
     padding: 40px 0;
     text-align: center;
+
+    p {
+        color: $homeBodyColour;
+        margin: 0 0 20px
+    }
 
     p:last-child {
         margin: 0;
     }
 
-    a {
-        color: $bodyColour;
+}
+
+.siteFooterLink {
+    color: $homeBodyColour;
+    display: inline-block;
+    margin: 15px 10px 0;
+    text-decoration: none;
+}
+
+.siteFooterLink:hover {
+    color: #fff;
+}
+
+@include mq(tablet) {
+
+    .siteFooter p {
+        margin-bottom: 30px;
+    }
+
+    .siteFooter p:nth-child(2) {
+        margin-bottom: 10px;
+    }
+
+    .siteFooter br {
+        display: none;
+    }
+
+    .siteFooterLink {
+        margin: 0 15px;
+        position: relative;
+    }
+
+    .siteFooterLink:first-of-type:after {
+        background: rgba(255, 255, 255, .3);
+        content: '';
         display: inline-block;
-        margin: 15px 10px 0;
-        text-decoration: none;
+        height: 18px;
+        position: absolute;
+        right: -15px;
+        top: 5px;
+        width: 1px;
     }
 
-    a:hover {
-        color: #fff;
-        text-decoration: underline;
-    }
+}
 
+@include mq(tablet-lg) {
+    .siteFooter {
+        padding: 60px 0;
+    }
+}
+
+@include mq(desktop) {
+    .siteFooter p {
+        font-size: 1.6rem;
+    }
 }

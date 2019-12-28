@@ -15,8 +15,7 @@ html {
 }
 
 body {
-  background: #0e0e0f;
-  // padding: 8px;
+  background: $bodyBg;
 }
 
 .wf-loading {
@@ -34,14 +33,17 @@ h2,
 h3,
 h4,
 h5,
-h6,
-img {
+h6 {
+  color: $headingColour;
   margin: 0;
 }
 
-ul,
-ol {
-  // font-size: 0
+p {
+  color: $bodyColour;
+}
+
+img {
+  margin: 0;
 }
 
 p,
@@ -51,16 +53,84 @@ li {
 }
 
 
-// Media Queries
+
+// Homepage Specific
+
+.is-homepage {
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $homeHeadingColour;
+  }
+
+  p {
+    color: $homeBodyColour;
+  }
+
+}
+
 
 @include mq(tablet) {
-  body {
-    padding: 16px;
+
+  p,
+  li {
+    font-size: 1.4rem;
   }
 
   .container {
-    max-width: 680px;
-    // max-width: 1200px;
+    max-width: 700px;
+    position: relative;
+    z-index: 1;
+  }
+
+}
+
+@include mq(tablet-lg) {
+
+  body {
+    padding: 20px 20px 0;
+  }
+
+  .container {
+    max-width: 900px;
+  }
+
+  p,
+  li {
+    font-size: 1.6rem;
+  }
+
+}
+
+@include mq(desktop) {
+
+  body {
+    padding: 30px 30px 0;
+  }
+
+  .container {
+    max-width: 1000px;
+  }
+
+  p,
+  li {
+    font-size: 1.7rem;
+  }
+
+}
+
+@include mq(desktop-md) {
+
+  .container {
+    max-width: 1300px;
+  }
+
+  p,
+  li {
+    font-size: 1.9rem;
   }
 
 }

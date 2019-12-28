@@ -16,3 +16,37 @@
     }
 
 }
+
+@include mq(tablet) {
+
+    .clientLogo {
+        width: calc(25% - 12px);
+    }
+
+    .clientLogo:nth-child(-n+4) {
+        margin-top: 0;
+    }
+
+}
+
+@include mq(tablet-lg) {
+
+    .clientLogo {
+        margin-top: 24px;
+        width: calc(25% - 18px);
+    }
+}
+
+@include mq(desktop) {
+    .clientLogo {
+        margin-top: 28px;
+        width: calc(25% - 24px);
+    }
+}
+
+@include mq(desktop-md) {
+    .clientLogo {
+        margin-top: 38px;
+        width: calc(25% - 28px);
+    }
+}

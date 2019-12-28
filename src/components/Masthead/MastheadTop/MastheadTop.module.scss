@@ -1,10 +1,14 @@
-.mastheadTop {}
-
 @include mq(tablet) {
   .mastheadTop {
     align-items: center;
     display: flex;
     justify-content: space-between;
     padding-top: 30px
+  }
+}
+
+@include mq(desktop) {
+  .mastheadTop {
+    padding-top: 50px;
   }
 }

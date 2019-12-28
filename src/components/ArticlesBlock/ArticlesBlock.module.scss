@@ -3,4 +3,15 @@
     text-align: center;
 }
 
-.articles {}
+@include mq(tablet) {
+    .articles {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@include mq(tablet-lg) {
+    .articlesBlock {
+        text-align: left;
+    }
+}

@@ -1,4 +1,5 @@
 import React from "react"
+import Helmet from "react-helmet"
 import { graphql } from "gatsby"
 
 import Layout from "../components/Layout/Layout"
@@ -7,13 +8,19 @@ import ClientLogosBlock from "../components/ClientLogosBlock/ClientLogosBlock"
 
 export default ({ data }) => {
   const {
+    homePageContent,
     clientLogos,
     serviceOverview,
     whyChooseMe,
   } = data.allDataJson.nodes[0]
 
   return (
-    <Layout location="home">
+    <Layout location="isHomepage" mastheadContent={homePageContent}>
+      <Helmet
+        bodyAttributes={{
+          class: "is-homepage",
+        }}
+      />
       <ArticlesBlock content={serviceOverview} />
       <ClientLogosBlock content={clientLogos} />
       <ArticlesBlock content={whyChooseMe} />
@@ -25,6 +32,10 @@ export const query = graphql`
   query homeContentQuery {
     allDataJson {
       nodes {
+        homePageContent {
+          mastheadTitle
+          mastheadBody
+        }
         clientLogos {
           title
           intro

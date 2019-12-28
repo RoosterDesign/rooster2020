@@ -3,13 +3,13 @@ import React from "react"
 import styles from "./ArticleBlockItem.module.scss"
 
 export default props => (
-  <div className={styles.serviceItem}>
+  <div className={styles.articleItem}>
     <img
       src={props.articleContent.img}
       alt={props.articleContent.title}
-      className={styles.serviceItemImg}
+      className={styles.articleItemImg}
     />
-    <h2 className={styles.serviceItemTitle}>{props.articleContent.title}</h2>
-    <p className={styles.serviceItemBody}>{props.articleContent.body}</p>
+    <h2 className={styles.articleItemTitle}>{props.articleContent.title}</h2>
+    <p className={styles.articleItemBody}>{props.articleContent.body}</p>
   </div>
 )

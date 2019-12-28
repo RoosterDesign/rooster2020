@@ -1,17 +1,38 @@
-.BlockIntro {
+.blockIntro {
   display: none;
-  // padding-left: 30px;
-  // position: relative;
+}
 
-  // &:before {
-  //     background: $lightPurple;
-  //     border-radius: 3px;
-  //     content: '';
-  //     height: 100%;
-  //     left: 0;
-  //     position: absolute;
-  //     width: 6px;
-  // }
+@include mq(tablet-lg) {
 
-  p {}
+  .blockIntro {
+    display: block;
+    margin-bottom: 50px;
+    max-width: 60%;
+    padding-left: 30px;
+    position: relative;
+  }
+
+  .blockIntro:before {
+    background: $lightPurple;
+    border-radius: 3px;
+    content: '';
+    height: 100%;
+    left: 0;
+    max-height: 55px;
+    position: absolute;
+    width: 6px;
+  }
+
+}
+
+@include mq(desktop) {
+  .blockIntro {
+    margin-bottom: 60px;
+  }
+}
+
+@include mq(desktop-md) {
+  .blockIntro {
+    max-width: 50%;
+  }
 }

@@ -1,46 +1,49 @@
-.masthead,
-.homeMasthead {
+.masthead {
+  @include pageBgGradient;
   align-items: center;
   display: flex;
-  margin-bottom: 50px;
+
+  height: 350px;
+
   position: relative;
   text-align: center;
   z-index: 1;
 }
 
-.masthead {
-  background: blue;
-}
-
-@include mq(mobile-lg) {
-  .mastheadIntro {
-    font-size: 1.8rem;
-  }
-}
-
-// HOME MASTHEAD
-
-.homeMasthead {
+.masthead.isHome {
+  background: none;
   height: 100vh;
 }
 
-// Media Queries
+.roosterBg {
+  display: block;
+  height: auto;
+  left: 50%;
+  max-width: none;
+  opacity: .01;
+  position: absolute;
+  transform: translateX(-50%);
+  top: -50px;
+  width: 450px;
+}
 
 @include mq(mobile-lg) {
   .mastheadIntro {
     font-size: 1.8rem;
   }
+
+  .roosterBg {
+    width: 600px;
+  }
+
 }
 
 @include mq(tablet) {
-
-  .masthead,
-  .homeMasthead {
+  .masthead {
     text-align: left;
   }
 
-  .masthead>div,
-  .homeMasthead>div {
+  .masthead>div {
     height: 100%;
   }
 
@@ -49,7 +52,7 @@
     margin-bottom: 0;
   }
 
-  .homeMasthead {
+  .masthead.isHome {
     height: calc(100vh - 32px);
   }
 
@@ -59,11 +62,35 @@
     justify-content: space-between;
   }
 
-  .mastheadBody {
+  .mastheadContent {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: calc(100% - 150px);
   }
 
+  .roosterBg {
+    top: -100px;
+    width: 900px;
+  }
+
+}
+
+@include mq(tablet-lg) {
+  .roosterBg {
+    top: -75px;
+    width: 1200px;
+  }
+}
+
+@include mq(desktop) {
+
+  .masthead {
+    height: 900px;
+  }
+
+  .roosterBg {
+    top: -100px;
+    width: 1500px;
+  }
 }
