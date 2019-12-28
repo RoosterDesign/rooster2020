@@ -3,13 +3,13 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/Layout/Layout"
 import ClientLogosBlock from "../components/ClientLogosBlock/ClientLogosBlock"
-import WhatIUseBlock from "../components/WhatIUseBlock/WhatIUseBlock"
+import SkillsBlock from "../components/SkillsBlock/SkillsBlock"
 
 export default ({ data }) => {
-  const { aboutPageContent, clientLogos, whatIUse } = data.allDataJson.nodes[0]
+  const { aboutPageContent, clientLogos, skills } = data.allDataJson.nodes[0]
   return (
     <Layout mastheadContent={aboutPageContent}>
-      <WhatIUseBlock content={whatIUse} />
+      <SkillsBlock content={skills} />
       <ClientLogosBlock content={clientLogos} />
     </Layout>
   )
@@ -31,12 +31,12 @@ export const query = graphql`
             name
           }
         }
-        whatIUse {
+        skills {
           title
           intro
-          skills {
-            img
-            alt
+          logos {
+            src
+            name
           }
         }
       }

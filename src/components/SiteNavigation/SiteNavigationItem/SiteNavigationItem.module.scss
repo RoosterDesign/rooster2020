@@ -41,7 +41,7 @@
     }
 
     .siteNavigationLink:hover:after,
-    .siteNavigationItem.active:after {
+    .siteNavigationLinkActive:after {
         bottom: 5px;
         opacity: 1;
     }
@@ -60,6 +60,7 @@
 
 @include mq(desktop-md) {
     .siteNavigationLink {
-        // font-size: 1.8rem;
+        height: 60px;
+        line-height: 60px;
     }
 }

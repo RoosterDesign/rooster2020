@@ -1,0 +1,16 @@
+.skillsLogosBlock {
+    @include blockMargin;
+    text-align: center;
+}
+
+.skillsLogos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@include mq(tablet-lg) {
+    .skillsLogosBlock {
+        text-align: left;
+    }
+}

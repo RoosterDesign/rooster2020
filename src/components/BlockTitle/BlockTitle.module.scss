@@ -1,12 +1,13 @@
 .blockTitle {
   font-size: 3.4rem;
-  letter-spacing: -0.1rem;
+  letter-spacing: -0.15rem;
   margin-bottom: 40px;
 }
 
 @include mq(tablet) {
   .blockTitle {
     font-size: 3rem;
+    letter-spacing: -0.2rem;
     margin-bottom: 30px;
   }
 }
@@ -14,12 +15,14 @@
 @include mq(tablet-lg) {
   .blockTitle {
     font-size: 4rem;
+    letter-spacing: -0.3rem;
   }
 }
 
 @include mq(desktop) {
   .blockTitle {
     font-size: 5rem;
+    letter-spacing: -0.4rem;
   }
 }
 

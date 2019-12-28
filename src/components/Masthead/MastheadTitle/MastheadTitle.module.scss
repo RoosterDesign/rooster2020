@@ -29,7 +29,7 @@
 @include mq(tablet-lg) {
   .mastheadTitle {
     margin-top: -50px;
-    max-width: 60%;
+    max-width: 660px;
   }
 }
 
@@ -37,6 +37,7 @@
   .mastheadTitle {
     font-size: 8rem;
     margin-top: -150px;
+    max-width: 750px;
   }
 }
 
@@ -44,5 +45,13 @@
   .mastheadTitle {
     font-size: 10rem;
     letter-spacing: -.5rem;
+    max-width: 950px;
+  }
+}
+
+@include mq(desktop-lg) {
+  .mastheadTitle {
+    font-size: 12rem;
+    max-width: 1110px;
   }
 }

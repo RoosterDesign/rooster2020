@@ -79,77 +79,77 @@
       }
     ]
   },
-  "whatIUse": {
+  "skills": {
     "title": "What I use",
     "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sollicitudin interdum turpis, sed rutrum mauris varius sit amet. Nulla commodo nunc nec lorem venenatis, non consequat nulla elementum. Integer at erat rhoncus, varius mi sed.",
-    "skills": [
+    "logos": [
       {
-        "img": "https://via.placeholder.com/146",
-        "alt": "Adaptable"
+        "src": "https://via.placeholder.com/146",
+        "name": "Adaptable"
       },
       {
-        "img": "https://via.placeholder.com/146",
-        "alt": "Adaptable"
+        "src": "https://via.placeholder.com/146",
+        "name": "Adaptable"
       },
       {
-        "img": "https://via.placeholder.com/146",
-        "alt": "Adaptable"
+        "src": "https://via.placeholder.com/146",
+        "name": "Adaptable"
       },
       {
-        "img": "https://via.placeholder.com/146",
-        "alt": "Adaptable"
+        "src": "https://via.placeholder.com/146",
+        "name": "Adaptable"
       },
       {
-        "img": "https://via.placeholder.com/146",
-        "alt": "Adaptable"
+        "src": "https://via.placeholder.com/146",
+        "name": "Adaptable"
       },
       {
-        "img": "https://via.placeholder.com/146",
-        "alt": "Adaptable"
+        "src": "https://via.placeholder.com/146",
+        "name": "Adaptable"
       },
       {
-        "img": "https://via.placeholder.com/146",
-        "alt": "Adaptable"
+        "src": "https://via.placeholder.com/146",
+        "name": "Adaptable"
       },
       {
-        "img": "https://via.placeholder.com/146",
-        "alt": "Adaptable"
+        "src": "https://via.placeholder.com/146",
+        "name": "Adaptable"
       },
       {
-        "img": "https://via.placeholder.com/146",
-        "alt": "Adaptable"
+        "src": "https://via.placeholder.com/146",
+        "name": "Adaptable"
       },
       {
-        "img": "https://via.placeholder.com/146",
-        "alt": "Adaptable"
+        "src": "https://via.placeholder.com/146",
+        "name": "Adaptable"
       },
       {
-        "img": "https://via.placeholder.com/146",
-        "alt": "Adaptable"
+        "src": "https://via.placeholder.com/146",
+        "name": "Adaptable"
       },
       {
-        "img": "https://via.placeholder.com/146",
-        "alt": "Adaptable"
+        "src": "https://via.placeholder.com/146",
+        "name": "Adaptable"
       },
       {
-        "img": "https://via.placeholder.com/146",
-        "alt": "Adaptable"
+        "src": "https://via.placeholder.com/146",
+        "name": "Adaptable"
       },
       {
-        "img": "https://via.placeholder.com/146",
-        "alt": "Adaptable"
+        "src": "https://via.placeholder.com/146",
+        "name": "Adaptable"
       },
       {
-        "img": "https://via.placeholder.com/146",
-        "alt": "Adaptable"
+        "src": "https://via.placeholder.com/146",
+        "name": "Adaptable"
       },
       {
-        "img": "https://via.placeholder.com/146",
-        "alt": "Adaptable"
+        "src": "https://via.placeholder.com/146",
+        "name": "Adaptable"
       },
       {
-        "img": "https://via.placeholder.com/146",
-        "alt": "Adaptable"
+        "src": "https://via.placeholder.com/146",
+        "name": "Adaptable"
       }
     ]
   },

@@ -2,9 +2,7 @@
   @include pageBgGradient;
   align-items: center;
   display: flex;
-
-  height: 350px;
-
+  height: 100vh;
   position: relative;
   text-align: center;
   z-index: 1;
@@ -12,7 +10,7 @@
 
 .masthead.isHome {
   background: none;
-  height: 100vh;
+
 }
 
 .roosterBg {

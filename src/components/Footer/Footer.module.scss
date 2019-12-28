@@ -16,7 +16,7 @@
 .siteFooterLink {
     color: $homeBodyColour;
     display: inline-block;
-    margin: 15px 10px 0;
+    margin: 15px 0 0;
     text-decoration: none;
 }
 
@@ -39,19 +39,7 @@
     }
 
     .siteFooterLink {
-        margin: 0 15px;
-        position: relative;
-    }
-
-    .siteFooterLink:first-of-type:after {
-        background: rgba(255, 255, 255, .3);
-        content: '';
-        display: inline-block;
-        height: 18px;
-        position: absolute;
-        right: -15px;
-        top: 5px;
-        width: 1px;
+        margin: 0 0 0 15px;
     }
 
 }

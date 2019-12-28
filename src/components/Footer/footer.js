@@ -11,9 +11,6 @@ export default () => (
         <Link to="/privacy" className={styles.siteFooterLink}>
           Privacy &amp; Legal
         </Link>
-        <Link to="/cookies" className={styles.siteFooterLink}>
-          Cookie Policy
-        </Link>
       </p>
       <p>
         Rooster Design is registered in England and Wales, No. 07335844. VAT No.
