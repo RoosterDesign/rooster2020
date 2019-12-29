@@ -1,35 +1,24 @@
 .mastheadBody {
-    color: #fff;
-    margin-top: 20px;
-
-    p {
-        color: #fff;
-    }
-
+  color: #fff;
+  margin: 20px 0 0;
 }
 
 @include mq(mobile-lg) {
-    .mastheadBody {
-        margin-top: 30px;
-    }
+  .mastheadBody {
+    margin-top: 30px;
+  }
 }
 
 @include mq(tablet) {
-    .mastheadBody {
-        font-size: 2rem;
-        margin-top: 30px;
-    }
-}
-
-@include mq(tablet-lg) {
-    .mastheadBody {
-        // max-width: 60%;
-    }
+  .mastheadBody {
+    font-size: 2rem;
+    margin-top: 30px;
+  }
 }
 
 @include mq(desktop-md) {
-    .mastheadBody {
-        font-size: 2.4rem;
-        margin-top: 40px;
-    }
+  .mastheadBody {
+    font-size: 2.2rem;
+    margin-top: 40px;
+  }
 }

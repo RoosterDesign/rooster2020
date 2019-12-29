@@ -16,42 +16,29 @@
 @include mq(tablet) {
   .mastheadTitle {
     font-size: 7rem;
-    letter-spacing: -.3rem;
-    margin-top: -100px;
+    letter-spacing: -0.3rem;
   }
 
   .mastheadTitle br {
     display: block;
-  }
-
-}
-
-@include mq(tablet-lg) {
-  .mastheadTitle {
-    margin-top: -50px;
-    max-width: 660px;
   }
 }
 
 @include mq(desktop) {
   .mastheadTitle {
     font-size: 8rem;
-    margin-top: -150px;
-    max-width: 750px;
   }
 }
 
 @include mq(desktop-md) {
   .mastheadTitle {
     font-size: 10rem;
-    letter-spacing: -.5rem;
-    max-width: 950px;
+    letter-spacing: -0.5rem;
   }
 }
 
 @include mq(desktop-lg) {
   .mastheadTitle {
     font-size: 12rem;
-    max-width: 1110px;
   }
 }

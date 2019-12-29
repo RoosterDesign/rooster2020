@@ -2,8 +2,9 @@
   @include pageBgGradient;
   align-items: center;
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
   overflow: hidden;
+  padding: 30px 0;
   position: relative;
   text-align: center;
   z-index: 1;
@@ -19,7 +20,7 @@
   height: auto;
   left: 50%;
   max-width: none;
-  opacity: .02;
+  opacity: 0.015;
   position: absolute;
   transform: translateX(-50%);
   top: -50px;
@@ -35,25 +36,22 @@
   .roosterBg {
     width: 600px;
   }
-
 }
 
 @include mq(tablet) {
   .masthead {
-    text-align: left;
-  }
-
-  .masthead>div {
-    height: 100%;
-  }
-
-  .masthead {
     align-items: flex-start;
+    min-height: 800px;
+    text-align: left;
     margin-bottom: 0;
   }
 
   .masthead.isHome {
-    height: calc(100vh - 32px);
+    height: calc(100vh - 20px);
+  }
+
+  .masthead > div {
+    height: 100%;
   }
 
   .mastheadTop {
@@ -63,20 +61,41 @@
   }
 
   .mastheadContent {
+    height: calc(100% - 210px);
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 75px;
+  }
+
+  .masthead.isHome .mastheadContent {
     justify-content: center;
-    height: calc(100% - 150px);
+    padding-top: 0;
   }
 
   .roosterBg {
     top: -100px;
     width: 900px;
   }
-
 }
 
 @include mq(tablet-lg) {
+  .masthead {
+    min-height: 700px;
+  }
+
+  .mastheadContent {
+    padding-top: 50px;
+  }
+
+  .masthead.isHome .mastheadContent {
+    max-width: 660px;
+  }
+
+  .masthead.isHome .mastheadContent p {
+    max-width: 80%;
+  }
+
   .roosterBg {
     top: -75px;
     width: 1200px;
@@ -84,13 +103,45 @@
 }
 
 @include mq(desktop) {
-
   .masthead {
-    height: 900px;
+    min-height: 750px;
+  }
+
+  .masthead.isHome {
+    height: calc(100vh - 30px);
+  }
+
+  .mastheadContent {
+    height: calc(100% - 230px);
+    padding-top: 75px;
+  }
+
+  .masthead.isHome .mastheadContent {
+    max-width: 750px;
   }
 
   .roosterBg {
     top: -100px;
     width: 1500px;
+  }
+}
+
+@include mq(desktop-md) {
+  .masthead {
+    min-height: 850px;
+  }
+
+  .mastheadContent {
+    padding-top: 100px;
+  }
+
+  .masthead.isHome .mastheadContent {
+    max-width: 950px;
+  }
+}
+
+@include mq(desktop-lg) {
+  .masthead.isHome .mastheadContent {
+    max-width: 1110px;
   }
 }

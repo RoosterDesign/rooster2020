@@ -1,16 +1,16 @@
 .clientLogosBlock {
-    @include blockMargin;
-    text-align: center;
+  // @include blockMargin;
+  text-align: center;
 }
 
 .clientLogos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 @include mq(tablet-lg) {
-    .clientLogosBlock {
-        text-align: left;
-    }
+  .clientLogosBlock {
+    text-align: left;
+  }
 }

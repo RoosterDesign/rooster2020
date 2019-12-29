@@ -1,14 +1,14 @@
 .logo {
   display: block;
-  height: auto;
+  height: 150px;
   margin: 0 auto 20px;
-  width: 80px;
+  width: auto;
 }
 
 @include mq(mobile-lg) {
   .logo {
     margin-bottom: 30px;
-    width: 110px;
+    height: 180px;
   }
 }
 
@@ -16,12 +16,10 @@
   .logo {
     display: flex;
     margin: 0;
-    width: 100px;
   }
 }
 
 @include mq(desktop) {
   .logo {
-    width: 130px;
   }
 }

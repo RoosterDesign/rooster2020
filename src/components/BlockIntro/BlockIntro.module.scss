@@ -3,11 +3,10 @@
 }
 
 @include mq(tablet-lg) {
-
   .blockIntro {
     display: block;
     margin-bottom: 50px;
-    max-width: 60%;
+    max-width: 475px;
     padding-left: 30px;
     position: relative;
   }
@@ -15,19 +14,19 @@
   .blockIntro:before {
     background: $lightPurple;
     border-radius: 3px;
-    content: '';
+    content: "";
     height: 100%;
     left: 0;
     max-height: 55px;
     position: absolute;
     width: 6px;
   }
-
 }
 
 @include mq(desktop) {
   .blockIntro {
     margin-bottom: 60px;
+    max-width: 540px;
   }
 }
 

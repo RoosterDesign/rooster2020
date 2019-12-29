@@ -7,8 +7,8 @@ export default () => (
     role="button"
     tabIndex="0"
     className={styles.toTop}
-    onClick={() => scrollTo("#top")}
-    onKeyDown={() => scrollTo("#top")}
+    onClick={() => scrollTo("body")}
+    onKeyDown={() => scrollTo("body")}
   >
     <span className={styles.arrow}></span>
   </div>
