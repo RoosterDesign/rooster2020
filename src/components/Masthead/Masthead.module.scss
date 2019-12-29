@@ -3,6 +3,7 @@
   align-items: center;
   display: flex;
   height: 100vh;
+  overflow: hidden;
   position: relative;
   text-align: center;
   z-index: 1;
@@ -10,7 +11,7 @@
 
 .masthead.isHome {
   background: none;
-
+  overflow: visible;
 }
 
 .roosterBg {
@@ -18,11 +19,12 @@
   height: auto;
   left: 50%;
   max-width: none;
-  opacity: .01;
+  opacity: .02;
   position: absolute;
   transform: translateX(-50%);
   top: -50px;
   width: 450px;
+  z-index: -1;
 }
 
 @include mq(mobile-lg) {

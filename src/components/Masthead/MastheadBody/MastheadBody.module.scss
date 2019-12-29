@@ -1,29 +1,34 @@
-.mastheadIntro {
+.mastheadBody {
     color: #fff;
     margin-top: 20px;
+
+    p {
+        color: #fff;
+    }
+
 }
 
 @include mq(mobile-lg) {
-    .mastheadIntro {
+    .mastheadBody {
         margin-top: 30px;
     }
 }
 
 @include mq(tablet) {
-    .mastheadIntro {
+    .mastheadBody {
         font-size: 2rem;
         margin-top: 30px;
     }
 }
 
 @include mq(tablet-lg) {
-    .mastheadIntro {
-        max-width: 60%;
+    .mastheadBody {
+        // max-width: 60%;
     }
 }
 
 @include mq(desktop-md) {
-    .mastheadIntro {
+    .mastheadBody {
         font-size: 2.4rem;
         margin-top: 40px;
     }

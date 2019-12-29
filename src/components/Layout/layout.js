@@ -9,6 +9,7 @@ const Layout = ({ children, location, mastheadContent }) => {
   return (
     <>
       <div
+        id="top"
         className={
           location === "isHomepage"
             ? [styles.pageWrap, styles.isHome].join(" ")

@@ -7,7 +7,7 @@ const typography = new Typography({
   //bodyColor: "rgba(255,255,255,.67)",
   headerFontFamily: ["HalisR-Bold", "serif"],
   headerWeight: "normal",
-  bodyFontFamily: ["HalisR-Light", "serif"],
+  bodyFontFamily: ["HalisR-ExtraLight", "serif"],
 })
 
 export default typography

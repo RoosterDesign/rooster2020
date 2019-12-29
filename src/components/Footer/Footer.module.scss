@@ -1,57 +1,55 @@
 .siteFooter {
-    padding: 40px 0;
-    text-align: center;
+  padding: 40px 0;
+  position: relative;
+  text-align: center;
 
-    p {
-        color: $homeBodyColour;
-        margin: 0 0 20px
-    }
+  p {
+    color: $homeBodyColour;
+    margin: 0 0 20px;
+  }
 
-    p:last-child {
-        margin: 0;
-    }
-
+  p:last-child {
+    margin: 0;
+  }
 }
 
 .siteFooterLink {
-    color: $homeBodyColour;
-    display: inline-block;
-    margin: 15px 0 0;
-    text-decoration: none;
+  color: $homeBodyColour;
+  display: inline-block;
+  margin: 15px 0 0;
+  text-decoration: none;
 }
 
 .siteFooterLink:hover {
-    color: #fff;
+  color: #fff;
 }
 
 @include mq(tablet) {
+  .siteFooter p {
+    margin-bottom: 30px;
+  }
 
-    .siteFooter p {
-        margin-bottom: 30px;
-    }
+  .siteFooter p:nth-child(2) {
+    margin-bottom: 10px;
+  }
 
-    .siteFooter p:nth-child(2) {
-        margin-bottom: 10px;
-    }
+  .siteFooter br {
+    display: none;
+  }
 
-    .siteFooter br {
-        display: none;
-    }
-
-    .siteFooterLink {
-        margin: 0 0 0 15px;
-    }
-
+  .siteFooterLink {
+    margin: 0 0 0 15px;
+  }
 }
 
 @include mq(tablet-lg) {
-    .siteFooter {
-        padding: 60px 0;
-    }
+  .siteFooter {
+    padding: 60px 0;
+  }
 }
 
 @include mq(desktop) {
-    .siteFooter p {
-        font-size: 1.6rem;
-    }
+  .siteFooter p {
+    font-size: 1.6rem;
+  }
 }
