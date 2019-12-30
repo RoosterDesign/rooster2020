@@ -1,5 +1,6 @@
 .masthead {
   @include pageBgGradient;
+  background: green;
   align-items: center;
   display: flex;
   min-height: 100vh;
@@ -10,31 +11,16 @@
   z-index: 1;
 }
 
-.masthead.isHome {
-  background: none;
+.masthead.isHomepage {
+  background: red;
+  height: 100vh;
+  min-height: 0;
   overflow: visible;
-}
-
-.roosterBg {
-  display: block;
-  height: auto;
-  left: 50%;
-  max-width: none;
-  opacity: 0.015;
-  position: absolute;
-  transform: translateX(-50%);
-  top: -50px;
-  width: 450px;
-  z-index: -1;
 }
 
 @include mq(mobile-lg) {
   .mastheadIntro {
     font-size: 1.8rem;
-  }
-
-  .roosterBg {
-    width: 600px;
   }
 }
 
@@ -44,10 +30,6 @@
     min-height: 800px;
     text-align: left;
     margin-bottom: 0;
-  }
-
-  .masthead.isHome {
-    height: calc(100vh - 20px);
   }
 
   .masthead > div {
@@ -68,14 +50,9 @@
     padding-top: 75px;
   }
 
-  .masthead.isHome .mastheadContent {
+  .masthead.isHomepage .mastheadContent {
     justify-content: center;
     padding-top: 0;
-  }
-
-  .roosterBg {
-    top: -100px;
-    width: 900px;
   }
 }
 
@@ -84,21 +61,20 @@
     min-height: 700px;
   }
 
+  .masthead.isHomepage {
+    height: calc(100vh - 20px);
+  }
+
   .mastheadContent {
     padding-top: 50px;
   }
 
-  .masthead.isHome .mastheadContent {
+  .masthead.isHomepage .mastheadContent {
     max-width: 660px;
   }
 
-  .masthead.isHome .mastheadContent p {
+  .masthead.isHomepage .mastheadContent p {
     max-width: 80%;
-  }
-
-  .roosterBg {
-    top: -75px;
-    width: 1200px;
   }
 }
 
@@ -107,7 +83,7 @@
     min-height: 750px;
   }
 
-  .masthead.isHome {
+  .masthead.isHomepage {
     height: calc(100vh - 30px);
   }
 
@@ -116,13 +92,8 @@
     padding-top: 75px;
   }
 
-  .masthead.isHome .mastheadContent {
+  .masthead.isHomepage .mastheadContent {
     max-width: 750px;
-  }
-
-  .roosterBg {
-    top: -100px;
-    width: 1500px;
   }
 }
 
@@ -135,13 +106,13 @@
     padding-top: 100px;
   }
 
-  .masthead.isHome .mastheadContent {
+  .masthead.isHomepage .mastheadContent {
     max-width: 950px;
   }
 }
 
 @include mq(desktop-lg) {
-  .masthead.isHome .mastheadContent {
+  .masthead.isHomepage .mastheadContent {
     max-width: 1110px;
   }
 }

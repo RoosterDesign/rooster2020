@@ -1,36 +1,20 @@
 import React from "react"
-
+import SiteHeader from "../SiteHeader/SiteHeader"
+import RoosterBg from "../RoosterBg/RoosterBg"
 import styles from "./Masthead.module.scss"
-import MastheadTop from "./MastheadTop/MastheadTop"
-import MastheadTitle from "./MastheadTitle/MastheadTitle"
-import MastheadBody from "./MastheadBody/MastheadBody"
 
-import roosterBg from "../../images/roosterBg.svg"
-
-export default ({ location, mastheadContent }) => (
-  <header
+export default ({ children, isHomepage }) => (
+  <div
     className={
-      location === "isHomepage"
-        ? [styles.masthead, styles.isHome].join(" ")
+      isHomepage
+        ? [styles.masthead, styles.isHomepage].join(" ")
         : styles.masthead
     }
-    role="banner"
   >
     <div className="container">
-      <MastheadTop />
-
-      <div className={styles.mastheadContent}>
-        <MastheadTitle
-          location={location}
-          mastheadTitle={mastheadContent.mastheadTitle}
-        />
-        <MastheadBody
-          location={location}
-          mastheadBody={mastheadContent.mastheadBody}
-        />
-      </div>
+      <SiteHeader />
+      <div>{children}</div>
     </div>
-
-    <img src={roosterBg} alt="img" className={styles.roosterBg} />
-  </header>
+    <RoosterBg />
+  </div>
 )

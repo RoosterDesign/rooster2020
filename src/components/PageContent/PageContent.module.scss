@@ -1,0 +1,18 @@
+.contentWrap {
+  background: #fff;
+  padding-top: 50px;
+  position: relative;
+  z-index: 1;
+}
+
+@include mq(tablet) {
+  .contentWrap {
+    padding-top: 75px;
+  }
+}
+
+@include mq(desktop) {
+  .contentWrap {
+    padding-top: 100px;
+  }
+}

@@ -1,0 +1,43 @@
+.roosterBg {
+  display: block;
+  height: auto;
+  left: 50%;
+  max-width: none;
+  opacity: 0.05;
+  position: absolute;
+  transform: translateX(-50%);
+  top: -50px;
+  width: 450px;
+  z-index: -1;
+}
+
+@include mq(mobile-lg) {
+  .mastheadIntro {
+    font-size: 1.8rem;
+  }
+
+  .roosterBg {
+    width: 600px;
+  }
+}
+
+@include mq(tablet) {
+  .roosterBg {
+    top: -100px;
+    width: 900px;
+  }
+}
+
+@include mq(tablet-lg) {
+  .roosterBg {
+    top: -75px;
+    width: 1200px;
+  }
+}
+
+@include mq(desktop) {
+  .roosterBg {
+    top: -100px;
+    width: 1500px;
+  }
+}

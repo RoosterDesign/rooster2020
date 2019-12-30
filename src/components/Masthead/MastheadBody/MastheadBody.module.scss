@@ -1,6 +1,9 @@
 .mastheadBody {
+  margin-top: 20px;
+}
+
+.mastheadBody p {
   color: #fff;
-  margin: 20px 0 0;
 }
 
 @include mq(mobile-lg) {
@@ -11,14 +14,20 @@
 
 @include mq(tablet) {
   .mastheadBody {
-    font-size: 2rem;
     margin-top: 30px;
+  }
+
+  .mastheadBody p {
+    font-size: 2rem;
   }
 }
 
 @include mq(desktop-md) {
   .mastheadBody {
-    font-size: 2.2rem;
     margin-top: 40px;
+  }
+
+  .mastheadBody p {
+    font-size: 2.2rem;
   }
 }

@@ -1,26 +1,36 @@
 import React from "react"
 import Helmet from "react-helmet"
 import { graphql } from "gatsby"
-
+import Masthead from "../components/Masthead/Masthead"
+import MastheadTitle from "../components/Masthead/MastheadTitle/MastheadTitle"
+import MastheadBody from "../components/Masthead/MastheadBody/MastheadBody"
 import Layout from "../components/Layout/Layout"
 import ArticlesBlock from "../components/ArticlesBlock/ArticlesBlock"
 import ClientLogosBlock from "../components/ClientLogosBlock/ClientLogosBlock"
 
 export default ({ data }) => {
   const {
-    homePageContent,
+    // homePageContent,
     clientLogos,
     serviceOverview,
     whyChooseMe,
   } = data.allDataJson.nodes[0]
 
   return (
-    <Layout location="isHomepage" mastheadContent={homePageContent}>
+    <Layout>
       <Helmet
         bodyAttributes={{
           class: "is-homepage",
         }}
       />
+
+      <Masthead isHomepage>
+        <MastheadTitle mastheadTitle="page title" />
+        <MastheadBody>
+          <p>page body or icons.....</p>
+        </MastheadBody>
+      </Masthead>
+
       <ArticlesBlock content={serviceOverview} />
       <ClientLogosBlock content={clientLogos} />
       <ArticlesBlock content={whyChooseMe} />

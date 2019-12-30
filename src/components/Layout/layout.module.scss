@@ -3,35 +3,8 @@
   overflow: hidden;
 }
 
-.pageWrap.isHome {
-  @include pageBgGradient(2000px, 4000px);
-}
-
-.contentWrap {
-  background: #fff;
-  padding-top: 50px;
-  position: relative;
-  z-index: 1;
-}
-
-.pageWrap.isHome .contentWrap {
-  background: none;
-}
-
-@include mq(tablet) {
-  .contentWrap {
-    padding-top: 75px;
-  }
-}
-
 @include mq(tablet-lg) {
   .pageWrap {
     border-radius: $borderRadius;
-  }
-}
-
-@include mq(desktop) {
-  .contentWrap {
-    padding-top: 100px;
   }
 }
