@@ -1,118 +1,106 @@
 .masthead {
   @include pageBgGradient;
-  background: green;
-  align-items: center;
-  display: flex;
-  min-height: 100vh;
   overflow: hidden;
-  padding: 30px 0;
   position: relative;
   text-align: center;
   z-index: 1;
 }
 
 .masthead.isHomepage {
-  background: red;
-  height: 100vh;
-  min-height: 0;
+  background: none;
   overflow: visible;
 }
 
+.masthead>div {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+}
+
+.mastheadContent {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px 0;
+}
+
+.masthead.isHomepage .mastheadContent {
+  padding: 0;
+}
+
 @include mq(mobile-lg) {
-  .mastheadIntro {
-    font-size: 1.8rem;
-  }
-}
-
-@include mq(tablet) {
-  .masthead {
-    align-items: flex-start;
-    min-height: 800px;
-    text-align: left;
-    margin-bottom: 0;
-  }
-
-  .masthead > div {
-    height: 100%;
-  }
-
-  .mastheadTop {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .mastheadContent {
-    height: calc(100% - 210px);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding-top: 75px;
-  }
-
-  .masthead.isHomepage .mastheadContent {
-    justify-content: center;
-    padding-top: 0;
-  }
-}
-
-@include mq(tablet-lg) {
-  .masthead {
-    min-height: 700px;
-  }
-
-  .masthead.isHomepage {
-    height: calc(100vh - 20px);
-  }
-
-  .mastheadContent {
+  .masthead>div {
     padding-top: 50px;
   }
 
   .masthead.isHomepage .mastheadContent {
-    max-width: 660px;
+    margin-top: -30px;
+  }
+}
+
+@include mq(mobile-xlg) {
+  .masthead.isHomepage .mastheadContent {
+    margin-top: -40px;
+  }
+}
+
+@include mq(tablet) {
+
+  .masthead {
+    text-align: left;
+  }
+
+  .masthead>div {
+    height: auto;
+    min-height: 675px;
+    padding-top: 30px;
+  }
+
+  .masthead.isHomepage>div {
+    min-height: 100vh;
+  }
+
+  .masthead.isHomepage .mastheadContent {
+    margin-top: -75px;
+  }
+
+}
+
+@include mq(tablet-lg) {
+  .masthead>div {
+    min-height: 675px;
+  }
+
+  .masthead.isHomepage .mastheadContent {
+    margin-top: -20px;
   }
 
   .masthead.isHomepage .mastheadContent p {
-    max-width: 80%;
+    width: 70%;
   }
 }
 
 @include mq(desktop) {
-  .masthead {
+
+  .masthead>div {
     min-height: 750px;
+    padding-top: 50px;
   }
 
-  .masthead.isHomepage {
+  .masthead.isHomepage>div {
     height: calc(100vh - 30px);
   }
 
-  .mastheadContent {
-    height: calc(100% - 230px);
-    padding-top: 75px;
-  }
-
-  .masthead.isHomepage .mastheadContent {
-    max-width: 750px;
-  }
 }
 
 @include mq(desktop-md) {
-  .masthead {
+  .masthead>div {
     min-height: 850px;
   }
 
-  .mastheadContent {
-    padding-top: 100px;
-  }
-
   .masthead.isHomepage .mastheadContent {
-    max-width: 950px;
-  }
-}
-
-@include mq(desktop-lg) {
-  .masthead.isHomepage .mastheadContent {
-    max-width: 1110px;
+    margin-top: -30px;
   }
 }

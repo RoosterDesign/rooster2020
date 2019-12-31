@@ -2,21 +2,26 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import Masthead from "../components/Masthead/Masthead"
-import SiteHeader from "../components/SiteHeader/SiteHeader"
+import MastheadTitle from "../components/Masthead/MastheadTitle/MastheadTitle"
+import MastheadBody from "../components/Masthead/MastheadBody/MastheadBody"
+
 import Layout from "../components/Layout/Layout"
 import PageContent from "../components/PageContent/PageContent"
-
 import ClientLogosBlock from "../components/ClientLogosBlock/ClientLogosBlock"
 import SkillsBlock from "../components/SkillsBlock/SkillsBlock"
 
 export default ({ data }) => {
-  const { aboutPageContent, clientLogos, skills } = data.allDataJson.nodes[0]
+  const {
+    aboutPageContent,
+    clientLogos,
+    skills,
+  } = data.allDataJson.nodes[0]
   return (
     <Layout>
       <Masthead>
-        <MastheadTitle mastheadTitle="about page title" />
+        <MastheadTitle mastheadTitle={aboutPageContent.mastheadTitle} />
         <MastheadBody>
-          <p>page body or icons.....</p>
+          <p dangerouslySetInnerHTML={{__html: aboutPageContent.mastheadBody}}></p>
         </MastheadBody>
       </Masthead>
       <PageContent>

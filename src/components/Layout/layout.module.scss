@@ -1,4 +1,5 @@
 .pageWrap {
+  @include pageBgGradient;
   position: relative;
   overflow: hidden;
 }

@@ -13,7 +13,7 @@ export default ({ children, isHomepage }) => (
   >
     <div className="container">
       <SiteHeader />
-      <div>{children}</div>
+      <div className={styles.mastheadContent}>{children}</div>
     </div>
     <RoosterBg />
   </div>

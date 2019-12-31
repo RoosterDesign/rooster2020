@@ -1,2 +1,30 @@
 .siteHeader {
+    height: $siteHeaderHeight;
+    width: 100%;
+}
+
+@include mq(mobile-lg) {
+    .siteHeader {
+        height: $siteHeaderHeight--mobileLg;
+    }
+}
+
+@include mq(tablet) {
+    .siteHeader {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@include mq(mobile-xlg) {
+    .siteHeader {
+        height: $siteHeaderHeight--mobileXlg;
+    }
+}
+
+@include mq(desktop) {
+    .siteHeader {
+        height: $siteHeaderHeight--desktop;
+    }
 }

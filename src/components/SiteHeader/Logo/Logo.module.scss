@@ -1,26 +1,18 @@
 .logo {
-  display: block;
-  height: 150px;
+  display: inline-block;
+  height: 100%;
   margin: 0 auto 20px;
   width: auto;
 }
 
-@include mq(mobile-lg) {
-  .logo {
-    margin-bottom: 30px;
-    height: 180px;
-  }
+.logo img {
+  display: block;
+  height: 100%;
+  width: auto;
 }
 
 @include mq(tablet) {
   .logo {
-    display: flex;
     margin: 0;
-  }
-}
-
-@include mq(desktop) {
-  .logo {
-    height: 250px;
   }
 }

@@ -1,5 +1,4 @@
-$breakpoints: (
-  mobile-lg: 375px,
+$breakpoints: (mobile-lg: 375px,
   mobile-xlg: 414px,
   tablet: 768px,
   tablet-lg: 992px,
@@ -43,19 +42,13 @@ $breakpoints: (
 
 @mixin pageBgGradient($start: 25%, $end: 100%) {
   background: $pageBgGradStart;
-  background: -moz-linear-gradient(
-    top,
-    $pageBgGradStart $start,
-    $pageBgGradEnd $end
-  );
-  background: -webkit-linear-gradient(
-    top,
-    $pageBgGradStart $start,
-    $pageBgGradEnd $end
-  );
-  background: linear-gradient(
-    to bottom,
-    $pageBgGradStart $start,
-    $pageBgGradEnd $end
-  );
+  background: -moz-linear-gradient(top,
+      $pageBgGradStart $start,
+      $pageBgGradEnd $end);
+  background: -webkit-linear-gradient(top,
+      $pageBgGradStart $start,
+      $pageBgGradEnd $end);
+  background: linear-gradient(to bottom,
+      $pageBgGradStart $start,
+      $pageBgGradEnd $end);
 }

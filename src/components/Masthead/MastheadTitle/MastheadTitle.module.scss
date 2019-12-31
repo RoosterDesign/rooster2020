@@ -1,6 +1,7 @@
 .mastheadTitle {
   font-size: 3.8rem;
-  letter-spacing: -0.15rem;
+  letter-spacing: -0.2rem;
+  margin-bottom: 15px;
 }
 
 .mastheadTitle br {
@@ -9,7 +10,13 @@
 
 @include mq(mobile-lg) {
   .mastheadTitle {
-    font-size: 4.4rem;
+    font-size: 4.8rem;
+  }
+}
+
+@include mq(mobile-xlg) {
+  .mastheadTitle {
+    font-size: 5.2rem;
   }
 }
 
@@ -24,21 +31,30 @@
   }
 }
 
-@include mq(desktop) {
+@include mq(tablet-lg) {
   .mastheadTitle {
     font-size: 8rem;
   }
 }
 
+@include mq(desktop) {
+  .mastheadTitle {
+    font-size: 9rem;
+    margin-bottom: 20px;
+  }
+}
+
 @include mq(desktop-md) {
   .mastheadTitle {
-    font-size: 10rem;
+    font-size: 11rem;
     letter-spacing: -0.5rem;
+    margin-bottom: 20px;
   }
 }
 
 @include mq(desktop-lg) {
   .mastheadTitle {
     font-size: 12rem;
+    margin-bottom: 30px;
   }
 }

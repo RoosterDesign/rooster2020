@@ -2,6 +2,8 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import Masthead from "../components/Masthead/Masthead"
+import MastheadTitle from "../components/Masthead/MastheadTitle/MastheadTitle"
+import MastheadBody from "../components/Masthead/MastheadBody/MastheadBody"
 import Layout from "../components/Layout/Layout"
 import PageContent from "../components/PageContent/PageContent"
 
@@ -11,10 +13,16 @@ export default ({ data }) => {
   return (
     <Layout>
       <Masthead>
-        <h1>contact page title...</h1>
-        <p>page body or icons.....</p>
+        <MastheadTitle mastheadTitle={contactPageContent.mastheadTitle} />
+        <MastheadBody>
+          <p
+            dangerouslySetInnerHTML={{
+              __html: contactPageContent.mastheadBody,
+            }}
+          ></p>
+        </MastheadBody>
       </Masthead>
-      <PageContent>contact page...</PageContent>
+      <PageContent>page content...</PageContent>
     </Layout>
   )
 }

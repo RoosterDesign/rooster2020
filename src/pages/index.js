@@ -10,7 +10,7 @@ import ClientLogosBlock from "../components/ClientLogosBlock/ClientLogosBlock"
 
 export default ({ data }) => {
   const {
-    // homePageContent,
+    homePageContent,
     clientLogos,
     serviceOverview,
     whyChooseMe,
@@ -25,9 +25,9 @@ export default ({ data }) => {
       />
 
       <Masthead isHomepage>
-        <MastheadTitle mastheadTitle="page title" />
+        <MastheadTitle mastheadTitle={homePageContent.mastheadTitle} />
         <MastheadBody>
-          <p>page body or icons.....</p>
+          <p dangerouslySetInnerHTML={{__html: homePageContent.mastheadBody}}></p>
         </MastheadBody>
       </Masthead>
 

@@ -12,23 +12,23 @@ module.exports = {
     menuLinks: [
       {
         name: "Homepage",
-        link: "",
+        link: "/",
       },
       {
         name: "About",
-        link: "/about",
+        link: "/about/",
       },
       {
         name: "Services",
-        link: "/services",
+        link: "/services/",
       },
       {
         name: "Portfolio",
-        link: "/portfolio",
+        link: "/portfolio/",
       },
       {
         name: "Contact",
-        link: "/contact",
+        link: "/contact/",
       },
     ],
   },

@@ -42,6 +42,10 @@ p {
   color: $bodyColour;
 }
 
+p:last-child {
+  margin-bottom: 0;
+}
+
 img {
   margin: 0;
 }
@@ -59,6 +63,7 @@ strong {
 // Homepage Specific
 
 .is-homepage {
+
   h2,
   h3,
   h4,
@@ -103,6 +108,7 @@ body.is-homepage section {
 }
 
 @include mq(tablet) {
+
   p,
   li {
     font-size: 1.4rem;
@@ -116,12 +122,9 @@ body.is-homepage section {
 }
 
 @include mq(tablet-lg) {
-  body {
-    padding: 20px 20px 0;
-  }
 
   .container {
-    max-width: 900px;
+    max-width: 950px;
   }
 
   p,
