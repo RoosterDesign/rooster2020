@@ -25,35 +25,47 @@
     "intro": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi natus itaque consequatur labore, nostrum hic suscipit, distinctio temporibus quod ipsum voluptatum incidunt quisquam sit dignissimos, quia autem doloribus esse quas?",
     "logos": [
       {
-        "src": "https://via.placeholder.com/260",
+        "src": "https://via.placeholder.com/600x520",
         "name": "Joe Bloggs Ltd"
       },
       {
-        "src": "https://via.placeholder.com/260",
+        "src": "https://via.placeholder.com/300x260",
         "name": "Joe Bloggs Ltd"
       },
       {
-        "src": "https://via.placeholder.com/260",
+        "src": "https://via.placeholder.com/300x260",
         "name": "Joe Bloggs Ltd"
       },
       {
-        "src": "https://via.placeholder.com/260",
+        "src": "https://via.placeholder.com/300x260",
         "name": "Joe Bloggs Ltd"
       },
       {
-        "src": "https://via.placeholder.com/260",
+        "src": "https://via.placeholder.com/300x260",
         "name": "Joe Bloggs Ltd"
       },
       {
-        "src": "https://via.placeholder.com/260",
+        "src": "https://via.placeholder.com/300x260",
         "name": "Joe Bloggs Ltd"
       },
       {
-        "src": "https://via.placeholder.com/260",
+        "src": "https://via.placeholder.com/300x260",
         "name": "Joe Bloggs Ltd"
       },
       {
-        "src": "https://via.placeholder.com/260",
+        "src": "https://via.placeholder.com/300x260",
+        "name": "Joe Bloggs Ltd"
+      },
+      {
+        "src": "https://via.placeholder.com/300x260",
+        "name": "Joe Bloggs Ltd"
+      },
+      {
+        "src": "https://via.placeholder.com/300x260",
+        "name": "Joe Bloggs Ltd"
+      },
+      {
+        "src": "https://via.placeholder.com/300x260",
         "name": "Joe Bloggs Ltd"
       }
     ]

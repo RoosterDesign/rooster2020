@@ -4,13 +4,47 @@
 }
 
 .clientLogos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  padding: 20% 10px 0;
+  margin-bottom: -20%;
+  ;
+}
+
+@include mq(mobile-lg) {
+  .clientLogos {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 @include mq(tablet-lg) {
   .clientLogosBlock {
     text-align: left;
+  }
+}
+
+@include mq(tablet) {
+  .clientLogos {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin: -25px 0 0;
+    padding-top: 0;
+  }
+}
+
+@include mq(tablet-lg) {
+  .clientLogos {
+    margin-top: -100px;
+  }
+}
+
+
+@include mq(desktop-md) {
+  .clientLogos {
+    margin-top: -120px;
   }
 }

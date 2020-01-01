@@ -5,6 +5,9 @@ import BlockIntro from "../BlockIntro/BlockIntro"
 import ClientLogo from "../ClientLogo/ClientLogo"
 
 export default props => {
+
+  const rows = []
+  const currentRo
   const logos = props.content.logos.map((logo, index) => (
     <ClientLogo key={index} logoContent={logo} />
   ))

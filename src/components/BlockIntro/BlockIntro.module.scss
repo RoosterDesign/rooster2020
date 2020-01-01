@@ -2,13 +2,13 @@
   display: none;
 }
 
-@include mq(tablet-lg) {
+@include mq(tablet) {
   .blockIntro {
     display: block;
-    margin-bottom: 50px;
-    max-width: 475px;
+    margin-bottom: 30px;
     padding-left: 30px;
     position: relative;
+    text-align: left;
   }
 
   .blockIntro:before {
@@ -21,6 +21,18 @@
     position: absolute;
     width: 6px;
   }
+
+  .blockIntro p {
+    font-size: 1.8rem;
+  }
+
+}
+
+@include mq(tablet-lg) {
+  .blockIntro {
+    margin-bottom: 50px;
+    max-width: 70%;
+  }
 }
 
 @include mq(desktop) {
@@ -32,6 +44,10 @@
 
 @include mq(desktop-md) {
   .blockIntro {
-    max-width: 50%;
+    max-width: 60%;
+  }
+
+  .blockIntro p {
+    font-size: 2rem;
   }
 }

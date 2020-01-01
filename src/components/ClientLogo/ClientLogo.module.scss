@@ -1,52 +1,122 @@
 .clientLogo {
-    border-radius: $borderRadius;
-    display: block;
-    margin-top: 16px;
-    overflow: hidden;
-    width: calc(50% - 8px);
-
-    &:nth-child(-n+2) {
-        margin-top: 0;
-    }
-
-    img {
-        display: block;
-        height: auto;
-        width: 100%;
-    }
-
+    margin: 7% 0;
+    position: relative;
+    height: 0;
+    padding-bottom: 100%;
 }
+
+.clientLogo:nth-child(3n+1),
+.clientLogo:nth-child(3n+3),
+.clientLogo:last-child {
+    transform: translateY(-57%);
+}
+
+.clientLogo svg {
+    display: block;
+    transform: scale(1.18);
+    width: 100%;
+}
+
+.clientLogo:nth-child(1) {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.clientLogo:nth-child(2) {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.clientLogo:nth-child(3) {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+.clientLogo:nth-child(4) {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.clientLogo:nth-child(5) {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.clientLogo:nth-child(6) {
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+.clientLogo:nth-child(7) {
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.clientLogo:nth-child(8) {
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+.clientLogo:nth-child(9) {
+    grid-area: 3 / 3 / 4 / 4;
+}
+
+.clientLogo:nth-child(10) {
+    grid-area: 4 / 1 / 5 / 2;
+}
+
+.clientLogo:nth-child(11) {
+    grid-area: 4 / 3 / 5 / 4;
+}
+
 
 @include mq(tablet) {
 
     .clientLogo {
-        width: calc(25% - 12px);
+        margin: 7% 0;
+        transform: none !important;
     }
 
-    .clientLogo:nth-child(-n+4) {
-        margin-top: 0;
+    .clientLogo:nth-child(3),
+    .clientLogo:nth-child(5),
+    .clientLogo:nth-child(8),
+    .clientLogo:nth-child(10) {
+        transform: translateY(-57%) !important;
     }
 
-}
-
-@include mq(tablet-lg) {
-
-    .clientLogo {
-        margin-top: 24px;
-        width: calc(25% - 18px);
+    .clientLogo:nth-child(1) {
+        grid-area: 1 / 5 / 2 / 6;
     }
-}
 
-@include mq(desktop) {
-    .clientLogo {
-        margin-top: 28px;
-        width: calc(25% - 24px);
+    .clientLogo:nth-child(2) {
+        grid-area: 2 / 1 / 3 / 2;
     }
-}
 
-@include mq(desktop-md) {
-    .clientLogo {
-        margin-top: 38px;
-        width: calc(25% - 28px);
+    .clientLogo:nth-child(3) {
+        grid-area: 2 / 2 / 3 / 3;
+    }
+
+    .clientLogo:nth-child(4) {
+        grid-area: 2 / 3 / 3 / 4;
+    }
+
+    .clientLogo:nth-child(5) {
+        grid-area: 2 / 4 / 3 / 5;
+    }
+
+    .clientLogo:nth-child(6) {
+        grid-area: 2 / 5 / 3 / 6;
+    }
+
+    .clientLogo:nth-child(7) {
+        grid-area: 3 / 1 / 4 / 2;
+    }
+
+    .clientLogo:nth-child(8) {
+        grid-area: 3 / 2 / 4 / 3;
+    }
+
+    .clientLogo:nth-child(9) {
+        grid-area: 3 / 3 / 4 / 4;
+    }
+
+    .clientLogo:nth-child(10) {
+        grid-area: 3 / 4 / 4 / 5;
+    }
+
+    .clientLogo:nth-child(11) {
+        grid-area: 3 / 5 / 4 / 6;
     }
 }
