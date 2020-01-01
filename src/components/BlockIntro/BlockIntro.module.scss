@@ -31,14 +31,13 @@
 @include mq(tablet-lg) {
   .blockIntro {
     margin-bottom: 50px;
-    max-width: 70%;
+    max-width: 570px;
   }
 }
 
 @include mq(desktop) {
   .blockIntro {
     margin-bottom: 60px;
-    max-width: 540px;
   }
 }
 

@@ -5,15 +5,12 @@ import BlockIntro from "../BlockIntro/BlockIntro"
 import ClientLogo from "../ClientLogo/ClientLogo"
 
 export default props => {
-
-  const rows = []
-  const currentRo
   const logos = props.content.logos.map((logo, index) => (
-    <ClientLogo key={index} logoContent={logo} />
+    <ClientLogo key={index} logoContent={logo} id={index} />
   ))
 
   return (
-    <section className={styles.clientLogosBlock}>
+    <section className="block">
       <div className="container">
         <BlockTitle titleContent={props.content.title} />
         <BlockIntro introContent={props.content.intro} />

@@ -10,7 +10,7 @@ export default props => {
   ))
 
   return (
-    <section className={styles.articlesBlock}>
+    <section className="block">
       <div className="container">
         <BlockTitle
           location={props.location}

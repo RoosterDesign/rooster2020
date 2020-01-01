@@ -11,17 +11,15 @@ import ClientLogosBlock from "../components/ClientLogosBlock/ClientLogosBlock"
 import SkillsBlock from "../components/SkillsBlock/SkillsBlock"
 
 export default ({ data }) => {
-  const {
-    aboutPageContent,
-    clientLogos,
-    skills,
-  } = data.allDataJson.nodes[0]
+  const { aboutPageContent, clientLogos, skills } = data.allDataJson.nodes[0]
   return (
     <Layout>
       <Masthead>
         <MastheadTitle mastheadTitle={aboutPageContent.mastheadTitle} />
         <MastheadBody>
-          <p dangerouslySetInnerHTML={{__html: aboutPageContent.mastheadBody}}></p>
+          <p
+            dangerouslySetInnerHTML={{ __html: aboutPageContent.mastheadBody }}
+          ></p>
         </MastheadBody>
       </Masthead>
       <PageContent>

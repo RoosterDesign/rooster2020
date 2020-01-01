@@ -77,7 +77,7 @@ strong {
   }
 }
 
-section {
+.block {
   padding-bottom: 75px;
 
   @include mq(mobile-lg) {
@@ -97,7 +97,7 @@ section {
   }
 }
 
-body.is-homepage section {
+body.is-homepage .block {
   @include mq(desktop) {
     padding-bottom: 200px;
   }

@@ -1,8 +1,11 @@
 import React from "react"
 import styles from "./SkillLogo.module.scss"
+import Hexagon from "../Hexagon/Hexagon"
 
-export default props => (
-  <picture className={styles.skillLogo}>
-    <img src={props.logoContent.src} alt={props.logoContent.name} />
-  </picture>
-)
+export default props => {
+  return (
+    <div className={styles.skillLogo}>
+      <Hexagon type="skills" id={props.id} src={props.logoContent.src} />
+    </div>
+  )
+}
