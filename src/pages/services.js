@@ -22,7 +22,37 @@ export default ({ data }) => {
           ></p>
         </MastheadBody>
       </Masthead>
-      <PageContent>page content...</PageContent>
+      <PageContent>
+        <section>
+          <div class="container">
+            <div>
+              <h2>Outsourcing - blockTitle</h2>
+              <p>Lorem ipsum... - blockIntro</p>
+            </div>
+          </div>
+          <img src="http://placekitten.com/800" />
+        </section>
+
+        <section>
+          <img src="http://placekitten.com/800" />
+          <div class="container">
+            <div>
+              <h2>Outsourcing - blockTitle</h2>
+              <p>Lorem ipsum... - blockIntro</p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="container">
+            <div>
+              <h2>Outsourcing - blockTitle</h2>
+              <p>Lorem ipsum... - blockIntro</p>
+            </div>
+          </div>
+          <img src="http://placekitten.com/800" />
+        </section>
+      </PageContent>
     </Layout>
   )
 }
