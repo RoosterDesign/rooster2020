@@ -9,9 +9,15 @@ import Layout from "../components/Layout/Layout"
 import PageContent from "../components/PageContent/PageContent"
 import ClientLogosBlock from "../components/ClientLogosBlock/ClientLogosBlock"
 import SkillsBlock from "../components/SkillsBlock/SkillsBlock"
+import CvBlock from "../components/CvBlock/CvBlock"
 
 export default ({ data }) => {
-  const { aboutPageContent, clientLogos, skills } = data.allDataJson.nodes[0]
+  const {
+    aboutPageContent,
+    clientLogos,
+    skills,
+    cv,
+  } = data.allDataJson.nodes[0]
   return (
     <Layout>
       <Masthead>
@@ -25,6 +31,7 @@ export default ({ data }) => {
       <PageContent>
         <SkillsBlock content={skills} />
         <ClientLogosBlock content={clientLogos} />
+        <CvBlock content={cv} />
       </PageContent>
     </Layout>
   )
@@ -52,6 +59,15 @@ export const query = graphql`
           logos {
             src
             name
+          }
+        }
+        cv {
+          title
+          intro
+          btn {
+            label1
+            label2
+            fileInfo
           }
         }
       }

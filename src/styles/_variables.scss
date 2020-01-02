@@ -3,15 +3,16 @@ $lightPurple: #8358a0;
 $bodyBg: #0e0e0f;
 $homeHeadingColour: #fff;
 $headingColour: $lightPurple;
-$homeBodyColour: rgba(255, 255, 255, .67);
+$homeBodyColour: rgba(255, 255, 255, 0.67);
 $bodyColour: #1d1d1d;
-
 
 $pageBgGradStart: #161318;
 $pageBgGradEnd: #302140;
-
 
 $siteHeaderHeight: 150px;
 $siteHeaderHeight--mobileLg: 180px;
 $siteHeaderHeight--mobileXlg: 200px;
 $siteHeaderHeight--desktop: 250px;
+
+$btnBg: #3d2753;
+$btnBg--hover: lighten($btnBg, 10%);

@@ -181,6 +181,15 @@
       }
     ]
   },
+  "cv": {
+    "title": "Curriculum Vitae",
+    "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sollicitudin interdum turpis, sed rutrum mauris varius sit amet. Nulla commodo nunc nec lorem venenatis, non consequat nulla elementum. Integer at erat rhoncus, varius mi sed.",
+    "btn": {
+      "label1": "Download my CV",
+      "label2": "Senior Front End Developer",
+      "fileInfo": ".pdf - 380kb"
+    }
+  },
   "homePageContent": {
     "mastheadTitle": "UI/UX Designer &<br/> Front End Developer",
     "mastheadBody": "Based in Leamington Spa, Warwickshire, Rooster Design Ltd offer digital services for agencies looking to outsource projects, in-house contract opportunities as well as individuals and businesses looking to create a web presence."

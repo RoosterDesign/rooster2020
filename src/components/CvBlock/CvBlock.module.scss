@@ -1,0 +1,127 @@
+.cvButton {
+  align-items: center;
+  background: $btnBg;
+  border-radius: 42px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 84px;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.cvButton:hover {
+  background: $btnBg--hover;
+  transform: scale(1.02);
+}
+
+.cvButton span {
+  display: block;
+  line-height: 1;
+}
+
+.label1 {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.1rem;
+  font-family: "HalisR-Medium", "serif";
+  letter-spacing: 0.4rem;
+  text-transform: uppercase;
+}
+
+.label2 {
+  font-size: 1.8rem;
+  font-family: "HalisR-Medium", "serif";
+  letter-spacing: -0.1rem;
+  margin: 8px 0;
+}
+
+.fileInfo {
+  font-size: 1.2rem;
+}
+
+@include mq(mobile-xlg) {
+  .cvButton {
+    border-radius: 50px;
+    height: 100px;
+  }
+
+  .label1 {
+    font-size: 1.3rem;
+  }
+
+  .label2 {
+    font-size: 2.2rem;
+    margin: 10px 0;
+  }
+
+  .fileInfo {
+    font-size: 1.3rem;
+  }
+}
+
+@include mq(tablet) {
+  .cvButton {
+    border-radius: 70px;
+    height: 140px;
+  }
+
+  .label1 {
+    font-size: 1.5rem;
+    letter-spacing: 0.6rem;
+  }
+
+  .label2 {
+    font-size: 3rem;
+    // letter-spacing: -0.1rem;
+    margin: 15px 0;
+  }
+
+  .fileInfo {
+    font-size: 1.5rem;
+  }
+}
+
+@include mq(tablet-lg) {
+  .cvButton {
+    border-radius: 82px;
+    height: 164px;
+  }
+
+  .label1 {
+    font-size: 1.8rem;
+    letter-spacing: 1rem;
+  }
+
+  .label2 {
+    font-size: 3.6rem;
+    margin: 18px 0;
+  }
+
+  .fileInfo {
+    font-size: 1.8rem;
+  }
+}
+
+@include mq(desktop-md) {
+  .cvButton {
+    border-radius: 100px;
+    height: 200px;
+  }
+
+  .label1 {
+    font-size: 1.9rem;
+    letter-spacing: 1.3rem;
+  }
+
+  .label2 {
+    font-size: 4.4rem;
+    letter-spacing: -0.2rem;
+    margin: 25px 0;
+  }
+
+  .fileInfo {
+    font-size: 1.9rem;
+  }
+}
