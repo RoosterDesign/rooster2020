@@ -6,9 +6,14 @@ import MastheadTitle from "../components/Masthead/MastheadTitle/MastheadTitle"
 import MastheadBody from "../components/Masthead/MastheadBody/MastheadBody"
 import Layout from "../components/Layout/Layout"
 import PageContent from "../components/PageContent/PageContent"
+import PortfolioItem from "../components/PortfolioItem/PortfolioItem"
 
 export default ({ data }) => {
-  const { portfolioPageContent } = data.allDataJson.nodes[0]
+  const { portfolioPageContent } = data.dataJson
+
+  const portfolioItems = portfolioPageContent.portfolio.map(
+    ({ node }, index) => <PortfolioItem key={index} content={node} />
+  )
 
   return (
     <Layout>
@@ -22,19 +27,24 @@ export default ({ data }) => {
           ></p>
         </MastheadBody>
       </Masthead>
-      <PageContent>page content...</PageContent>
+      <PageContent>
+        <div className="container">{portfolioItems}</div>
+      </PageContent>
     </Layout>
   )
 }
 
 export const query = graphql`
   query portfolioContentQuery {
-    allDataJson {
-      nodes {
-        portfolioPageContent {
-          mastheadTitle
-          mastheadBody
-        }
+    dataJson {
+      portfolioPageContent {
+        mastheadBody
+        mastheadTitle
+      }
+      portfolio {
+        slug
+        thumbnail
+        title
       }
     }
   }

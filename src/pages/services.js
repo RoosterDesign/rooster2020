@@ -10,7 +10,7 @@ import ServiceBlock from "../components/ServiceBlock/ServiceBlock"
 import JbandgBanner from "../components/JbandgBanner/JbandgBanner"
 
 export default ({ data }) => {
-  const { servicesPageContent } = data.allDataJson.nodes[0]
+  const { servicesPageContent } = data.dataJson
 
   const services = servicesPageContent.services.map((service, index) => (
     <ServiceBlock key={index} content={service} />
@@ -38,16 +38,14 @@ export default ({ data }) => {
 
 export const query = graphql`
   query servicesContentQuery {
-    allDataJson {
-      nodes {
-        servicesPageContent {
-          mastheadTitle
-          mastheadBody
-          services {
-            body
-            img
-            title
-          }
+    dataJson {
+      servicesPageContent {
+        mastheadTitle
+        mastheadBody
+        services {
+          body
+          img
+          title
         }
       }
     }

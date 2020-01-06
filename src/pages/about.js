@@ -12,12 +12,7 @@ import SkillsBlock from "../components/SkillsBlock/SkillsBlock"
 import CvBlock from "../components/CvBlock/CvBlock"
 
 export default ({ data }) => {
-  const {
-    aboutPageContent,
-    clientLogos,
-    skills,
-    cv,
-  } = data.allDataJson.nodes[0]
+  const { aboutPageContent, clientLogos, skills, cv } = data.dataJson
   return (
     <Layout>
       <Masthead>
@@ -39,36 +34,34 @@ export default ({ data }) => {
 
 export const query = graphql`
   query aboutContentQuery {
-    allDataJson {
-      nodes {
-        aboutPageContent {
-          mastheadTitle
-          mastheadBody
+    dataJson {
+      aboutPageContent {
+        mastheadTitle
+        mastheadBody
+      }
+      clientLogos {
+        title
+        intro
+        logos {
+          src
+          name
         }
-        clientLogos {
-          title
-          intro
-          logos {
-            src
-            name
-          }
+      }
+      skills {
+        title
+        intro
+        logos {
+          src
+          name
         }
-        skills {
-          title
-          intro
-          logos {
-            src
-            name
-          }
-        }
-        cv {
-          title
-          intro
-          btn {
-            label1
-            label2
-            fileInfo
-          }
+      }
+      cv {
+        title
+        intro
+        btn {
+          label1
+          label2
+          fileInfo
         }
       }
     }

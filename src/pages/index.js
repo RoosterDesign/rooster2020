@@ -14,7 +14,7 @@ export default ({ data }) => {
     clientLogos,
     serviceOverview,
     whyChooseMe,
-  } = data.allDataJson.nodes[0]
+  } = data.dataJson
 
   return (
     <Layout>
@@ -28,7 +28,9 @@ export default ({ data }) => {
         <MastheadTitle mastheadTitle={homePageContent.mastheadTitle} />
         <MastheadBody>
           <p
-            dangerouslySetInnerHTML={{ __html: homePageContent.mastheadBody }}
+            dangerouslySetInnerHTML={{
+              __html: homePageContent.mastheadBody,
+            }}
           ></p>
         </MastheadBody>
       </Masthead>
@@ -42,37 +44,35 @@ export default ({ data }) => {
 
 export const query = graphql`
   query homeContentQuery {
-    allDataJson {
-      nodes {
-        homePageContent {
-          mastheadTitle
-          mastheadBody
+    dataJson {
+      homePageContent {
+        mastheadBody
+        mastheadTitle
+      }
+      clientLogos {
+        title
+        intro
+        logos {
+          src
+          name
         }
-        clientLogos {
+      }
+      serviceOverview {
+        title
+        intro
+        articles {
           title
-          intro
-          logos {
-            src
-            name
-          }
+          img
+          body
         }
-        serviceOverview {
+      }
+      whyChooseMe {
+        title
+        intro
+        articles {
           title
-          intro
-          articles {
-            title
-            img
-            body
-          }
-        }
-        whyChooseMe {
-          title
-          intro
-          articles {
-            title
-            img
-            body
-          }
+          img
+          body
         }
       }
     }
