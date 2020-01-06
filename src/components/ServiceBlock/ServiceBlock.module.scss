@@ -1,0 +1,43 @@
+.serviceBlock {
+    min-height: 900px;
+    position: relative;
+}
+
+.serviceBlock>div {
+    // background: blue;
+    display: flex;
+    flex-direction: row;
+}
+
+.content {
+    // background: yellow;
+    max-width: 55%;
+    width: 100%;
+}
+
+.content>div {
+    max-width: none;
+}
+
+.img {
+    position: absolute;
+    left: 60%;
+    top: 0;
+
+}
+
+
+
+.serviceBlock:nth-child(even) {
+
+    &>div {
+        // background: red;
+        flex-direction: row-reverse;
+    }
+
+    .img {
+        left: auto;
+        right: 60%;
+    }
+
+}

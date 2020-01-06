@@ -6,9 +6,15 @@ import MastheadTitle from "../components/Masthead/MastheadTitle/MastheadTitle"
 import MastheadBody from "../components/Masthead/MastheadBody/MastheadBody"
 import Layout from "../components/Layout/Layout"
 import PageContent from "../components/PageContent/PageContent"
+import ServiceBlock from "../components/ServiceBlock/ServiceBlock"
+import JbandgBanner from "../components/JbandgBanner/JbandgBanner"
 
 export default ({ data }) => {
   const { servicesPageContent } = data.allDataJson.nodes[0]
+
+  const services = servicesPageContent.services.map((service, index) => (
+    <ServiceBlock key={index} content={service} />
+  ))
 
   return (
     <Layout>
@@ -23,35 +29,8 @@ export default ({ data }) => {
         </MastheadBody>
       </Masthead>
       <PageContent>
-        <section>
-          <div class="container">
-            <div>
-              <h2>Outsourcing - blockTitle</h2>
-              <p>Lorem ipsum... - blockIntro</p>
-            </div>
-          </div>
-          <img src="http://placekitten.com/800" />
-        </section>
-
-        <section>
-          <img src="http://placekitten.com/800" />
-          <div class="container">
-            <div>
-              <h2>Outsourcing - blockTitle</h2>
-              <p>Lorem ipsum... - blockIntro</p>
-            </div>
-          </div>
-        </section>
-
-        <section>
-          <div class="container">
-            <div>
-              <h2>Outsourcing - blockTitle</h2>
-              <p>Lorem ipsum... - blockIntro</p>
-            </div>
-          </div>
-          <img src="http://placekitten.com/800" />
-        </section>
+        {services}
+        <JbandgBanner />
       </PageContent>
     </Layout>
   )
@@ -64,6 +43,11 @@ export const query = graphql`
         servicesPageContent {
           mastheadTitle
           mastheadBody
+          services {
+            body
+            img
+            title
+          }
         }
       }
     }

@@ -22,11 +22,12 @@
   display: flex;
   flex: 1;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 30px 0;
 }
 
 .masthead.isHomepage .mastheadContent {
+  justify-content: center;
   padding: 0;
 }
 
