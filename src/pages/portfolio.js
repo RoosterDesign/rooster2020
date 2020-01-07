@@ -6,15 +6,10 @@ import MastheadTitle from "../components/Masthead/MastheadTitle/MastheadTitle"
 import MastheadBody from "../components/Masthead/MastheadBody/MastheadBody"
 import Layout from "../components/Layout/Layout"
 import PageContent from "../components/PageContent/PageContent"
-import PortfolioItem from "../components/PortfolioItem/PortfolioItem"
+import PortfolioThumbnailsBlock from "../components/PortfolioThumbnailsBlock/PortfolioThumbnailsBlock"
 
 export default ({ data }) => {
   const { portfolioPageContent } = data.dataJson
-
-  const portfolioItems = portfolioPageContent.portfolio.map(
-    ({ node }, index) => <PortfolioItem key={index} content={node} />
-  )
-
   return (
     <Layout>
       <Masthead>
@@ -28,7 +23,7 @@ export default ({ data }) => {
         </MastheadBody>
       </Masthead>
       <PageContent>
-        <div className="container">{portfolioItems}</div>
+        <PortfolioThumbnailsBlock portfolioItems={data.dataJson.portfolio} />
       </PageContent>
     </Layout>
   )
