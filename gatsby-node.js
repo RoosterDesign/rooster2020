@@ -4,13 +4,10 @@ exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
   const result = await graphql(`
     query {
-      allDataJson {
+      allPortfolioJson {
         edges {
-          node {
-            portfolio {
-              slug
-            }
-          }
+          node {            
+            slug
         }
       }
     }
@@ -21,7 +18,10 @@ exports.createPages = async ({ graphql, actions }) => {
       path: node.slug,
       component: path.resolve(`./src/templates/portfolio-detail.js`),
       context: {
-        node,
+        /*
+        the value passed in the context will be available for you to use in your page queries as a GraphQL variable, as per the template snippet */
+
+        slug: node.slug,
       },
     })
   })

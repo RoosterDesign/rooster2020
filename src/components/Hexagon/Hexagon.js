@@ -13,8 +13,8 @@ export default props => {
         <text
           x="50%"
           y="50%"
-          dominant-baseline="middle"
-          text-anchor="middle"
+          dominantBaseline="middle"
+          textAnchor="middle"
           className={styles.hoverText}
         >
           {props.title}
