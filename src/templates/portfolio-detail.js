@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import Masthead from "../components/Masthead/Masthead"
 import MastheadTitle from "../components/Masthead/MastheadTitle/MastheadTitle"
 import MastheadBody from "../components/Masthead/MastheadBody/MastheadBody"
@@ -7,20 +7,25 @@ import Layout from "../components/Layout/Layout"
 import PageContent from "../components/PageContent/PageContent"
 
 export default ({ data }) => {
-  console.log(JSON.stringify(data, null, 4))
+  const { title, description, images } = data.portfolioJson
+
+  const allImages = images.map(img => <img src={img} />)
 
   return (
     <Layout>
       <Masthead>
-        <MastheadTitle mastheadTitle="title" />
+        <MastheadTitle mastheadTitle={title} />
         <MastheadBody>
-          <div>{data.allDataJson.edges[0].node}</div>
+          <p
+            dangerouslySetInnerHTML={{
+              __html: description,
+            }}
+          ></p>
         </MastheadBody>
       </Masthead>
       <PageContent>
-        <div className="container">
-          <img src="" />
-        </div>
+        <div className="container">{allImages}</div>
+        <Link to="/portfolio/">Back to portfolio</Link>
       </PageContent>
     </Layout>
   )
@@ -29,7 +34,9 @@ export default ({ data }) => {
 export const query = graphql`
   query($slug: String!) {
     portfolioJson(slug: { eq: $slug }) {
-      slug
+      title
+      description
+      images
     }
   }
 `

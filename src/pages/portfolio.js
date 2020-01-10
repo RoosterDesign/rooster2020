@@ -1,19 +1,27 @@
 import React from "react"
 import { graphql } from "gatsby"
-
+import styled from "styled-components"
 import Masthead from "../components/Masthead/Masthead"
 import MastheadTitle from "../components/Masthead/MastheadTitle/MastheadTitle"
 import MastheadBody from "../components/Masthead/MastheadBody/MastheadBody"
 import Layout from "../components/Layout/Layout"
 import PageContent from "../components/PageContent/PageContent"
-import PortfolioItem from "../components/PortfolioThumbnailsBlock/PortfolioItem/PortfolioItem"
+import PortfolioItem from "../components/PortfolioItem/PortfolioItem"
 
 export default ({ data }) => {
-  const portfolioItems = data.portfolioJson.map((node, index) => (
+  const { portfolioPageContent } = data.dataJson
+
+  const portfolioItems = data.allPortfolioJson.edges.map(({ node }, index) => (
     <PortfolioItem key={index} content={node} id={index} />
   ))
 
-  const { portfolioPageContent } = data.dataJson
+  const PortfolioList = styled.div`
+    padding: 50px 0;
+    @media (min-width: 768px) {
+      padding: 100px 0;
+    }
+  `
+
   return (
     <Layout>
       <Masthead>
@@ -28,7 +36,9 @@ export default ({ data }) => {
       </Masthead>
       <PageContent>
         <section>
-          <div className="container">{portfolioItems}</div>
+          <div className="container">
+            <PortfolioList>{portfolioItems}</PortfolioList>
+          </div>
         </section>
       </PageContent>
     </Layout>
@@ -43,10 +53,14 @@ export const query = graphql`
         mastheadTitle
       }
     }
-    portfolioJson {
-      slug
-      thumbnail
-      title
+    allPortfolioJson {
+      edges {
+        node {
+          slug
+          thumbnail
+          title
+        }
+      }
     }
   }
 `

@@ -6,7 +6,7 @@ import { location } from "@reach/router"
 export default props => {
   const isPartiallyActive = props => {
     const currentLocation = props.pathname
-    if (currentLocation.includes("portfolio")) {
+    if (!currentLocation.includes("/")) {
       return { className: "active" }
     }
   }
