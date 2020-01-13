@@ -16,9 +16,12 @@ export default ({ data }) => {
   ))
 
   const PortfolioList = styled.div`
-    padding: 50px 0;
+    padding: 20% 0;
     @media (min-width: 768px) {
       padding: 100px 0;
+    }
+    @media (min-width: 992px) {
+      padding-top: 75px;
     }
   `
 
