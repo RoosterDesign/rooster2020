@@ -44,7 +44,8 @@ export const query = graphql`
         mastheadBody
         services {
           body
-          img
+          mobileImg
+          desktopImg
           title
         }
       }

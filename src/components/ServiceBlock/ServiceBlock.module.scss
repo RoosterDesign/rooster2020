@@ -1,43 +1,77 @@
 .serviceBlock {
-    min-height: 900px;
-    position: relative;
+    margin-bottom: 50px;
 }
 
-.serviceBlock>div {
-    // background: blue;
-    display: flex;
-    flex-direction: row;
-}
+.serviceBlock>div {}
 
-.content {
-    // background: yellow;
-    max-width: 55%;
-    width: 100%;
-}
+.content {}
 
-.content>div {
-    max-width: none;
-}
+.content>div {}
 
 .img {
-    position: absolute;
-    left: 60%;
-    top: 0;
-
+    display: block;
+    max-height: 100%;
+    margin-bottom: 30px;
+    width: auto;
 }
-
-
 
 .serviceBlock:nth-child(even) {
 
-    &>div {
-        // background: red;
-        flex-direction: row-reverse;
+    &>div {}
+
+    .img {}
+
+}
+
+@include mq(tablet) {
+
+    .serviceBlock {
+        min-height: 750px;
+        position: relative;
+    }
+
+    .serviceBlock>div {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .content {
+        max-width: 55%;
+        width: 100%;
+    }
+
+    .content>div {
+        max-width: none;
     }
 
     .img {
-        left: auto;
-        right: 60%;
+        margin: 0;
+        position: absolute;
+        left: 60%;
+        top: 0;
+        max-height: 750px;
+    }
+
+    .serviceBlock:nth-child(even) {
+
+        &>div {
+            // background: red;
+            flex-direction: row-reverse;
+        }
+
+        .img {
+            left: auto;
+            right: 60%;
+        }
+
+    }
+
+}
+
+@include mq(desktop) {
+
+    .serviceBlock {
+        min-height: 900px;
     }
 
 }
