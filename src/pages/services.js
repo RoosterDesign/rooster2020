@@ -1,4 +1,6 @@
 import React from "react"
+import Helmet from "react-helmet"
+
 import Masthead from "../components/Masthead/Masthead"
 import MastheadTitle from "../components/Masthead/MastheadTitle/MastheadTitle"
 import Layout from "../components/Layout/Layout"
@@ -14,23 +16,32 @@ import collaborationIcon from "../images/icons/cubes.svg"
 
 import { graphql } from "gatsby"
 
-export default ({ data }) => {
+export default ({ data, location }) => {
   const { servicesPageContent } = data.dataJson
 
   const services = servicesPageContent.services.map((service, index) => (
     <ServiceBlock key={index} content={service} />
   ))
 
-  const MastheadServices = styled.div`    
-    margin-top: 20px;
+  const MastheadServices = styled.div`
     @media (min-width: 768px) {
       display: flex;
       justify-content: space-between;
     }
+    @media (min-width: 1500px) {
+      margin-top: 10px;
+    }
+    @media (min-width: 1920px) {
+      margin-top: 0;
+    }
   `
 
   return (
-    <Layout>
+    <Layout location={location}>
+      <Helmet>
+        <title>Services Page</title>
+        <meta name="description" content="Helmet application" />
+      </Helmet>
       <Masthead>
         <MastheadTitle mastheadTitle={servicesPageContent.mastheadTitle} />
         <MastheadServices>

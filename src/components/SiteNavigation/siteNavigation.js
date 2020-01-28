@@ -3,12 +3,11 @@ import { useStaticQuery, graphql } from "gatsby"
 import SiteNavigationItem from "./SiteNavigationItem/SiteNavigationItem"
 import styles from "./SiteNavigation.module.scss"
 
-const SiteNavigation = () => {
+const SiteNavigation = location => {
   const data = useStaticQuery(graphql`
     query siteNavQuery {
       site {
         siteMetadata {
-          description
           menuLinks {
             name
             link

@@ -8,7 +8,7 @@ import Layout from "../components/Layout/Layout"
 import ArticlesBlock from "../components/ArticlesBlock/ArticlesBlock"
 import ClientLogosBlock from "../components/ClientLogosBlock/ClientLogosBlock"
 
-export default ({ data }) => {
+export default ({ data, location }) => {
   const {
     homePageContent,
     clientLogos,
@@ -17,12 +17,15 @@ export default ({ data }) => {
   } = data.dataJson
 
   return (
-    <Layout>
+    <Layout location={location}>
       <Helmet
         bodyAttributes={{
           class: "is-homepage",
         }}
-      />
+      >
+        <title>Homepage</title>
+        <meta name="description" content="Helmet application" />
+      </Helmet>
 
       <Masthead isHomepage>
         <MastheadTitle mastheadTitle={homePageContent.mastheadTitle} />

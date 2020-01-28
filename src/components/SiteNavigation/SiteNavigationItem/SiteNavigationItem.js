@@ -1,26 +1,36 @@
 import React from "react"
 import { Link } from "gatsby"
 import styles from "./SiteNavigationItem.module.scss"
-import { location } from "@reach/router"
 
 export default props => {
-  const isPartiallyActive = props => {
-    const currentLocation = props.pathname
-    if (!currentLocation.includes("/")) {
-      return { className: "active" }
+  const isActive = props => {
+    const currentLocation = props.location.pathname
+    const currentPath = props.href.replace(/^\/+/, "")
+    let isActive = false
+    if (currentLocation === props.href) {
+      isActive = true
+    } else if (currentLocation.indexOf(currentPath) === 1) {
+      isActive = true
+    }
+    if (isActive) {
+      return {
+        className: [
+          styles.siteNavigationLink,
+          styles.siteNavigationLinkActive,
+        ].join(" "),
+      }
     }
   }
 
+  const NavLink = props => (
+    <Link getProps={(href, location) => isActive(href, location)} {...props} />
+  )
+
   return (
     <li className={styles.siteNavigationItem}>
-      <Link
-        to={props.item.link}
-        className={styles.siteNavigationLink}
-        activeClassName={styles.siteNavigationLinkActive}
-        getProps={({ location }) => isPartiallyActive(location)}
-      >
+      <NavLink to={props.item.link} className={styles.siteNavigationLink}>
         {props.item.name}
-      </Link>
+      </NavLink>
     </li>
   )
 }

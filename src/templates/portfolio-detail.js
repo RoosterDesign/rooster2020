@@ -48,14 +48,6 @@ export default ({ data }) => {
     }
   `
 
-  const BackToPortfolio = styled(Link)`
-    color: #8358a0;
-    text-decoration: none;
-    :hover {
-      color: #000;
-    }
-  `
-
   const allImages = images.map(img => <PortfolioDetailImage src={img} />)
 
   return (
@@ -74,9 +66,7 @@ export default ({ data }) => {
         <div className="container">
           {allImages}
           <p>
-            <BackToPortfolio to="/portfolio/">
-              &#8592; Back to portfolio
-            </BackToPortfolio>
+            <Link to="/portfolio/">&#8592; Back to portfolio</Link>
           </p>
         </div>
       </PortfolioPageContent>

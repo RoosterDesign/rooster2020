@@ -67,6 +67,10 @@
     margin-top: -75px;
   }
 
+  .mastheadContent {
+    padding-bottom: 40px;
+  }
+
 }
 
 @include mq(tablet-lg) {
@@ -81,6 +85,11 @@
   .masthead.isHomepage .mastheadContent p {
     width: 70%;
   }
+
+  .mastheadContent {
+    padding-bottom: 60px;
+  }
+
 }
 
 @include mq(desktop) {
@@ -102,10 +111,17 @@
   }
 
   .mastheadContent {
-    padding-top: 60px;
+    padding-top: 50px;
+    padding-bottom: 70px;
   }
 
   .masthead.isHomepage .mastheadContent {
     margin-top: -30px;
+  }
+}
+
+@include mq(desktop-lg) {
+  .masthead>div {
+    min-height: 870px;
   }
 }

@@ -1,4 +1,6 @@
 import React from "react"
+import Helmet from "react-helmet"
+
 import { graphql } from "gatsby"
 import styled from "styled-components"
 import Masthead from "../components/Masthead/Masthead"
@@ -8,7 +10,7 @@ import Layout from "../components/Layout/Layout"
 import PageContent from "../components/PageContent/PageContent"
 import PortfolioItem from "../components/PortfolioItem/PortfolioItem"
 
-export default ({ data }) => {
+export default ({ data, location }) => {
   const { portfolioPageContent } = data.dataJson
 
   const portfolioItems = data.allPortfolioJson.edges.map(({ node }, index) => (
@@ -26,7 +28,11 @@ export default ({ data }) => {
   `
 
   return (
-    <Layout>
+    <Layout location={location}>
+      <Helmet>
+        <title>Portfolio Page</title>
+        <meta name="description" content="Helmet application" />
+      </Helmet>
       <Masthead>
         <MastheadTitle mastheadTitle={portfolioPageContent.mastheadTitle} />
         <MastheadBody>

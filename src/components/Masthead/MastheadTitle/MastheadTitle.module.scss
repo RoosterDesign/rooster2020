@@ -48,13 +48,13 @@
   .mastheadTitle {
     font-size: 11rem;
     letter-spacing: -0.5rem;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 }
 
 @include mq(desktop-lg) {
   .mastheadTitle {
     font-size: 12rem;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
 }

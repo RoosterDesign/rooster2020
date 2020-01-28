@@ -1,4 +1,6 @@
 import React from "react"
+import Helmet from "react-helmet"
+
 import { graphql } from "gatsby"
 
 import Masthead from "../components/Masthead/Masthead"
@@ -11,10 +13,14 @@ import ClientLogosBlock from "../components/ClientLogosBlock/ClientLogosBlock"
 import SkillsBlock from "../components/SkillsBlock/SkillsBlock"
 import CvBlock from "../components/CvBlock/CvBlock"
 
-export default ({ data }) => {
+export default ({ data, location }) => {
   const { aboutPageContent, clientLogos, skills, cv } = data.dataJson
   return (
-    <Layout>
+    <Layout location={location}>
+      <Helmet>
+        <title>About Page</title>
+        <meta name="description" content="Helmet application" />
+      </Helmet>
       <Masthead>
         <MastheadTitle mastheadTitle={aboutPageContent.mastheadTitle} />
         <MastheadBody>

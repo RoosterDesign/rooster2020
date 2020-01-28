@@ -43,14 +43,13 @@
     }
 
     .siteNavigationLink:hover,
-    .siteNavigationLinkActive,
-    .isActive {
+    .siteNavigationLinkActive {
+        color: #fff;
         opacity: 1;
     }
 
     .siteNavigationLink:hover:after,
-    .siteNavigationLinkActive:after,
-    .isActive:after {
+    .siteNavigationLinkActive:after {
         bottom: 5px;
         opacity: 1;
     }

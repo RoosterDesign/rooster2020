@@ -1,4 +1,6 @@
 import React from "react"
+import Helmet from "react-helmet"
+
 import { graphql } from "gatsby"
 
 import Masthead from "../components/Masthead/Masthead"
@@ -12,6 +14,10 @@ export default ({ data }) => {
 
   return (
     <Layout>
+      <Helmet>
+        <title>Contact Page</title>
+        <meta name="description" content="Helmet application" />
+      </Helmet>
       <Masthead>
         <MastheadTitle mastheadTitle={contactPageContent.mastheadTitle} />
         <MastheadBody>

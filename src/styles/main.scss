@@ -107,6 +107,17 @@ body.is-homepage .block {
   }
 }
 
+
+a {
+  color: $linkColour;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: $linkColour--hover;
+  text-decoration: none;
+}
+
 @include mq(tablet) {
 
   p,
@@ -157,4 +168,35 @@ body.is-homepage .block {
   li {
     font-size: 2rem;
   }
+}
+
+h4 {
+  font-size: 3rem;
+  letter-spacing: -.15rem;
+  margin-top: 30px;
+  margin-bottom: 15px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+}
+
+@include mq(tablet) {
+
+  h4 {
+    font-size: 3.6rem;
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
+
+}
+
+@include mq(desktop) {
+
+  h4 {
+    font-size: 4rem;
+    margin-top: 80px;
+  }
+
 }

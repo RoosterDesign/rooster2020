@@ -6,9 +6,6 @@
 
 module.exports = {
   siteMetadata: {
-    title: `Rooster Design`,
-    description: `This is the site description metadata.`,
-    author: `Neil Dewing`,
     menuLinks: [
       {
         name: "Homepage",
