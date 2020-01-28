@@ -1,18 +1,96 @@
 .jbandgBanner {
     background-image: linear-gradient(45deg, #5E4571 0%, #8B2B47 100%);
     border-radius: 4px;
-    padding: 32px;
+    padding: 40px 32px;
 
     p {
         color: rgba(255, 255, 255, .7);
     }
 
     a {
-        color: #fff;
+        color: rgba(255, 255, 255, .7);
+        padding-bottom: 8px;
+        position: relative;
+        transition: color .2s ease;
+        text-decoration: none;
+    }
+
+    a:after {
+        background: #fff;
+        bottom: 0;
+        content: '';
+        display: block;
+        height: 1px;
+        opacity: .5;
+        position: absolute;
+        transition: opacity .2s ease;
+        width: 100%;
     }
 
     a:hover {
-        text-decoration: none;
+        color: #fff;
+    }
+
+    a:hover:after {
+        opacity: 1;
+    }
+
+}
+
+.jbandgLogo {
+    display: block;
+    margin-bottom: 20px;
+    max-width: 220px;
+    width: 80%;
+
+    img {
+        display: block;
+        height: auto;
+        width: 100%;
+    }
+
+}
+
+@include mq(tablet) {
+
+    .jbandgBanner {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 40px;
+    }
+
+    .jbandgLogo {
+        min-width: 250px;
+        padding-right: 40px;
+    }
+
+}
+
+@include mq(tablet-lg) {
+
+    .jbandgBanner {
+        padding: 40px 60px;
+    }
+
+    .jbandgLogo {
+        padding-right: 60px;
+        min-width: 320px;
+    }
+
+}
+
+@include mq(desktop-md) {
+
+    .jbandgBanner {
+        height: 320px;
+        padding: 0 120px 0 100px;
+    }
+
+    .jbandgLogo {
+        padding-right: 120px;
+        min-width: 420px;
     }
 
 }
