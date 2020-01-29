@@ -6,17 +6,17 @@
       "articles": [
         {
           "title": "Outsourcing",
-          "img": "http://placekitten.com/366/210",
+          "img": "services-overview/outsourcing.jpg",
           "body": "Are you finding yourself with limited time or resource? Outsource your projects to Rooster Design to help ease the load."
         },
         {
           "title": "Contracting",
-          "img": "http://placekitten.com/366/210",
+          "img": "services-overview/contracting.jpg",
           "body": "I am always on the lookout for UI/UX Designer or Front End Developer contracts in and around the West Midlands area."
         },
         {
           "title": "Freelance",
-          "img": "http://placekitten.com/366/210",
+          "img": "services-overview/freelance.jpg",
           "body": "Are you looking to redo your current website or start a new project? Rooster Design can bring your ideas to life.."
         }
       ]
