@@ -4,21 +4,20 @@ import Img from "gatsby-image"
 import styles from "./ArticleBlockItem.module.scss"
 
 export default props => {
-  //const imgPath = props.articleContent.img
-  const data = useStaticQuery(
-    graphql`
-      query getImage($imgPath: String) {
-        imageOne: file(relativePath: { eq: $imgPath }) {
-          childImageSharp {
-            fluid(maxWidth: 1000) {
-              ...GatsbyImageSharpFluid
-            }
+  console.info(props.articleContent.img)
+  const data = useStaticQuery(graphql`
+    query {
+      imageOne: file(
+        relativePath: { eq: "services-overview/outsourcing.jpg" }
+      ) {
+        childImageSharp {
+          fluid(maxWidth: 1000) {
+            ...GatsbyImageSharpFluid
           }
         }
       }
-    `,
-    { fileName: props.articleContent.img }
-  )
+    }
+  `)
 
   return (
     <div className={styles.articleItem}>
