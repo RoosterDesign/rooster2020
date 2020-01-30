@@ -27,7 +27,7 @@ export default ({ data, location }) => {
         <meta name="description" content="Helmet application" />
       </Helmet>
 
-      <Masthead isHomepage>
+      {/* <Masthead isHomepage>
         <MastheadTitle mastheadTitle={homePageContent.mastheadTitle} />
         <MastheadBody>
           <p
@@ -36,17 +36,17 @@ export default ({ data, location }) => {
             }}
           ></p>
         </MastheadBody>
-      </Masthead>
+      </Masthead> */}
 
       <ArticlesBlock content={serviceOverview} />
-      <ClientLogosBlock content={clientLogos} />
+      {/* <ClientLogosBlock content={clientLogos} /> */}
       <ArticlesBlock content={whyChooseMe} />
     </Layout>
   )
 }
 
 export const query = graphql`
-  query homeContentQuery {
+  query {
     dataJson {
       homePageContent {
         mastheadBody
@@ -65,7 +65,7 @@ export const query = graphql`
         intro
         articles {
           title
-          img
+          image
           body
         }
       }
@@ -74,7 +74,7 @@ export const query = graphql`
         intro
         articles {
           title
-          img
+          image
           body
         }
       }

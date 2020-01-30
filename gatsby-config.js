@@ -63,8 +63,13 @@ module.exports = {
         ],
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: "serviceOverviewImages",
+        path: `src/images/services-overview/`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -72,6 +77,7 @@ module.exports = {
         path: `src/images/`,
       },
     },
+
     `gatsby-transformer-json`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -85,6 +91,8 @@ module.exports = {
         path: `src/downloads/`,
       },
     },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
       resolve: "gatsby-plugin-react-svg",
       options: {
