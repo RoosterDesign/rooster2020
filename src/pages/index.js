@@ -27,7 +27,7 @@ export default ({ data, location }) => {
         <meta name="description" content="Helmet application" />
       </Helmet>
 
-      {/* <Masthead isHomepage>
+      <Masthead isHomepage>
         <MastheadTitle mastheadTitle={homePageContent.mastheadTitle} />
         <MastheadBody>
           <p
@@ -38,7 +38,7 @@ export default ({ data, location }) => {
         </MastheadBody>
       </Masthead>
 
-      <ArticlesBlock content={serviceOverview} /> */}
+      <ArticlesBlock content={serviceOverview} />
       <ClientLogosBlock content={clients} />
       <ArticlesBlock content={whyChooseMe} />
     </Layout>
