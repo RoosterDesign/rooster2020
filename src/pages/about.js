@@ -14,7 +14,7 @@ import SkillsBlock from "../components/SkillsBlock/SkillsBlock"
 import CvBlock from "../components/CvBlock/CvBlock"
 
 export default ({ data, location }) => {
-  const { aboutPageContent, clientLogos, skills, cv } = data.dataJson
+  const { aboutPageContent, clients, skills, cv } = data.dataJson
   return (
     <Layout location={location}>
       <Helmet>
@@ -31,7 +31,7 @@ export default ({ data, location }) => {
       </Masthead>
       <PageContent>
         <SkillsBlock content={skills} />
-        <ClientLogosBlock content={clientLogos} />
+        <ClientLogosBlock content={clients} />
         <CvBlock content={cv} />
       </PageContent>
     </Layout>
@@ -45,13 +45,9 @@ export const query = graphql`
         mastheadTitle
         mastheadBody
       }
-      clientLogos {
+      clients {
         title
         intro
-        logos {
-          src
-          name
-        }
       }
       skills {
         title

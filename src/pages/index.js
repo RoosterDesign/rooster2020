@@ -11,7 +11,7 @@ import ClientLogosBlock from "../components/ClientLogosBlock/ClientLogosBlock"
 export default ({ data, location }) => {
   const {
     homePageContent,
-    clientLogos,
+    clients,
     serviceOverview,
     whyChooseMe,
   } = data.dataJson
@@ -36,10 +36,10 @@ export default ({ data, location }) => {
             }}
           ></p>
         </MastheadBody>
-      </Masthead> */}
+      </Masthead>
 
-      <ArticlesBlock content={serviceOverview} />
-      {/* <ClientLogosBlock content={clientLogos} /> */}
+      <ArticlesBlock content={serviceOverview} /> */}
+      <ClientLogosBlock content={clients} />
       <ArticlesBlock content={whyChooseMe} />
     </Layout>
   )
@@ -52,13 +52,9 @@ export const query = graphql`
         mastheadBody
         mastheadTitle
       }
-      clientLogos {
+      clients {
         title
         intro
-        logos {
-          src
-          name
-        }
       }
       serviceOverview {
         title

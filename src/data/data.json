@@ -11,65 +11,19 @@
         },
         {
           "title": "Contracting",
-          "image": "outsourcing.jpg",
+          "image": "contracting.jpg",
           "body": "I am always on the lookout for UI/UX Designer or Front End Developer contracts in and around the West Midlands area."
         },
         {
           "title": "Freelance",
-          "image": "outsourcing.jpg",
+          "image": "freelance.jpg",
           "body": "Are you looking to redo your current website or start a new project? Rooster Design can bring your ideas to life."
         }
       ]
     },
-    "clientLogos": {
+    "clients": {
       "title": "Who I work with",
-      "intro": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi natus itaque consequatur labore, nostrum hic suscipit, distinctio temporibus quod ipsum voluptatum incidunt quisquam sit dignissimos, quia autem doloribus esse quas?</p>",
-      "logos": [
-        {
-          "src": "http://placekitten.com/300/260",
-          "name": "Joe Bloggs Ltd"
-        },
-        {
-          "src": "http://placekitten.com/300/260",
-          "name": "Joe Bloggs Ltd"
-        },
-        {
-          "src": "http://placekitten.com/300/260",
-          "name": "Joe Bloggs Ltd"
-        },
-        {
-          "src": "http://placekitten.com/300/260",
-          "name": "Joe Bloggs Ltd"
-        },
-        {
-          "src": "http://placekitten.com/300/260",
-          "name": "Joe Bloggs Ltd"
-        },
-        {
-          "src": "http://placekitten.com/300/260",
-          "name": "Joe Bloggs Ltd"
-        },
-        {
-          "src": "http://placekitten.com/300/260",
-          "name": "Joe Bloggs Ltd"
-        },
-        {
-          "src": "http://placekitten.com/300/260",
-          "name": "Joe Bloggs Ltd"
-        },
-        {
-          "src": "http://placekitten.com/300/260",
-          "name": "Joe Bloggs Ltd"
-        },
-        {
-          "src": "http://placekitten.com/300/260",
-          "name": "Joe Bloggs Ltd"
-        },
-        {
-          "src": "http://placekitten.com/300/260",
-          "name": "Joe Bloggs Ltd"
-        }
-      ]
+      "intro": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi natus itaque consequatur labore, nostrum hic suscipit, distinctio temporibus quod ipsum voluptatum incidunt quisquam sit dignissimos, quia autem doloribus esse quas?</p>"
     },
     "whyChooseMe": {
       "title": "Why choose me?",
@@ -77,17 +31,17 @@
       "articles": [
         {
           "title": "Adaptable",
-          "image": "freelance.jpg",
+          "image": "adaptable.jpg",
           "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi natus itaque consequatur labore."
         },
         {
           "title": "Reliable",
-          "image": "freelance.jpg",
+          "image": "reliable.jpg",
           "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi natus itaque consequatur labore."
         },
         {
           "title": "Pioneering",
-          "image": "freelance.jpg",
+          "image": "pioneering.jpg",
           "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi natus itaque consequatur labore."
         }
       ]

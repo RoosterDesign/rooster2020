@@ -1,11 +1,17 @@
 import React from "react"
 import styles from "./ClientLogo.module.scss"
-import Hexagon from "../Hexagon/Hexagon"
+import Img from "gatsby-image"
 
 export default props => {
+  let clientName =
+    props.clientName.charAt(0).toUpperCase() + props.clientName.slice(1)
   return (
     <div className={styles.clientLogo}>
-      <Hexagon type="clients" id={props.id} src={props.logoContent.src} />
+      <Img
+        fluid={props.img}
+        alt={clientName}
+        className={styles.clientLogoImg}
+      />
     </div>
   )
 }

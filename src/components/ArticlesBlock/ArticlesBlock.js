@@ -1,17 +1,16 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
 import styles from "./ArticlesBlock.module.scss"
 import ArticleBlockItem from "./ArticleBlockItem/ArticleBlockItem"
 import BlockTitle from "../BlockTitle/BlockTitle"
 import BlockIntro from "../BlockIntro/BlockIntro"
 
 export default props => {
-  const data = useStaticQuery(
+  const imageData = useStaticQuery(
     graphql`
-      query AllImagesAndJSON {
+      query {
         images: allFile(
-          filter: { sourceInstanceName: { eq: "serviceOverviewImages" } }
+          filter: { sourceInstanceName: { eq: "articleImages" } }
         ) {
           edges {
             node {
@@ -31,7 +30,7 @@ export default props => {
   const datafromjson = props.content.articles
 
   const services = datafromjson.map(service => {
-    const imageIndex = data.images.edges.findIndex(
+    const imageIndex = imageData.images.edges.findIndex(
       x =>
         x.node.name ===
         service.image
@@ -41,7 +40,7 @@ export default props => {
     )
     return (
       <ArticleBlockItem
-        img={data.images.edges[imageIndex].node.childImageSharp.fluid}
+        img={imageData.images.edges[imageIndex].node.childImageSharp.fluid}
         title={service.title}
         body={service.body}
       />
