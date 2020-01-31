@@ -1,6 +1,6 @@
 import React from "react"
+import { graphql } from "gatsby"
 import Helmet from "react-helmet"
-
 import Masthead from "../components/Masthead/Masthead"
 import MastheadTitle from "../components/Masthead/MastheadTitle/MastheadTitle"
 import Layout from "../components/Layout/Layout"
@@ -9,19 +9,33 @@ import ServiceBlock from "../components/ServiceBlock/ServiceBlock"
 import JbandgBanner from "../components/JbandgBanner/JbandgBanner"
 import ServicesMastheadBody from "../components/ServicesMastheadBody/ServicesMastheadBody"
 import styled from "styled-components"
-
 import designIcon from "../images/icons/tint.svg"
 import developIcon from "../images/icons/laptop-code.svg"
 import collaborationIcon from "../images/icons/cubes.svg"
 
-import { graphql } from "gatsby"
-
 export default ({ data, location }) => {
   const { servicesPageContent } = data.dataJson
 
-  const services = servicesPageContent.services.map((service, index) => (
-    <ServiceBlock key={index} content={service} />
-  ))
+  const services = servicesPageContent.services.map((service, index) => {
+    console.info(service)
+
+    const imageIndex = data.images.edges.findIndex(
+      x =>
+        x.node.name ===
+        service.image
+          .split(".")
+          .slice(0, -1)
+          .join(".")
+    )
+    return (
+      <ServiceBlock
+        key={index}
+        img={data.images.edges[imageIndex].node.childImageSharp.fluid}
+        title={service.title}
+        body={service.body}
+      />
+    )
+  })
 
   const MastheadServices = styled.div`
     @media (min-width: 768px) {
@@ -72,6 +86,18 @@ export default ({ data, location }) => {
 
 export const query = graphql`
   query servicesContentQuery {
+    images: allFile(filter: { sourceInstanceName: { eq: "services" } }) {
+      edges {
+        node {
+          name
+          childImageSharp {
+            fluid(maxWidth: 750, quality: 75) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
+      }
+    }
     dataJson {
       servicesPageContent {
         mastheadTitle
@@ -82,6 +108,7 @@ export const query = graphql`
         }
         services {
           body
+          image
           mobileImg
           desktopImg
           title

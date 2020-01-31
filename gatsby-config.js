@@ -87,6 +87,13 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: "services",
+        path: `src/images/services/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: "images",
         path: `src/images/`,
       },

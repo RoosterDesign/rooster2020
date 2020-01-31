@@ -176,18 +176,21 @@
         {
           "title": "Outsourcing",
           "body": "<p>Sometimes either there is no time or no resource to complete all projects on time at a high standard. By outsourcing your projects to me, this frees you up to concentrate on more important matters. You can be safe in the knowledge that the product will be delivered to your exacting standards on time.</p><p>I offer a range of skills and have experience working on large brands so whether you are a small design agency or a large software house, I can help.</p><p>All of my work is conducted using latest development technologies and with strict web and browser standards in mind. I also have a wealth of experience working with CMS and E-Commerce solutions. Pixel perfect is my middle name.</p>",
+          "image": "service1.png",
           "mobileImg": "http://placekitten.com/744/430",
           "desktopImg": "http://placekitten.com/900"
         },
         {
           "title": "Contracting",
           "body": "<p>I am also available as a contractor, working either as a UI/UX Designer working on innovative designs or as a frontend developer pushing boundaries with new technology though HTML5/CSS3 and responsive web design. I also have experience working with OO Javascript and frameworks such as AngularJS and React.</p><p>I have worked in-house at award winning design agencies and multinational companies and integrate seamlessly with your working practices and ethos and adapt very quickly - I have experience working on both ASP.NET MVC and JAVA platforms.</p><p>Due to my dual skillset of design and development I find that I am uniquely positioned for contract work, where time is money and having both design and development resource, for the price of one, is of great advantage.</p>",
+          "image": "service1.png",
           "mobileImg": "http://placekitten.com/744/430",
           "desktopImg": "http://placekitten.com/900"
         },
         {
           "title": "Freelance",
           "body": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nibh enim, elementum sit amet nunc non, sagittis maximus urna. Mauris ornare finibus finibus. Vestibulum varius gravida turpis, non tristique ligula commodo a. Aliquam accumsan congue odio nec euismod. Ut elementum enim vitae augue rutrum, quis semper nibh finibus.</p><p>Vivamus vel cursus justo. Vivamus scelerisque lacus vel diam laoreet, eu ultrices ipsum mattis. Nullam eu hendrerit odio. Morbi et iaculis urna. Phasellus diam est, porttitor consectetur condimentum quis, sollicitudin sed mauris. Phasellus in ante volutpat, viverra risus sed, aliquet ligula. Vestibulum scelerisque lectus in nisi placerat, id semper leo pulvinar. Nam et eros eget tellus sollicitudin ultrices. Suspendisse potenti.</p><p>You can view a few of my freelance projects on my work page.</p>",
+          "image": "service1.png",
           "mobileImg": "http://placekitten.com/744/430",
           "desktopImg": "http://placekitten.com/900"
         }

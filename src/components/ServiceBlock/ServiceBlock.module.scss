@@ -1,71 +1,66 @@
 .serviceBlock {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 
-    &:last-of-type {
-        margin-bottom: 0;
-    }
-
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 .img {
-    display: block;
-    max-height: 100%;
-    margin-bottom: 30px;
-    width: auto;
+  display: block;
+  height: auto;
+  margin-bottom: 30px;
+  max-height: 100%;
+  min-width: 100%;
+  width: auto;
 }
 
 @include mq(tablet) {
+  .serviceBlock {
+    min-height: 750px;
+    position: relative;
+  }
 
-    .serviceBlock {
-        min-height: 750px;
-        position: relative;
-    }
+  .serviceBlock > div {
+    display: flex;
+    flex-direction: row;
+  }
 
-    .serviceBlock>div {
-        display: flex;
-        flex-direction: row;
-    }
+  .content {
+    max-width: 55%;
+    width: 100%;
+  }
 
-    .content {
-        max-width: 55%;
-        width: 100%;
-    }
+  .content > div {
+    max-width: none;
+  }
 
-    .content>div {
-        max-width: none;
+  .img {
+    margin: 0;
+    left: 60%;
+    max-height: 600px;
+    position: absolute !important;
+    top: 0;
+  }
+
+  .serviceBlock:nth-child(even) {
+    & > div {
+      flex-direction: row-reverse;
     }
 
     .img {
-        margin: 0;
-        position: absolute;
-        left: 60%;
-        top: 0;
-        max-height: 600px;
+      left: auto;
+      right: 60%;
     }
-
-    .serviceBlock:nth-child(even) {
-
-        &>div {
-            flex-direction: row-reverse;
-        }
-
-        .img {
-            left: auto;
-            right: 60%;
-        }
-
-    }
-
+  }
 }
 
 @include mq(desktop) {
+  .serviceBlock {
+    min-height: 900px;
+  }
 
-    .serviceBlock {
-        min-height: 900px;
-    }
-
-    .img {
-        max-height: 750px;
-    }
-
+  .img {
+    max-height: 750px;
+  }
 }
