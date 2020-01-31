@@ -53,7 +53,7 @@ export const query = graphql`
         title
         intro
         logos {
-          src
+          image
           name
         }
       }

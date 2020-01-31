@@ -80,6 +80,13 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: "skillLogos",
+        path: `src/images/skill-logos/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: "images",
         path: `src/images/`,
       },

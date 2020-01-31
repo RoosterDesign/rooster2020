@@ -1,16 +1,11 @@
 .skillLogo {
-  // display: block;
-  // overflow: hidden;
-  // padding: 0 4px 8px;
-  // width: calc(100% / 4);
-
   margin: 7% 0;
   position: relative;
   height: 0;
   padding-bottom: 100%;
 }
 
-.skillLogo svg {
+.skillLogoImg {
   display: block;
   transform: scale(1.18);
   width: 100%;

@@ -1,11 +1,15 @@
 import React from "react"
+import Img from "gatsby-image"
 import styles from "./SkillLogo.module.scss"
-import Hexagon from "../Hexagon/Hexagon"
 
 export default props => {
   return (
     <div className={styles.skillLogo}>
-      <Hexagon type="skills" id={props.id} src={props.logoContent.src} />
+      <Img
+        fluid={props.img}
+        alt={props.title}
+        className={styles.skillLogoImg}
+      />
     </div>
   )
 }
