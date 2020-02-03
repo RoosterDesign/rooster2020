@@ -7,7 +7,7 @@ import Masthead from "../components/Masthead/Masthead"
 import MastheadTitle from "../components/Masthead/MastheadTitle/MastheadTitle"
 import MastheadBody from "../components/Masthead/MastheadBody/MastheadBody"
 
-import Layout from "../components/Layout/Layout"
+import Layout from "../components/LayoutTEST/Layout"
 import PageContent from "../components/PageContent/PageContent"
 import ClientLogosBlock from "../components/ClientLogosBlock/ClientLogosBlock"
 import SkillsBlock from "../components/SkillsBlock/SkillsBlock"
