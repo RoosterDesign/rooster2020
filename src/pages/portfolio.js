@@ -13,9 +13,31 @@ import PortfolioItem from "../components/PortfolioItem/PortfolioItem"
 export default ({ data, location }) => {
   const { portfolioPageContent } = data.dataJson
 
-  const portfolioItems = data.allPortfolioJson.edges.map(({ node }, index) => (
-    <PortfolioItem key={index} content={node} id={index} />
-  ))
+  // const portfolioItems = data.allPortfolioJson.edges.map(({ node }, index) => (
+  //   <PortfolioItem key={index} content={node} id={index} />
+  // ))
+
+  const imageData = 
+  const datafromjson = data.allPortfolioJson
+
+  const portfolioItems = datafromjson.map(service => {
+    const imageIndex = imageData.images.edges.findIndex(
+      x =>
+        x.node.name ===
+        service.image
+          .split(".")
+          .slice(0, -1)
+          .join(".")
+    )
+    return (
+      <PortfolioItem
+        img={imageData.images.edges[imageIndex].node.childImageSharp.fluid}
+        slug={service.slug}
+        title={service.title}
+        synopsis={service.synopsis}
+      />
+    )
+  })
 
   const PortfolioList = styled.div`
     padding: 20% 0;
@@ -62,12 +84,29 @@ export const query = graphql`
         mastheadTitle
       }
     }
+    images: allFile(
+      filter: {
+        sourceInstanceName: { eq: "portfolioImages" }
+        relativeDirectory: { eq: "thumbs" }
+      }
+    ) {
+      edges {
+        node {
+          name
+          childImageSharp {
+            fluid(maxWidth: 580, quality: 75) {
+              originalName
+            }
+          }
+        }
+      }
+    }
     allPortfolioJson {
       edges {
         node {
           slug
-          thumbnail
           title
+          synopsis
         }
       }
     }

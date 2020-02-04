@@ -73,6 +73,13 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: "portfolioImages",
+        path: `src/images/portfolio/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: "clientLogos",
         path: `src/images/client-logos/`,
       },
