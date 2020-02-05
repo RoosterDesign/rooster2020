@@ -17,35 +17,36 @@ export default ({ data, location }) => {
   //   <PortfolioItem key={index} content={node} id={index} />
   // ))
 
-  const imageData = 
-  const datafromjson = data.allPortfolioJson
+  const imageData = data.images.edges
+  const datafromjson = data.allPortfolioJson.edges
 
-  const portfolioItems = datafromjson.map(service => {
-    const imageIndex = imageData.images.edges.findIndex(
-      x =>
-        x.node.name ===
-        service.image
-          .split(".")
-          .slice(0, -1)
-          .join(".")
+  const portfolioItems = datafromjson.map(portfolioItem => {
+    const imageIndex = imageData.findIndex(
+      x => x.node.name === portfolioItem.node.slug
     )
+
     return (
       <PortfolioItem
-        img={imageData.images.edges[imageIndex].node.childImageSharp.fluid}
-        slug={service.slug}
-        title={service.title}
-        synopsis={service.synopsis}
+        key={portfolioItem.node.slug}
+        img={imageData[imageIndex].node.childImageSharp.fluid}
+        slug={portfolioItem.node.slug}
+        title={portfolioItem.node.title}
+        synopsis={portfolioItem.node.synopsis}
       />
     )
   })
 
   const PortfolioList = styled.div`
-    padding: 20% 0;
-    @media (min-width: 768px) {
-      padding: 100px 0;
-    }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: -26px;
+    padding-bottom: 40px;
     @media (min-width: 992px) {
-      padding-top: 75px;
+      margin-top: 0;
+    }
+    @media (min-width: 1250px) {
+      padding-bottom: 80px;
     }
   `
 
@@ -95,7 +96,7 @@ export const query = graphql`
           name
           childImageSharp {
             fluid(maxWidth: 580, quality: 75) {
-              originalName
+              ...GatsbyImageSharpFluid_withWebp
             }
           }
         }

@@ -38,6 +38,7 @@ export default props => {
           .slice(0, -1)
           .join(".")
     )
+
     return (
       <ArticleBlockItem
         img={imageData.images.edges[imageIndex].node.childImageSharp.fluid}

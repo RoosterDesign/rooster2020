@@ -1,11 +1,18 @@
 import React from "react"
-import { Link } from "gatsby"
+import BackgroundImage from "gatsby-background-image"
 import styles from "./PortfolioItem.module.scss"
+import { Link } from "gatsby"
 
-export default props => (
-  <Link className={styles.portfolioThumbnail} to={props.content.slug}>
-    {props.id}
-    {props.content.thumbnail}
-    {props.content.title}
-  </Link>
-)
+export default props => {
+  const link = "/portfolio/" + props.slug
+  return (
+    <BackgroundImage fluid={props.img} className={styles.portfolioThumbnail}>
+      <Link className={styles.portfolioThumbnailLink} to={link}>
+        <div className={styles.portfolioThumbnailLinkContent}>
+          <h2>{props.title}</h2>
+          <p>{props.synopsis}</p>
+        </div>
+      </Link>
+    </BackgroundImage>
+  )
+}

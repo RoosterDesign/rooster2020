@@ -5,7 +5,6 @@ import Masthead from "../components/Masthead/Masthead"
 import MastheadTitle from "../components/Masthead/MastheadTitle/MastheadTitle"
 import MastheadBody from "../components/Masthead/MastheadBody/MastheadBody"
 import Layout from "../components/Layout/Layout"
-import PageContent from "../components/PageContent/PageContent"
 
 export default ({ data }) => {
   const { title, description, images } = data.portfolioJson

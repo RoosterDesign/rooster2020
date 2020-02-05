@@ -272,6 +272,7 @@ export default () => (
             href="http://www.allaboutcookies.org/manage-cookies/"
             title="All about cookies"
             target="_blank"
+            rel="noopener noreferrer"
           >
             www.allaboutcookies.org/manage-cookies/
           </a>
@@ -339,6 +340,7 @@ export default () => (
             href="https://www.macromedia.com/support/documentation/en/flashplayer/help/settings_manager.html"
             title="Macromedia"
             target="_blank"
+            rel="noopener noreferrer"
           >
             www.macromedia.com/support/documentation/en/flashplayer/help/settings_manager.html
           </a>
@@ -361,6 +363,7 @@ export default () => (
             href="https://www.microsoft.com/GetSilverlight/resources/documentation/AppStorage.aspx"
             title="Microsoft"
             target="_blank"
+            rel="noopener noreferrer"
           >
             www.microsoft.com/GetSilverlight/resources/documentation/AppStorage.aspx
           </a>
@@ -425,6 +428,7 @@ export default () => (
             href="http://www.allaboutcookies.org"
             title="All about cookies"
             target="_blank"
+            rel="noopener noreferrer"
           >
             www.allaboutcookies.org
           </a>

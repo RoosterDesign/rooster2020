@@ -31,7 +31,11 @@ export default () => (
         and software applications.
         <br />
         <br />
-        <a href="https://www.jbandg.co.uk/" target="_blank">
+        <a
+          href="https://www.jbandg.co.uk/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Click here to visit jbandg
         </a>
       </p>
