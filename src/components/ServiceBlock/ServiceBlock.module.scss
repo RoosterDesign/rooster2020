@@ -37,7 +37,7 @@
     position: relative;
   }
 
-  .serviceBlock > div {
+  .serviceBlock>div {
     display: flex;
     flex-direction: row;
   }
@@ -47,7 +47,7 @@
     width: 100%;
   }
 
-  .content > div {
+  .content>div {
     max-width: none;
   }
 
@@ -68,7 +68,7 @@
   }
 
   .serviceBlock:nth-child(even) {
-    & > div {
+    &>div {
       flex-direction: row-reverse;
     }
 
@@ -105,4 +105,24 @@
   .serviceBlock {
     min-height: 1000px;
   }
+
+  .imgWrap {
+    height: 1000px;
+    margin-top: -250px;
+    width: 1000px;
+  }
+
+}
+
+@include mq(desktop-lg) {
+  .serviceBlock {
+    min-height: 1200px;
+  }
+
+  .imgWrap {
+    height: 1200px;
+    margin-top: -350px;
+    width: 1200px;
+  }
+
 }

@@ -120,6 +120,12 @@ a:hover {
 
 @include mq(tablet) {
 
+  h4 {
+    font-size: 3.6rem;
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
+
   p,
   li {
     font-size: 1.4rem;
@@ -153,6 +159,12 @@ a:hover {
     max-width: 1000px;
   }
 
+  h4 {
+    font-size: 4rem;
+    margin-top: 80px;
+  }
+
+
   p,
   li {
     font-size: 1.7rem;
@@ -182,21 +194,8 @@ h4 {
 
 }
 
-@include mq(tablet) {
-
-  h4 {
-    font-size: 3.6rem;
-    margin-top: 60px;
-    margin-bottom: 30px;
+@include mq(desktop-lg) {
+  .container {
+    max-width: 1400px;
   }
-
-}
-
-@include mq(desktop) {
-
-  h4 {
-    font-size: 4rem;
-    margin-top: 80px;
-  }
-
 }
