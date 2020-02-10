@@ -1,7 +1,7 @@
 import React from "react"
+import { Link } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
 import styles from "./PortfolioItem.module.scss"
-import { Link } from "gatsby"
 
 export default props => {
   const link = "/portfolio/" + props.slug

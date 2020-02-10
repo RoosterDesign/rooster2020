@@ -1,8 +1,8 @@
 import React from "react"
 import BackgroundImage from "gatsby-background-image"
-import styles from "./ServiceBlock.module.scss"
 import BlockTitle from "../BlockTitle/BlockTitle"
 import BlockIntro from "../BlockIntro/BlockIntro"
+import styles from "./ServiceBlock.module.scss"
 
 export default props => {
   return (

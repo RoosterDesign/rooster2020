@@ -1,5 +1,4 @@
 import React from "react"
-
 import styles from "./MastheadTitle.module.scss"
 
 export default props => (

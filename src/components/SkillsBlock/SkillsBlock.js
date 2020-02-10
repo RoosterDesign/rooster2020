@@ -1,9 +1,9 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import styles from "./SkillsBlock.module.scss"
 import BlockTitle from "../BlockTitle/BlockTitle"
 import BlockIntro from "../BlockIntro/BlockIntro"
 import SkillLogo from "./SkillLogo/SkillLogo"
+import styles from "./SkillsBlock.module.scss"
 
 export default props => {
   const imageData = useStaticQuery(

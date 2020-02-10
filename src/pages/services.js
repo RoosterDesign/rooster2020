@@ -109,8 +109,6 @@ export const query = graphql`
         services {
           body
           image
-          mobileImg
-          desktopImg
           title
         }
       }
