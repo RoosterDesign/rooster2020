@@ -14,7 +14,7 @@ export default () => (
         </Link>
       </p>
       <p>
-        Rooster Design is registered in England and Wales, No. 07335844. VAT No.
+        Rooster Design is registered in England and Wales, No: 07335844, VAT No:
         996320685
       </p>
       <p>Registered Address: 7 Dale Close, Long Itchington, CV47 9SE</p>

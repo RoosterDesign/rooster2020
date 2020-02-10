@@ -1,8 +1,8 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import styles from "./CvBlock.module.scss"
 import BlockTitle from "../BlockTitle/BlockTitle"
 import BlockIntro from "../BlockIntro/BlockIntro"
+import styles from "./CvBlock.module.scss"
 
 export default props => {
   const data = useStaticQuery(graphql`

@@ -1,9 +1,9 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import styles from "./ClientLogosBlock.module.scss"
 import BlockTitle from "../BlockTitle/BlockTitle"
 import BlockIntro from "../BlockIntro/BlockIntro"
 import ClientLogo from "../ClientLogo/ClientLogo"
+import styles from "./ClientLogosBlock.module.scss"
 
 export default props => {
   const logosData = useStaticQuery(
