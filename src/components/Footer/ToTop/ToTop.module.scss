@@ -1,5 +1,5 @@
 .toTop {
-  background: darken($lightPurple, 15%);
+  background: $lightPurple;
   border-radius: 6px/3px;
   cursor: pointer;
   height: 50px;
@@ -28,6 +28,7 @@
   -webkit-transform: rotate(60deg);
   transform: rotate(60deg);
 }
+
 .toTop:after {
   -webkit-transform: rotate(-60deg);
   transform: rotate(-60deg);
@@ -65,7 +66,7 @@
 }
 
 .toTop:hover {
-  background: $lightPurple;
+  background: darken($lightPurple, 15%);
   transform: translateY(-5px);
 }
 

@@ -14,14 +14,14 @@
 }
 
 .siteFooterLink {
-  color: $homeBodyColour;
+  color: #fff !important;
   display: inline-block;
   margin: 15px 0 0;
   text-decoration: none;
 }
 
 .siteFooterLink:hover {
-  color: #fff;
+  text-decoration: underline;
 }
 
 @include mq(tablet) {

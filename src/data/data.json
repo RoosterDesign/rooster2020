@@ -155,23 +155,6 @@
     },
     "servicesPageContent": {
       "mastheadTitle": "What I do",
-      "mastheadBody": [
-        {
-          "icon": "tint.svg",
-          "title": "UI/UX Design",
-          "body": "Lorem ipsum..."
-        },
-        {
-          "icon": "laptop-code.svg",
-          "title": "Development",
-          "body": "Lorem ipsum..."
-        },
-        {
-          "icon": "cubes.svg",
-          "title": "Collaboration",
-          "body": "Lorem ipsum..."
-        }
-      ],
       "services": [
         {
           "title": "Outsourcing",

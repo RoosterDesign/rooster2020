@@ -9,7 +9,7 @@ import ServiceBlock from "../components/ServiceBlock/ServiceBlock"
 import JbandgBanner from "../components/JbandgBanner/JbandgBanner"
 import ServicesMastheadBody from "../components/ServicesMastheadBody/ServicesMastheadBody"
 import styled from "styled-components"
-import designIcon from "../images/icons/tint.svg"
+import designIcon from "../images/icons/sketch.svg"
 import developIcon from "../images/icons/laptop-code.svg"
 import collaborationIcon from "../images/icons/cubes.svg"
 
@@ -17,8 +17,6 @@ export default ({ data, location }) => {
   const { servicesPageContent } = data.dataJson
 
   const services = servicesPageContent.services.map((service, index) => {
-    console.info(service)
-
     const imageIndex = data.images.edges.findIndex(
       x =>
         x.node.name ===
@@ -101,11 +99,6 @@ export const query = graphql`
     dataJson {
       servicesPageContent {
         mastheadTitle
-        mastheadBody {
-          icon
-          title
-          body
-        }
         services {
           body
           image

@@ -13,13 +13,19 @@
 
   .blockIntro:before {
     background: $lightPurple;
-    border-radius: 3px;
+    border-radius: 2px;
     content: "";
     height: 100%;
     left: 0;
     max-height: 55px;
     position: absolute;
-    width: 6px;
+    top: 5px;
+    // bottom: 5px;
+    width: 4px;
+  }
+
+  .blockIntro.isHomepage:before {
+    background: #fff;
   }
 
   .blockIntro p {
