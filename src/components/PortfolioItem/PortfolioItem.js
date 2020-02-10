@@ -12,6 +12,7 @@ export default props => {
           <h2>{props.title}</h2>
           <p>{props.synopsis}</p>
         </div>
+        <div className={styles.portfolioThumbnailMask}></div>
       </Link>
     </BackgroundImage>
   )

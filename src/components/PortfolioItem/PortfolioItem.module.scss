@@ -11,6 +11,19 @@
   width: 100%;
 }
 
+
+.portfolioThumbnailMask {
+  background: linear-gradient(180deg, #D138BB 0%, #742CE4 98%);
+  display: block;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  transition: opacity .3s ease;
+  width: 100%;
+}
+
 .portfolioThumbnailLink {
   height: 100%;
   overflow: hidden;
@@ -21,6 +34,8 @@
 
 .portfolioThumbnailLinkContent {
   display: none;
+  position: relative;
+  z-index: 1;
 }
 
 @include mq(tablet) {
@@ -56,7 +71,6 @@
 
   .portfolioThumbnailLinkContent h2 {
     color: #fff;
-    // font-family: "HalisR-Medium", "serif";
     font-size: 2.6rem;
     line-height: 1;
     margin: 0 0 16px;
@@ -74,7 +88,10 @@
   }
 
   .portfolioThumbnailLink:hover {
-    background: rgba(47, 33, 63, .7);
+
+    .portfolioThumbnailMask {
+      opacity: .8;
+    }
 
     .portfolioThumbnailLinkContent {
       bottom: 0;
