@@ -59,7 +59,7 @@
 
   .masthead>div {
     height: auto;
-    min-height: 675px;
+    min-height: 660px;
     padding-top: 30px;
   }
 
@@ -72,14 +72,14 @@
   }
 
   .mastheadContent {
-    padding-bottom: 40px;
+    padding-top: 40px;
+    padding-bottom: 0;
   }
 
   .mastheadSwoop {
     display: block;
     position: absolute;
     bottom: -2px;
-    // left: 0;
     width: calc(100% + 100px);
   }
 
@@ -98,12 +98,12 @@
     margin-top: -20px;
   }
 
-  .masthead.isHomepage .mastheadContent p {
+  .masthead .mastheadContent p {
     width: 70%;
   }
 
   .mastheadContent {
-    padding-bottom: 60px;
+    padding-top: 50px;
   }
 
 }
@@ -119,25 +119,25 @@
     height: calc(100vh - 30px);
   }
 
+  .masthead.isHomepage .mastheadContent {
+    margin-top: -100px;
+  }
+
 }
 
 @include mq(desktop-md) {
   .masthead>div {
-    min-height: 850px;
+    min-height: 800px;
   }
 
   .mastheadContent {
-    padding-top: 50px;
+    padding-top: 75px;
     padding-bottom: 70px;
-  }
-
-  .masthead.isHomepage .mastheadContent {
-    margin-top: -30px;
   }
 }
 
 @include mq(desktop-lg) {
-  .masthead>div {
-    min-height: 870px;
+  .masthead.isHomepage .mastheadContent {
+    margin-top: -150px;
   }
 }

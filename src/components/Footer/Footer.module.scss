@@ -1,4 +1,5 @@
 .siteFooter {
+  font-size: 1.5rem;
   padding: 40px 0;
   position: relative;
   text-align: center;
@@ -24,6 +25,13 @@
   text-decoration: underline;
 }
 
+@include mq(mobile-lg) {
+  .siteFooter {
+    font-size: 1.6rem;
+  }
+}
+
+
 @include mq(tablet) {
   .siteFooter p {
     margin-bottom: 30px;
@@ -48,8 +56,8 @@
   }
 }
 
-@include mq(desktop) {
-  .siteFooter p {
-    font-size: 1.6rem;
+@include mq(desktop-md) {
+  .siteFooter {
+    font-size: 1.8rem;
   }
 }

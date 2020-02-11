@@ -1,9 +1,16 @@
 .mastheadBody p {
   color: #fff;
+  font-size: 1.5rem;
 }
 
 .mastheadBody a {
   color: #fff !important;
+}
+
+@include mq(mobile-lg) {
+  .mastheadBody p {
+    font-size: 1.6rem;
+  }
 }
 
 @include mq(mobile-xlg) {
@@ -14,6 +21,16 @@
 
 @include mq(tablet) {
   .mastheadBody p {
+    font-size: 1.8rem;
+  }
+
+  .mastheadBody.isHomepage p {
+    font-size: 2rem;
+  }
+}
+
+@include mq(tablet-lg) {
+  .mastheadBody.isHomepage p {
     font-size: 2rem;
   }
 }
@@ -21,5 +38,15 @@
 @include mq(desktop-md) {
   .mastheadBody p {
     font-size: 2.2rem;
+  }
+
+  .mastheadBody.isHomepage p {
+    font-size: 2.6rem;
+  }
+}
+
+@include mq(desktop-lg) {
+  .mastheadBody.isHomepage p {
+    font-size: 2.8rem;
   }
 }

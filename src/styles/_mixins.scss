@@ -37,17 +37,6 @@ $breakpoints: (mobile-lg: 375px,
 }
 
 @mixin pageBgGradient($isInner: false) {
-  // background: $pageBgGradStart;
-  // background: -moz-linear-gradient(top,
-  //     $pageBgGradStart $start,
-  //     $pageBgGradEnd $end);
-  // background: -webkit-linear-gradient(top,
-  //     $pageBgGradStart $start,
-  //     $pageBgGradEnd $end);
-  // background: linear-gradient(to bottom,
-  //     $pageBgGradStart $start,
-  //     $pageBgGradEnd $end);
-
 
   @if $isInner {
     background-image: -moz-linear-gradient(220deg, #DB3AB8 0%, #DB3AB8 6%, #742CE4 83%);
@@ -60,8 +49,5 @@ $breakpoints: (mobile-lg: 375px,
     background-image: -webkit-linear-gradient(230deg, #DB3AB8 0%, #742CE4 32%, #DB3AB8 100%);
     background-image: linear-gradient(230deg, #DB3AB8 0%, #742CE4 32%, #DB3AB8 100%);
   }
-
-
-
 
 }

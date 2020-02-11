@@ -1,9 +1,11 @@
 .jbandgBanner {
-    // background-image: linear-gradient(45deg, #5E4571 0%, #8B2B47 100%);
     background-image: -moz-linear-gradient(220deg, #DB3AB8 0%, #DB3AB8 6%, #742CE4 83%);
     background-image: -webkit-linear-gradient(220deg, #DB3AB8 0%, #DB3AB8 6%, #742CE4 83%);
     background-image: linear-gradient(220deg, #DB3AB8 0%, #DB3AB8 6%, #742CE4 83%);
     border-radius: $borderRadius;
+    box-shadow: 0 0 30px 3px rgba(0, 0, 0, .3);
+    font-size: 1.5rem;
+    margin-top: 20px;
     padding: 40px 32px;
 
     p {
@@ -54,14 +56,27 @@
 
 }
 
+@include mq(mobile-lg) {
+
+    .jbandgBanner {
+        font-size: 1.6rem;
+    }
+
+}
+
+@include mq(mobile-xlg) {
+
+    .jbandgBanner {
+        font-size: 1.8rem;
+    }
+
+}
+
 @include mq(tablet) {
 
     .jbandgBanner {
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 40px;
+        box-shadow: 0 0 40px 5px rgba(0, 0, 0, .25);
+        padding: 60px;
     }
 
     .jbandgLogo {
@@ -74,12 +89,17 @@
 @include mq(tablet-lg) {
 
     .jbandgBanner {
-        padding: 40px 60px;
+        box-shadow: 0 0 70px 10px rgba(0, 0, 0, .3);
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+
     }
 
     .jbandgLogo {
         padding-right: 60px;
-        min-width: 320px;
+        min-width: 300px;
     }
 
 }
@@ -87,7 +107,9 @@
 @include mq(desktop-md) {
 
     .jbandgBanner {
-        height: 375px;
+        box-shadow: 0 0 70px 10px rgba(0, 0, 0, .3);
+        font-size: 2.2rem;
+        height: 425px;
         padding: 0 120px 0 100px;
     }
 

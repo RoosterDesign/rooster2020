@@ -1,9 +1,27 @@
 .blockIntro {
+  font-size: 1.5rem;
   margin-bottom: 20px;
   text-align: center;
 }
 
+@include mq(mobile-lg) {
+
+  .blockIntro {
+    font-size: 1.6rem;
+  }
+
+}
+
+@include mq(mobile-xlg) {
+
+  .blockIntro {
+    font-size: 1.8rem;
+  }
+
+}
+
 @include mq(tablet) {
+
   .blockIntro {
     margin-bottom: 30px;
     padding-left: 30px;
@@ -20,7 +38,6 @@
     max-height: 55px;
     position: absolute;
     top: 5px;
-    // bottom: 5px;
     width: 4px;
   }
 
@@ -28,30 +45,31 @@
     background: #fff;
   }
 
-  .blockIntro p {
-    font-size: 1.8rem;
-  }
 }
 
 @include mq(tablet-lg) {
+
   .blockIntro {
     margin-bottom: 50px;
     max-width: 570px;
   }
+
 }
 
 @include mq(desktop) {
+
   .blockIntro {
     margin-bottom: 60px;
   }
+
 }
 
 @include mq(desktop-md) {
+
   .blockIntro {
+    font-size: 2.2rem;
+    margin-bottom: 80px;
     max-width: 60%;
   }
 
-  .blockIntro p {
-    font-size: 2rem;
-  }
 }
