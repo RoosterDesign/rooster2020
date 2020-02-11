@@ -29,7 +29,7 @@ export default props => {
 
   const datafromjson = props.content.articles
 
-  const services = datafromjson.map(service => {
+  const services = datafromjson.map((service, index) => {
     const imageIndex = imageData.images.edges.findIndex(
       x =>
         x.node.name ===
@@ -41,6 +41,7 @@ export default props => {
 
     return (
       <ArticleBlockItem
+        key={index}
         img={imageData.images.edges[imageIndex].node.childImageSharp.fluid}
         title={service.title}
         body={service.body}
