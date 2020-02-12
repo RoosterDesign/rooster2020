@@ -39,15 +39,27 @@ $breakpoints: (mobile-lg: 375px,
 @mixin pageBgGradient($isInner: false) {
 
   @if $isInner {
-    background-image: -moz-linear-gradient(220deg, #DB3AB8 0%, #DB3AB8 6%, #742CE4 83%);
-    background-image: -webkit-linear-gradient(220deg, #DB3AB8 0%, #DB3AB8 6%, #742CE4 83%);
-    background-image: linear-gradient(220deg, #DB3AB8 0%, #DB3AB8 6%, #742CE4 83%);
+    background-image: -moz-linear-gradient(220deg, #742CE4 0%, #742CE4 6%, #DB3AB8 83%);
+    background-image: -webkit-linear-gradient(220deg, #742CE4 0%, #742CE4 6%, #DB3AB8 83%);
+    background-image: linear-gradient(220deg, #742CE4 0%, #742CE4 6%, #DB3AB8 83%);
+
+    @media only screen and (min-width: 767px) {
+      background-image: -moz-linear-gradient(220deg, #DB3AB8 0%, #DB3AB8 6%, #742CE4 83%);
+      background-image: -webkit-linear-gradient(220deg, #DB3AB8 0%, #DB3AB8 6%, #742CE4 83%);
+      background-image: linear-gradient(220deg, #DB3AB8 0%, #DB3AB8 6%, #742CE4 83%);
+    }
   }
 
   @else {
-    background-image: -moz-linear-gradient(230deg, #DB3AB8 0%, #742CE4 32%, #DB3AB8 100%);
-    background-image: -webkit-linear-gradient(230deg, #DB3AB8 0%, #742CE4 32%, #DB3AB8 100%);
-    background-image: linear-gradient(230deg, #DB3AB8 0%, #742CE4 32%, #DB3AB8 100%);
+    background-image: -moz-linear-gradient(230deg, #742CE4 0%, #DB3AB8 32%, #452773 100%);
+    background-image: -webkit-linear-gradient(230deg, #742CE4 0%, #DB3AB8 32%, #452773 100%);
+    background-image: linear-gradient(230deg, #742CE4 0%, #DB3AB8 32%, #452773 100%);
+
+    @media only screen and (min-width: 767px) {
+      background-image: -moz-linear-gradient(230deg, #DB3AB8 0%, #742CE4 32%, #c13adb 100%);
+      background-image: -webkit-linear-gradient(230deg, #DB3AB8 0%, #742CE4 32%, #c13adb 100%);
+      background-image: linear-gradient(230deg, #DB3AB8 0%, #742CE4 32%, #c13adb 100%);
+    }
   }
 
 }
