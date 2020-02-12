@@ -1,8 +1,6 @@
 .skillLogo {
-  margin: 7% 0;
+  margin: 12% 0;
   position: relative;
-  height: 0;
-  padding-bottom: 100%;
 }
 
 .skillLogoImg {
@@ -13,98 +11,191 @@
 
 // mobile
 @media only screen and (max-width: 767px) {
+
   .skillLogo:nth-child(even),
   .skillLogo:nth-child(21) {
-    transform: translateY(-57%);
+    -webkit-transform: translateY(-62%);
+    -ms-transform: translateY(-62%);
+    transform: translateY(-62%);
   }
 
   .skillLogo:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
     grid-area: 1 / 1 / 2 / 2;
   }
 
   .skillLogo:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
     grid-area: 1 / 2 / 2 / 3;
   }
 
   .skillLogo:nth-child(3) {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
     grid-area: 1 / 3 / 2 / 4;
   }
 
   .skillLogo:nth-child(4) {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
     grid-area: 1 / 4 / 2 / 5;
   }
 
   .skillLogo:nth-child(5) {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
     grid-area: 2 / 1 / 3 / 2;
   }
 
   .skillLogo:nth-child(6) {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
     grid-area: 2 / 2 / 3 / 3;
   }
 
   .skillLogo:nth-child(7) {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
     grid-area: 2 / 3 / 3 / 4;
   }
 
   .skillLogo:nth-child(8) {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
     grid-area: 2 / 4 / 3 / 5;
   }
 
   .skillLogo:nth-child(9) {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
     grid-area: 3 / 1 / 4 / 2;
   }
 
   .skillLogo:nth-child(10) {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
     grid-area: 3 / 2 / 4 / 3;
   }
 
   .skillLogo:nth-child(11) {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
     grid-area: 3 / 3 / 4 / 4;
   }
 
   .skillLogo:nth-child(12) {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
     grid-area: 3 / 4 / 4 / 5;
   }
 
   .skillLogo:nth-child(13) {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
     grid-area: 4 / 1 / 5 / 2;
   }
 
   .skillLogo:nth-child(14) {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
     grid-area: 4 / 2 / 5 / 3;
   }
 
   .skillLogo:nth-child(15) {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
     grid-area: 4 / 3 / 5 / 4;
   }
 
   .skillLogo:nth-child(16) {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
     grid-area: 4 / 4 / 5 / 5;
   }
 
   .skillLogo:nth-child(17) {
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
     grid-area: 5 / 1 / 6 / 2;
   }
 
   .skillLogo:nth-child(18) {
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
     grid-area: 5 / 2 / 6 / 3;
   }
 
   .skillLogo:nth-child(19) {
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
     grid-area: 5 / 3 / 6 / 4;
   }
 
   .skillLogo:nth-child(20) {
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
     grid-area: 5 / 4 / 6 / 5;
   }
 
   .skillLogo:nth-child(21) {
+    -ms-grid-row: 6;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
     grid-area: 6 / 2 / 7 / 3;
   }
+
 }
 
 // tablet
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+
+  .skillLogo {
+    margin: 12px 0;
+  }
+
   .skillLogo:nth-child(1),
   .skillLogo:nth-child(3),
   .skillLogo:nth-child(5),
@@ -117,182 +208,391 @@
   .skillLogo:nth-child(17),
   .skillLogo:nth-child(19),
   .skillLogo:nth-child(21) {
-    transform: translateY(-57%) !important;
+    -webkit-transform: translateY(-54px) !important;
+    -ms-transform: translateY(-54px) !important;
+    transform: translateY(-54px) !important;
   }
 
   .skillLogo:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
     grid-area: 1 / 1 / 2 / 2;
   }
 
   .skillLogo:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
     grid-area: 1 / 2 / 2 / 3;
   }
 
   .skillLogo:nth-child(3) {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
     grid-area: 1 / 3 / 2 / 4;
   }
 
   .skillLogo:nth-child(4) {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
     grid-area: 1 / 4 / 2 / 5;
   }
 
   .skillLogo:nth-child(5) {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 1;
     grid-area: 1 / 5 / 2 / 6;
   }
 
   .skillLogo:nth-child(6) {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 6;
+    -ms-grid-column-span: 1;
     grid-area: 1 / 6 / 2 / 7;
   }
 
   .skillLogo:nth-child(7) {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 1;
     grid-area: 1 / 7 / 2 / 8;
   }
 
   .skillLogo:nth-child(8) {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
     grid-area: 2 / 1 / 3 / 2;
   }
 
   .skillLogo:nth-child(9) {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
     grid-area: 2 / 2 / 3 / 3;
   }
 
   .skillLogo:nth-child(10) {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
     grid-area: 2 / 3 / 3 / 4;
   }
 
   .skillLogo:nth-child(11) {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
     grid-area: 2 / 4 / 3 / 5;
   }
 
   .skillLogo:nth-child(12) {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 1;
     grid-area: 2 / 5 / 3 / 6;
   }
 
   .skillLogo:nth-child(13) {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 6;
+    -ms-grid-column-span: 1;
     grid-area: 2 / 6 / 3 / 7;
   }
 
   .skillLogo:nth-child(14) {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 1;
     grid-area: 2 / 7 / 3 / 8;
   }
 
   .skillLogo:nth-child(15) {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
     grid-area: 3 / 1 / 4 / 2;
   }
 
   .skillLogo:nth-child(16) {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
     grid-area: 3 / 2 / 4 / 3;
   }
 
   .skillLogo:nth-child(17) {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
     grid-area: 3 / 3 / 4 / 4;
   }
 
   .skillLogo:nth-child(18) {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
     grid-area: 3 / 4 / 4 / 5;
   }
 
   .skillLogo:nth-child(19) {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 1;
     grid-area: 3 / 5 / 4 / 6;
   }
 
   .skillLogo:nth-child(20) {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 6;
+    -ms-grid-column-span: 1;
     grid-area: 3 / 6 / 4 / 7;
   }
 
   .skillLogo:nth-child(21) {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 1;
     grid-area: 3 / 7 / 4 / 8;
   }
+
 }
 
 // tablet lg
 @include mq(tablet-lg) {
+
+  .skillLogo {
+    margin: 15px 0;
+  }
+
   .skillLogo:nth-child(even),
   .skillLogo:nth-child(21) {
-    transform: translateY(-57%) !important;
+    -webkit-transform: translateY(-60px) !important;
+    -ms-transform: translateY(-60px) !important;
+    transform: translateY(-60px) !important;
   }
 
   .skillLogo:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 6;
+    -ms-grid-column-span: 1;
     grid-area: 1 / 6 / 2 / 7;
   }
 
   .skillLogo:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 1;
     grid-area: 1 / 7 / 2 / 8;
   }
 
   .skillLogo:nth-child(3) {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 8;
+    -ms-grid-column-span: 1;
     grid-area: 1 / 8 / 2 / 9;
   }
 
   .skillLogo:nth-child(4) {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 9;
+    -ms-grid-column-span: 1;
     grid-area: 1 / 9 / 2 / 10;
   }
 
   .skillLogo:nth-child(5) {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
     grid-area: 2 / 2 / 3 / 3;
   }
 
   .skillLogo:nth-child(6) {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
     grid-area: 2 / 3 / 3 / 4;
   }
 
   .skillLogo:nth-child(7) {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
     grid-area: 2 / 4 / 3 / 5;
   }
 
   .skillLogo:nth-child(8) {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 1;
     grid-area: 2 / 5 / 3 / 6;
   }
 
   .skillLogo:nth-child(9) {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 6;
+    -ms-grid-column-span: 1;
     grid-area: 2 / 6 / 3 / 7;
   }
 
   .skillLogo:nth-child(10) {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 1;
     grid-area: 2 / 7 / 3 / 8;
   }
 
   .skillLogo:nth-child(11) {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 8;
+    -ms-grid-column-span: 1;
     grid-area: 2 / 8 / 3 / 9;
   }
 
   .skillLogo:nth-child(12) {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
     grid-area: 3 / 1 / 4 / 2;
   }
 
   .skillLogo:nth-child(13) {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
     grid-area: 3 / 2 / 4 / 3;
   }
 
   .skillLogo:nth-child(14) {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
     grid-area: 3 / 3 / 4 / 4;
   }
 
   .skillLogo:nth-child(15) {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
     grid-area: 3 / 4 / 4 / 5;
   }
 
   .skillLogo:nth-child(16) {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 1;
     grid-area: 3 / 5 / 4 / 6;
   }
 
   .skillLogo:nth-child(17) {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 6;
+    -ms-grid-column-span: 1;
     grid-area: 3 / 6 / 4 / 7;
   }
 
   .skillLogo:nth-child(18) {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 1;
     grid-area: 3 / 7 / 4 / 8;
   }
 
   .skillLogo:nth-child(19) {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 8;
+    -ms-grid-column-span: 1;
     grid-area: 3 / 8 / 4 / 9;
   }
 
   .skillLogo:nth-child(20) {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 9;
+    -ms-grid-column-span: 1;
     grid-area: 3 / 9 / 4 / 10;
   }
 
   .skillLogo:nth-child(21) {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 1;
     grid-area: 4 / 5 / 5 / 6;
   }
+
+}
+
+@include mq(desktop-md) {
+
+  .skillLogo {
+    margin: 20px 0;
+  }
+
+  .skillLogo:nth-child(even),
+  .skillLogo:nth-child(21) {
+    -webkit-transform: translateY(-80px) !important;
+    -ms-transform: translateY(-80px) !important;
+    transform: translateY(-80px) !important;
+  }
+
+}
+
+@include mq(desktop-lg) {
+
+  .skillLogo {
+    margin: 20px 0;
+  }
+
+  .skillLogo:nth-child(even),
+  .skillLogo:nth-child(21) {
+    -webkit-transform: translateY(-80px) !important;
+    -ms-transform: translateY(-80px) !important;
+    transform: translateY(-84px) !important;
+  }
+
 }

@@ -11,8 +11,9 @@ $siteHeaderHeight--mobileLg: 180px;
 $siteHeaderHeight--mobileXlg: 200px;
 $siteHeaderHeight--desktop: 220px;
 
-$btnBg: #3d2753;
-$btnBg--hover: lighten($btnBg, 10%);
+$btnBg: $lightPurple;
+$btnBg--hover: darken($lightPurple, 15%);
+// $btnBg--hover: lighten($btnBg, 10%);
 
 $linkColour: $lightPurple;
 $linkColour--hover: #000;

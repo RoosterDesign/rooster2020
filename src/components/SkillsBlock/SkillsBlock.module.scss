@@ -1,47 +1,60 @@
 .skillsLogos {
+  display: -ms-grid;
   display: grid;
   grid-column-gap: 0;
   grid-row-gap: 0;
 }
 
 @media only screen and (max-width: 767px) {
+
   .skillsLogos {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
     grid-template-columns: repeat(4, 1fr);
+    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: repeat(6, 1fr);
     padding: 15% 10px 0;
     margin-bottom: -15%;
   }
+
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+
   .skillsLogos {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: repeat(7, 1fr);
+    -ms-grid-rows: 1fr 1fr 1fr;
     grid-template-rows: repeat(3, 1fr);
     margin-top: 92px;
   }
+
 }
 
 // tablet lg
 @include mq(tablet-lg) {
+
   .skillsLogos {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: repeat(9, 1fr);
+    -ms-grid-rows: 1fr 1fr 1fr 1fr;
     grid-template-rows: repeat(4, 1fr);
     margin: -30px 0 -70px;
   }
+
 }
 
 @include mq(desktop) {
+
   .skillsLogos {
     margin-top: -60px;
   }
+
 }
 
 @include mq(desktop-md) {
+
   .skillsLogos {
     margin-bottom: -90px;
   }
-}
 
-@include mq(desktop-lg) {
-  .skillsLogos {}
 }
