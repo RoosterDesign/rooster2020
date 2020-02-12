@@ -36,15 +36,27 @@ export default ({ data, location }) => {
   })
 
   const MastheadServices = styled.div`
+    margin-top: 20px;
     @media (min-width: 768px) {
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 0 40px 5px rgba(0, 0, 0, 0.25);
       display: flex;
       justify-content: space-between;
+      padding: 25px 10px;
+    }
+    @media (min-width: 992px) {
+      box-shadow: 0 0 70px 10px rgba(0, 0, 0, 0.3);
+      padding: 30px 15px;
     }
     @media (min-width: 1500px) {
-      margin-top: 10px;
+      box-shadow: 0 0 70px 10px rgba(0, 0, 0, 0.3);
+      margin-bottom: -80px;
+      padding: 40px 30px;
     }
     @media (min-width: 1920px) {
-      margin-top: 0;
+      margin-bottom: -100px;
+      padding: 50px 30px;
     }
   `
 

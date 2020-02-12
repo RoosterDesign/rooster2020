@@ -47,6 +47,24 @@ export default ({ data }) => {
     }
   `
 
+  const BackLink = styled(Link)`
+    color: #722be1;
+    font-family: "HalisR-Medium", "serif";
+    font-size: 1.5rem;
+    letter-spacing: -0.05rem;
+    text-decoration: none;
+    @media only screen and (min-width: 414px) {
+      font-size: 1.6rem;
+    }
+    @media only screen and (min-width: 1500px) {
+      font-size: 1.8rem;
+    }
+
+    &:hover {
+      color: #000;
+    }
+  `
+
   const allImages = images.map(img => <PortfolioDetailImage src={img} />)
 
   return (
@@ -64,9 +82,7 @@ export default ({ data }) => {
       <PortfolioPageContent>
         <div className="container">
           {allImages}
-          <p>
-            <Link to="/portfolio/">&#8592; Back to portfolio</Link>
-          </p>
+          <BackLink to="/portfolio/">&#8592; Back to portfolio</BackLink>
         </div>
       </PortfolioPageContent>
     </Layout>

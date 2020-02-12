@@ -8,18 +8,19 @@
 
     p {
         color: #fff;
+        width: 100% !important;
     }
 
 }
 
 .icon {
-    margin-bottom: 20px;
-    max-height: 80px;
+    display: none;
 }
 
-.title {
-    font-family: 'HalisR-Medium', 'serif';
+p.title {
+    font-family: 'HalisR-Bold', 'serif';
     font-size: 2rem;
+    letter-spacing: -.1rem;
     margin-bottom: 10px;
 }
 
@@ -33,17 +34,46 @@
     .serviceItem {
         flex: 1;
         margin-bottom: 0 !important;
-        padding: 0 10px;
+        padding: 0 8px;
+
+        p {
+            color: #573367;
+        }
+
     }
 
     .icon {
+        display: block;
         margin-bottom: 15px;
         max-height: 70px;
     }
 
-    .title {
+    p.title {
+        color: $headingColour;
         font-size: 2.2rem;
         margin-bottom: 5px;
+    }
+
+    .body {
+        font-size: 1.4rem;
+    }
+
+}
+
+@include mq(tablet-lg) {
+
+    .serviceItem {
+        padding: 0 15px;
+    }
+
+    .icon {
+        max-height: 80px;
+        margin-bottom: 20px;
+    }
+
+    p.title {
+        font-size: 2.4rem;
+        margin-bottom: 10px;
     }
 
     .body {
@@ -52,15 +82,15 @@
 
 }
 
-@include mq(tablet-lg) {
+@include mq(desktop) {
 
-    .icon {
-        max-height: 80px;
+    .serviceItem {
+        padding: 0 15px;
     }
 
-    .title {
-        font-size: 2.8rem;
-        margin-bottom: 10px;
+    .icon {
+        margin-bottom: 20px;
+        max-height: 100px;
     }
 
     .body {
@@ -69,20 +99,16 @@
 
 }
 
-@include mq(desktop) {
+@include mq(desktop-md) {
 
     .serviceItem {
-        padding: 0 20px;
+        padding: 0 25px;
     }
 
-    .icon {
-        margin-bottom: 20px;
-        max-height: 100px;
+    p.title {
+        font-size: 3rem;
+        margin-bottom: 5px;
     }
-
-}
-
-@include mq(desktop-md) {
 
     .body {
         font-size: 1.8rem;
