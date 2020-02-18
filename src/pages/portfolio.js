@@ -41,12 +41,8 @@ export default ({ data, location }) => {
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: -26px;
-    padding-bottom: 40px;
     @media (min-width: 992px) {
       margin-top: 0;
-    }
-    @media (min-width: 1250px) {
-      padding-bottom: 80px;
     }
   `
 

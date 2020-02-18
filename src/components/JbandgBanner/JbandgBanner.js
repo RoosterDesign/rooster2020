@@ -1,24 +1,9 @@
 import React from "react"
-import styled from "styled-components"
 import styles from "./JbandgBanner.module.scss"
 import jbandgLogo from "../../images/jbandg-logo.png"
 
-const JbandgLinkContainer = styled.div`
-  padding-top: 16px;
-  padding-bottom: 48px;
-  @media (min-width: 768px) {
-    padding-bottom: 60px;
-  }
-  @media (min-width: 992px) {
-    padding-bottom: 80px;
-  }
-  @media (min-width: 1250px) {
-    padding-bottom: 120px;
-  }
-`
-
 export default () => (
-  <JbandgLinkContainer className="container">
+  <div className="container">
     <div className={styles.jbandgBanner}>
       <picture className={styles.jbandgLogo}>
         <img src={jbandgLogo} alt="jbandg" />
@@ -40,5 +25,5 @@ export default () => (
         </a>
       </p>
     </div>
-  </JbandgLinkContainer>
+  </div>
 )
