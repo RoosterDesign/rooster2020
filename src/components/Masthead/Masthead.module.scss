@@ -1,6 +1,6 @@
 .masthead {
   @include pageBgGradient(true);
-  // overflow: hidden;
+  overflow: hidden;
   position: relative;
   text-align: center;
   z-index: 1;
@@ -15,7 +15,12 @@
   // min-height: 100vh;
   display: flex;
   flex-direction: column;
-  padding-top: 20px;
+  padding-top: 30px;
+}
+
+.masthead.isHomepage>div {
+  min-height: 100vh;
+  // padding-top: 40px;
 }
 
 .mastheadContent {

@@ -59,7 +59,7 @@
 @include mq(mobile-lg) {
 
     .jbandgBanner {
-        font-size: 1.6rem;
+        font-size: $bodyFontSize--mobile-lg;
     }
 
 }
@@ -67,7 +67,7 @@
 @include mq(mobile-xlg) {
 
     .jbandgBanner {
-        font-size: 1.8rem;
+        font-size: $bodyFontSize--mobile-xlg;
     }
 
 }

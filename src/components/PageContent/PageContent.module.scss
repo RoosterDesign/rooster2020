@@ -5,21 +5,27 @@
 }
 
 @include mq(tablet) {
+
   .contentWrap {
     padding-top: 50px;
     padding-bottom: 75px;
   }
+
 }
 
 @include mq(desktop) {
+
   .contentWrap {
     padding-top: 100px;
-    padding-bottom: 80px;
+    padding-bottom: 100px;
   }
+
 }
 
 @include mq(desktop-lg) {
+
   .contentWrap {
     padding-bottom: 150px;
   }
+
 }

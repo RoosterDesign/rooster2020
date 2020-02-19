@@ -1,3 +1,7 @@
+.mastheadBody {
+  margin-top: 15px;
+}
+
 .mastheadBody p {
   color: #fff;
   font-size: 1.5rem;
@@ -8,18 +12,35 @@
 }
 
 @include mq(mobile-lg) {
+
   .mastheadBody p {
-    font-size: 1.6rem;
+    font-size: $bodyFontSize--mobile-lg;
   }
+
+  .mastheadBody.isHomepage {
+    margin-top: 20px;
+  }
+
 }
 
 @include mq(mobile-xlg) {
+
   .mastheadBody p {
-    font-size: 1.8rem;
+    font-size: $bodyFontSize--mobile-xlg;
   }
+
 }
 
 @include mq(tablet) {
+
+  .mastheadBody {
+    margin-top: 20px;
+  }
+
+  .mastheadBody.isHomepage {
+    margin-top: 30px;
+  }
+
   .mastheadBody p {
     font-size: 1.8rem;
   }
@@ -27,15 +48,39 @@
   .mastheadBody.isHomepage p {
     font-size: 2rem;
   }
+
 }
 
 @include mq(tablet-lg) {
+
   .mastheadBody.isHomepage p {
     font-size: 2rem;
   }
+
+}
+
+@include mq(desktop) {
+
+  .mastheadBody {
+    margin-top: 25px;
+  }
+
+  .mastheadBody p {
+    font-size: 2rem;
+  }
+
+  .mastheadBody.isHomepage p {
+    font-size: 2.2rem;
+  }
+
 }
 
 @include mq(desktop-md) {
+
+  .mastheadBody {
+    margin-top: 30px;
+  }
+
   .mastheadBody p {
     font-size: 2.2rem;
   }
@@ -46,7 +91,9 @@
 }
 
 @include mq(desktop-lg) {
+
   .mastheadBody.isHomepage p {
     font-size: 2.8rem;
   }
+
 }

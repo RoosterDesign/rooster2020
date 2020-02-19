@@ -4,7 +4,7 @@
   overflow: hidden;
 }
 
-@include mq(tablet-lg) {
+@include mq(desktop) {
   .pageWrap {
     border-radius: $borderRadius;
   }

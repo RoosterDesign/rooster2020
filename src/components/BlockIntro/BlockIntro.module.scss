@@ -4,10 +4,18 @@
   text-align: center;
 }
 
+.blockIntro p {
+  margin-bottom: 20px;
+}
+
+.blockIntro p:last-child {
+  margin-bottom: 0;
+}
+
 @include mq(mobile-lg) {
 
   .blockIntro {
-    font-size: 1.6rem;
+    font-size: $bodyFontSize--mobile-lg;
   }
 
 }
@@ -15,7 +23,7 @@
 @include mq(mobile-xlg) {
 
   .blockIntro {
-    font-size: 1.8rem;
+    font-size: $bodyFontSize--mobile-xlg;
   }
 
 }
@@ -23,27 +31,27 @@
 @include mq(tablet) {
 
   .blockIntro {
-    margin-bottom: 30px;
-    padding-left: 30px;
+    margin-bottom: 40px;
+    // padding-left: 30px;
     position: relative;
     text-align: left;
   }
 
-  .blockIntro:before {
-    background: $lightPurple;
-    border-radius: 2px;
-    content: "";
-    height: 100%;
-    left: 0;
-    max-height: 55px;
-    position: absolute;
-    top: 5px;
-    width: 4px;
-  }
+  // .blockIntro:before {
+  //   background: $lightPurple;
+  //   border-radius: 2px;
+  //   content: "";
+  //   height: 100%;
+  //   left: 0;
+  //   max-height: 55px;
+  //   position: absolute;
+  //   top: 5px;
+  //   width: 4px;
+  // }
 
-  .blockIntro.isHomepage:before {
-    background: #fff;
-  }
+  // .blockIntro.isHomepage:before {
+  //   background: #fff;
+  // }
 
 }
 
@@ -54,12 +62,17 @@
     max-width: 570px;
   }
 
+  .blockIntro p {
+    margin-bottom: 25px;
+  }
+
 }
 
 @include mq(desktop) {
 
   .blockIntro {
-    margin-bottom: 60px;
+    font-size: $bodyFontSize--desktop;
+    margin-bottom: 50px;
   }
 
 }
@@ -67,9 +80,20 @@
 @include mq(desktop-md) {
 
   .blockIntro {
-    font-size: 2.2rem;
-    margin-bottom: 80px;
+    font-size: $bodyFontSize--desktop-md;
     max-width: 60%;
+  }
+
+  .blockIntro p {
+    margin-bottom: 30px;
+  }
+
+}
+
+@include mq(desktop-lg) {
+
+  .blockIntro {
+    font-size: 2.2rem;
   }
 
 }

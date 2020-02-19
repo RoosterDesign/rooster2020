@@ -17,7 +17,7 @@
 .siteFooterLink {
   color: #fff !important;
   display: inline-block;
-  margin: 15px 0 0;
+  margin: 15px 10px 0;
   text-decoration: none;
 }
 
@@ -26,9 +26,19 @@
 }
 
 @include mq(mobile-lg) {
+
   .siteFooter {
-    font-size: 1.6rem;
+    font-size: $bodyFontSize--mobile-lg;
   }
+
+}
+
+@include mq(mobile-xlg) {
+
+  .siteFooter {
+    font-size: $bodyFontSize--mobile-xlg;
+  }
+
 }
 
 

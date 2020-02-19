@@ -54,7 +54,7 @@ export default ({ data }) => {
     letter-spacing: -0.05rem;
     text-decoration: none;
     @media only screen and (min-width: 414px) {
-      font-size: 1.6rem;
+      font-size: 1.8rem;
     }
     @media only screen and (min-width: 1500px) {
       font-size: 1.8rem;

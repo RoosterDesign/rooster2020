@@ -12,32 +12,36 @@
 }
 
 @include mq(mobile-lg) {
-  .mastheadIntro {
-    font-size: 1.8rem;
-  }
 
   .roosterBg {
     width: 600px;
   }
+
 }
 
 @include mq(tablet) {
+
   .roosterBg {
     top: -100px;
     width: 900px;
   }
+
 }
 
 @include mq(tablet-lg) {
+
   .roosterBg {
     top: -75px;
     width: 1200px;
   }
+
 }
 
 @include mq(desktop) {
+
   .roosterBg {
     top: -100px;
     width: 1500px;
   }
+
 }

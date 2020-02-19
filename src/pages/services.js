@@ -36,7 +36,6 @@ export default ({ data, location }) => {
   })
 
   const MastheadServices = styled.div`
-    margin-top: 20px;
     @media (min-width: 768px) {
       background: #fff;
       border-radius: 15px;
@@ -51,11 +50,12 @@ export default ({ data, location }) => {
     }
     @media (min-width: 1500px) {
       box-shadow: 0 0 70px 10px rgba(0, 0, 0, 0.3);
-      margin-bottom: -80px;
+      // margin-bottom: -80px;
       padding: 40px 30px;
     }
     @media (min-width: 1920px) {
-      margin-bottom: -100px;
+      margin-top: -400px;
+      margin-bottom: 200px;
       padding: 50px 30px;
     }
   `
@@ -68,25 +68,27 @@ export default ({ data, location }) => {
       </Helmet>
       <Masthead>
         <MastheadTitle mastheadTitle={servicesPageContent.mastheadTitle} />
-        <MastheadServices>
-          <ServicesMastheadBody
-            icon={designIcon}
-            title="UI/UX Design"
-            body="Brainstorming through to wireframing, prototyping and bespoke, unique design, I treat every project with as much love and attention as if it were my own."
-          />
-          <ServicesMastheadBody
-            icon={developIcon}
-            title="Development"
-            body="Using HTML5 and CSS3 and JavaScript (ES5+) I bring your website to life. I integrate with your working practices and deliver a product to match your exacting standards."
-          />
-          <ServicesMastheadBody
-            icon={collaborationIcon}
-            title="Collaboration"
-            body="I build long-term relationships with agencies looking to outsource work to me safe in the knowledge it'll be delivered to a high standard and on time."
-          />
-        </MastheadServices>
       </Masthead>
       <PageContent>
+        <div className="container">
+          <MastheadServices>
+            <ServicesMastheadBody
+              icon={designIcon}
+              title="UI/UX Design"
+              body="Brainstorming through to wireframing, prototyping and bespoke, unique design, I treat every project with as much love and attention as if it were my own."
+            />
+            <ServicesMastheadBody
+              icon={developIcon}
+              title="Development"
+              body="Using HTML5 and CSS3 and JavaScript (ES5+) I bring your website to life. I integrate with your working practices and deliver a product to match your exacting standards."
+            />
+            <ServicesMastheadBody
+              icon={collaborationIcon}
+              title="Collaboration"
+              body="I build long-term relationships with agencies looking to outsource work to me safe in the knowledge it'll be delivered to a high standard and on time."
+            />
+          </MastheadServices>
+        </div>
         {services}
         <JbandgBanner />
       </PageContent>

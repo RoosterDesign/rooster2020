@@ -1,8 +1,12 @@
 .mastheadTitle {
   color: #fff;
-  font-size: 3.2rem;
+  font-size: 3.6rem;
   letter-spacing: -0.2rem;
-  margin-bottom: 15px;
+}
+
+.mastheadTitle.isHomepage {
+  font-size: 3.2rem;
+  margin-top: -50px;
 }
 
 .mastheadTitle br {
@@ -10,9 +14,16 @@
 }
 
 @include mq(mobile-lg) {
+
   .mastheadTitle {
     font-size: 3.8rem;
   }
+
+  .mastheadTitle.isHomepage {
+    font-size: 3.8rem;
+    margin-top: -30px;
+  }
+
 }
 
 @include mq(mobile-xlg) {
@@ -22,13 +33,14 @@
 }
 
 @include mq(tablet) {
+
   .mastheadTitle {
     font-size: 7rem;
     letter-spacing: -0.3rem;
   }
 
   .mastheadTitle.isHomepage {
-    margin-bottom: 30px;
+    font-size: 7rem;
   }
 
   .mastheadTitle br {
@@ -37,27 +49,26 @@
 }
 
 @include mq(tablet-lg) {
+
   .mastheadTitle {
     font-size: 8rem;
-    margin-bottom: 20px;
   }
+
 }
 
 @include mq(desktop) {
-  .mastheadTitle {
-    margin-bottom: 25px;
-  }
 
   .mastheadTitle.isHomepage {
     font-size: 9rem;
   }
+
 }
 
 @include mq(desktop-md) {
+
   .mastheadTitle {
     font-size: 10rem;
     letter-spacing: -0.5rem;
-    margin-bottom: 30px;
   }
 
   .mastheadTitle.isHomepage {

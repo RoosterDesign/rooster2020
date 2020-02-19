@@ -12,6 +12,13 @@ export default () => (
         <Link to="/privacy" className={styles.siteFooterLink}>
           Privacy &amp; Legal
         </Link>
+        <a
+          href="https://www.linkedin.com/in/roosterdesign/"
+          target="_blank"
+          className={styles.siteFooterLink}
+        >
+          LinkedIn
+        </a>
       </p>
       <p>
         Rooster Design is registered in England and Wales, No: 07335844, VAT No:
