@@ -3,19 +3,12 @@
     text-align: center;
 
     &:last-child {
-        // margin-bottom: 20px;
         margin-bottom: 60px;
-    }
-
-    p {
-        // color: #fff;
-        // width: 100% !important;
     }
 
 }
 
 .icon {
-    // display: none;
     display: block;
     margin-bottom: 15px;
     max-height: 80px;
@@ -29,13 +22,29 @@ p.title {
     color: $headingColour;
     font-family: 'HalisR-Bold', 'serif';
     font-size: 3rem;
-    letter-spacing: -.1rem;
+    letter-spacing: -0.15rem;
     margin-bottom: 10px;
 }
 
 .body {
-    font-size: 1.5rem;
+    font-size: $bodyFontSize--mobile;
     margin-bottom: 0;
+}
+
+@include mq(mobile-lg) {
+
+    .body {
+        font-size: $bodyFontSize--mobile-lg;
+    }
+
+}
+
+@include mq(mobile-xlg) {
+
+    .body {
+        font-size: $bodyFontSize--mobile-xlg;
+    }
+
 }
 
 @include mq(tablet) {
@@ -48,6 +57,10 @@ p.title {
 
     .icon {
         max-height: 70px;
+    }
+
+    p.title {
+        font-size: 2.6rem;
     }
 
     .body {

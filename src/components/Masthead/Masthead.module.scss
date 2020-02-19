@@ -116,7 +116,7 @@
 
 @include mq(tablet-lg) {
   .masthead>div {
-    min-height: 600px;
+    min-height: 640px;
   }
 
   .masthead.isHomepage .mastheadContent {
@@ -137,7 +137,7 @@
 @include mq(desktop) {
 
   .masthead>div {
-    min-height: 750px;
+    min-height: 725px;
     padding-top: 50px;
   }
 

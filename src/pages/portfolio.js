@@ -40,10 +40,6 @@ export default ({ data, location }) => {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: -26px;
-    @media (min-width: 992px) {
-      margin-top: 0;
-    }
   `
 
   return (

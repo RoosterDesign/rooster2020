@@ -5,26 +5,26 @@
   text-align: center;
 }
 
-@include mq(mobile-lg) {
+// @include mq(mobile-lg) {
 
-  .blockTitle {
-    font-size: 3.8rem;
-  }
+//   .blockTitle {
+//     font-size: 3.6rem;
+//   }
 
-}
+// }
 
-@include mq(mobile-xlg) {
+// @include mq(mobile-xlg) {
 
-  .mastheadTitle {
-    font-size: 4rem;
-  }
+//   .blockTitle {
+//     font-size: 4rem;
+//   }
 
-}
+// }
 
 @include mq(tablet) {
 
   .blockTitle {
-    font-size: 4.6rem;
+    font-size: 4rem;
     letter-spacing: -0.25rem;
     text-align: left;
     margin-bottom: 20px;
