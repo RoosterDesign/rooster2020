@@ -36,10 +36,6 @@
   padding: 0;
 }
 
-// .mastheadSwoop {
-//   display: none;
-// }
-
 .mastheadSwoop {
   bottom: 0;
   display: block;
@@ -50,7 +46,8 @@
   width: calc(100% + 10px);
 }
 
-.masthead.isHomepage .mastheadSwoop {
+.masthead.isHomepage .mastheadSwoop,
+.masthead .mastheadSwoop.isSuccess {
   display: none;
 }
 
