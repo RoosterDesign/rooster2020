@@ -2,10 +2,13 @@ import React from "react"
 import styles from "./MastheadTitle.module.scss"
 
 export default props => {
-  const classname =
-    window.location.pathname === "/"
-      ? [styles.mastheadTitle, styles.isHomepage].join(" ")
-      : styles.mastheadTitle
+  let classname
+  if (typeof window !== `undefined`) {
+    classname =
+      window.location.pathname === "/"
+        ? [styles.mastheadTitle, styles.isHomepage].join(" ")
+        : styles.mastheadTitle
+  }
 
   return (
     <h1

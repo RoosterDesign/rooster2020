@@ -2,10 +2,14 @@ import React from "react"
 import styles from "./BlockIntro.module.scss"
 
 export default props => {
-  const classname =
-    window.location.pathname === "/"
-      ? [styles.blockIntro, styles.isHomepage].join(" ")
-      : styles.blockIntro
+  let classname
+  if (typeof window !== `undefined`) {
+    classname =
+      window.location.pathname === "/"
+        ? [styles.blockIntro, styles.isHomepage].join(" ")
+        : styles.blockIntro
+  }
+
   return (
     <div
       className={classname}

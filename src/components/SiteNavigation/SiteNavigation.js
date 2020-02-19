@@ -5,7 +5,7 @@ import styles from "./SiteNavigation.module.scss"
 
 const SiteNavigation = () => {
   const data = useStaticQuery(graphql`
-    query siteNavQuery {
+    query {
       site {
         siteMetadata {
           menuLinks {

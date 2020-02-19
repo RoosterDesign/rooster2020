@@ -27,7 +27,7 @@ export default props => {
 
   const datafromjson = props.content.logos
 
-  const skillsLogos = datafromjson.map(skill => {
+  const skillsLogos = datafromjson.map((skill, index) => {
     const imageIndex = imageData.images.edges.findIndex(
       x =>
         x.node.name ===
@@ -38,6 +38,7 @@ export default props => {
     )
     return (
       <SkillLogo
+        key={index}
         img={imageData.images.edges[imageIndex].node.childImageSharp.fluid}
         title={skill.name}
       />

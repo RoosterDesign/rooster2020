@@ -4,16 +4,19 @@ import RoosterBg from "../RoosterBg/RoosterBg"
 import styles from "./Masthead.module.scss"
 import masheadSwoop from "../../images/masthead-swoop.svg"
 
-export default ({ children }) => {
-  const mastheadClassname =
-    window.location.pathname === "/"
-      ? [styles.masthead, styles.isHomepage].join(" ")
-      : styles.masthead
+export default ({ children, isHomepage, isSuccess }) => {
+  let mastheadClassname, swoopClassname
 
-  const swoopClassname =
-    window.location.pathname === "/success"
-      ? [styles.mastheadSwoop, styles.isSuccess].join(" ")
-      : styles.mastheadSwoop
+  if (typeof window !== `undefined`) {
+    mastheadClassname =
+      window.location.pathname === "/"
+        ? [styles.masthead, styles.isHomepage].join(" ")
+        : styles.masthead
+    swoopClassname =
+      window.location.pathname === "/success"
+        ? [styles.mastheadSwoop, styles.isSuccess].join(" ")
+        : styles.mastheadSwoop
+  }
 
   return (
     <div className={mastheadClassname}>

@@ -12,10 +12,13 @@ export default () => (
       <title>Thanks for getting in touch</title>
       <meta name="description" content="Helmet application" />
     </Helmet>
-    <Masthead>
+    <Masthead isSuccess>
       <MastheadTitle mastheadTitle="Thanks" />
       <MastheadBody>
-        <p>Thank you for your enquiry, we will be in touch soon. <Link to="/">Click here</Link> to return to the homepage.</p>
+        <p>
+          Thank you for your enquiry, we will be in touch soon.{" "}
+          <Link to="/">Click here</Link> to return to the homepage.
+        </p>
       </MastheadBody>
     </Masthead>
   </Layout>
