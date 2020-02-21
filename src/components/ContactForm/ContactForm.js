@@ -3,32 +3,34 @@ import styles from "./ContactForm.module.scss"
 
 export default () => (
   <div className="container">
-    <form
-      action="/success"
-      name="contact"
-      method="POST"
-      data-netlify="true"
-      netlify-honeypot="bot-field"
-      className={styles.contactForm}
-    >
-      <label>
-        Don’t fill this out if you're human:
-        <input name="bot-field" />
-      </label>
-
-      <div className={styles.formGroup}>
-        <label>Your Name</label>
-        <input type="text" name="name" />
-      </div>
-      <div className={styles.formGroup}>
-        <label>Email Address</label>
-        <input type="email" name="email" />
-      </div>
-      <div className={styles.formGroup}>
-        <label>Your Enquiry</label>
-        <textarea name="message"></textarea>
-      </div>
-      <button type="submit">Send</button>
+    <form name="contact" method="POST" data-netlify="true">
+      <p>
+        <label>
+          Your Name: <input type="text" name="name" />
+        </label>
+      </p>
+      <p>
+        <label>
+          Your Email: <input type="email" name="email" />
+        </label>
+      </p>
+      <p>
+        <label>
+          Your Role:{" "}
+          <select name="role[]" multiple>
+            <option value="leader">Leader</option>
+            <option value="follower">Follower</option>
+          </select>
+        </label>
+      </p>
+      <p>
+        <label>
+          Message: <textarea name="message"></textarea>
+        </label>
+      </p>
+      <p>
+        <button type="submit">Send</button>
+      </p>
     </form>
   </div>
 )
