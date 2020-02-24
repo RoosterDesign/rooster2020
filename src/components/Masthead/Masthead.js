@@ -5,8 +5,7 @@ import styles from "./Masthead.module.scss"
 import masheadSwoop from "../../images/masthead-swoop.svg"
 
 class Masthead extends Component {
-  constructor() {
-    super()
+  componentDidMount() {
     this.location = window.location.pathname
   }
 
