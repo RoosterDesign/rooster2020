@@ -1,19 +1,23 @@
 import React from "react"
 import styles from "./BlockIntro.module.scss"
 
-export default props => {
-  let classname
-  if (typeof window !== `undefined`) {
-    classname =
-      window.location.pathname === "/"
-        ? [styles.blockIntro, styles.isHomepage].join(" ")
-        : styles.blockIntro
+class BlockIntro extends React.Component {
+  componentDidMount() {
+    this.isHomepage = window.location.pathname === "/" ? "home" : null
   }
 
-  return (
-    <div
-      className={classname}
-      dangerouslySetInnerHTML={{ __html: props.introContent }}
-    ></div>
-  )
+  render() {
+    const classname =
+      this.isHomepage === "home"
+        ? [styles.blockIntro, styles.isHomepage].join(" ")
+        : styles.blockIntro
+    return (
+      <div
+        className={classname}
+        dangerouslySetInnerHTML={{ __html: this.props.introContent }}
+      ></div>
+    )
+  }
 }
+
+export default BlockIntro
