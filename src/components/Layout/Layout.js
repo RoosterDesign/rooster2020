@@ -1,5 +1,4 @@
 import React from "react"
-import "../../styles/main.scss"
 import Footer from "../Footer/Footer"
 import styles from "./Layout.module.scss"
 

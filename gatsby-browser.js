@@ -1,3 +1,5 @@
+import "./src/styles/main.scss"
+
 // ES5 way
 // exports.onClientEntry = () => {
 // ES6 way
