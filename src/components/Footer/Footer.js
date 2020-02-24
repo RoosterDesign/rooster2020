@@ -16,6 +16,7 @@ export default () => (
           href="https://www.linkedin.com/in/roosterdesign/"
           target="_blank"
           className={styles.siteFooterLink}
+          rel="noopener noreferrer"
         >
           LinkedIn
         </a>

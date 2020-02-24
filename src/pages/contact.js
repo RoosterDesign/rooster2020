@@ -6,7 +6,7 @@ import MastheadTitle from "../components/Masthead/MastheadTitle/MastheadTitle"
 import MastheadBody from "../components/Masthead/MastheadBody/MastheadBody"
 import Layout from "../components/Layout/Layout"
 import PageContent from "../components/PageContent/PageContent"
-import ContactForm from '../components/ContactForm/ContactForm'
+import ContactForm from "../components/ContactForm/ContactForm"
 
 export default ({ data }) => {
   const { contactPageContent } = data.allDataJson.nodes[0]
@@ -20,13 +20,31 @@ export default ({ data }) => {
       <Masthead>
         <MastheadTitle mastheadTitle={contactPageContent.mastheadTitle} />
         <MastheadBody>
-        <p>To find out more about my services or to check my availability for contract work, please fill out the form below providing as much details as possible, alternatively email me at <a href="mailto:info@roosterdesign.co.uk" target="_blank">info@roosterdesign.co.uk</a> or connect with me on <a href="https://www.linkedin.com/in/roosterdesign/" target="_blank">LinkedIn</a>.</p>
+          <p>
+            To find out more about my services or to check my availability for
+            contract work, please fill out the form below providing as much
+            details as possible, alternatively email me at{" "}
+            <a
+              href="mailto:info@roosterdesign.co.uk"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              info@roosterdesign.co.uk
+            </a>{" "}
+            or connect with me on{" "}
+            <a
+              href="https://www.linkedin.com/in/roosterdesign/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn
+            </a>
+            .
+          </p>
         </MastheadBody>
       </Masthead>
       <PageContent>
-        
-          <ContactForm/>
-          
+        <ContactForm />
       </PageContent>
     </Layout>
   )

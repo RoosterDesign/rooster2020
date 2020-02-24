@@ -1,5 +1,5 @@
 import React from "react"
-import styles from "./ContactForm.module.scss"
+// import styles from "./ContactForm.module.scss"
 
 export default () => (
   <div className="container">

@@ -46,8 +46,7 @@
   width: calc(100% + 10px);
 }
 
-.masthead.isHomepage .mastheadSwoop,
-.masthead .mastheadSwoop.isSuccess {
+.mastheadSwoop.isHidden {
   display: none;
 }
 

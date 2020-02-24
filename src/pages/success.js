@@ -8,7 +8,11 @@ import Layout from "../components/Layout/Layout"
 
 export default () => (
   <Layout>
-    <Helmet>
+    <Helmet
+      bodyAttributes={{
+        class: "is-success",
+      }}
+    >
       <title>Thanks for getting in touch</title>
       <meta name="description" content="Helmet application" />
     </Helmet>

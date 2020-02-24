@@ -1,19 +1,23 @@
-import React from "react"
+import React, { Component } from "react"
 import styles from "./MastheadTitle.module.scss"
 
-export default props => {
-  let classname
-  if (typeof window !== `undefined`) {
-    classname =
-      window.location.pathname === "/"
-        ? [styles.mastheadTitle, styles.isHomepage].join(" ")
-        : styles.mastheadTitle
+class MastheadTitle extends Component {
+  componentDidMount() {
+    this.location = window.location.pathname
   }
 
-  return (
-    <h1
-      className={classname}
-      dangerouslySetInnerHTML={{ __html: props.mastheadTitle }}
-    ></h1>
-  )
+  render() {
+    const classname =
+      this.location === "home"
+        ? [styles.mastheadTitle, styles.isHomepage].join(" ")
+        : styles.mastheadTitle
+    return (
+      <h1
+        className={classname}
+        dangerouslySetInnerHTML={{ __html: this.props.mastheadTitle }}
+      ></h1>
+    )
+  }
 }
+
+export default MastheadTitle
