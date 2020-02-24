@@ -27,9 +27,12 @@ export default ({ data, location }) => {
         <meta name="description" content="Helmet application" />
       </Helmet>
 
-      <Masthead isHomepage>
-        <MastheadTitle mastheadTitle={homePageContent.mastheadTitle} />
-        <MastheadBody>
+      <Masthead isHomepage noSwoop>
+        <MastheadTitle
+          isHomepage
+          mastheadTitle={homePageContent.mastheadTitle}
+        />
+        <MastheadBody isHomepage>
           <p
             dangerouslySetInnerHTML={{
               __html: homePageContent.mastheadBody,

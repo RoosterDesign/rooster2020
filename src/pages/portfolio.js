@@ -12,11 +12,6 @@ import PortfolioItem from "../components/PortfolioItem/PortfolioItem"
 
 export default ({ data, location }) => {
   const { portfolioPageContent } = data.dataJson
-
-  // const portfolioItems = data.allPortfolioJson.edges.map(({ node }, index) => (
-  //   <PortfolioItem key={index} content={node} id={index} />
-  // ))
-
   const imageData = data.images.edges
   const datafromjson = data.allPortfolioJson.edges
 

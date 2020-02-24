@@ -16,7 +16,7 @@ export default () => (
       <title>Thanks for getting in touch</title>
       <meta name="description" content="Helmet application" />
     </Helmet>
-    <Masthead isSuccess>
+    <Masthead noSwoop>
       <MastheadTitle mastheadTitle="Thanks" />
       <MastheadBody>
         <p>
