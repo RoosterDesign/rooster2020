@@ -2,8 +2,66 @@
     background: #fff;
     margin: 0;
     padding: 60px 80px;
+}
 
-    min-height: 600px;
+.formGroup {
+    margin-bottom: 40px;
+    width: calc(50% - 30px);
+}
+
+.formGroupFull {
+    width: 100%;
+}
+
+.formLabel {
+    color: $formLabelColour;
+    font-family: 'HalisR-Medium', 'serif';
+    font-size: 2.4rem;
+    display: block;
+    margin: 0;
+}
+
+.formInput,
+.formTextarea {
+    border: 1px solid #CDCDCD;
+    color: $formInputColour;
+    display: block;
+    font-family: 'HalisR-Light', 'serif';
+    font-size: 2rem;
+    margin-top: 10px;
+    outline: none;
+    width: 100%;
+}
+
+.formInput {
+    height: 60px;
+    padding: 0 20px;
+}
+
+.formTextarea {
+    height: 250px;
+    resize: none;
+    padding: 20px;
+}
+
+.btn {
+    background: $btnBg;
+    border-radius: 35px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: #fff;
+    cursor: pointer;
+    font-size: 2rem;
+    font-family: 'HalisR-Medium', 'serif';
+    height: 70px;
+    line-height: 70px;
+    margin-top: 40px;
+    padding: 0;
+    outline: none;
+    width: 250px;
+}
+
+.btn:hover {
+    background: $btnBg--hover;
 }
 
 @include mq(tablet) {
@@ -11,6 +69,7 @@
         border-radius: 15px;
         box-shadow: 0 0 40px 5px rgba(0, 0, 0, 0.25);
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         margin-top: -250px;
         padding: 25px 10px;
@@ -35,13 +94,17 @@
     .contactForm {
         box-shadow: 0 0 70px 10px rgba(0, 0, 0, 0.3);
         margin-top: -250px;
-        padding: 40px 30px;
+        padding: 50px 60px;
     }
 }
 
 @include mq(desktop-lg) {
+
     .contactForm {
         margin-top: -250px;
-        padding: 50px 30px;
+        padding: 70px 90px;
     }
+
+
+
 }

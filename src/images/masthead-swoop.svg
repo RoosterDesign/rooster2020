@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="1400px" height="221px" viewBox="0 0 1400 221" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
-    <title>Combined Shape</title>
+<svg width="1400px" height="220px" viewBox="0 0 1400 220" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Swoop</title>
     <desc>Created with Sketch.</desc>
-    <g id="HFD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="About" transform="translate(-20.000000, -611.000000)" fill="#FFFFFF">
-            <g id="Logo-bg" transform="translate(20.000000, 20.000000)">
-                <g id="Path">
-                    <path d="M1402.74144,591.967273 L1399.99961,592.137273 L1400,812 L4.12796908e-10,812 L-0.000390669324,722.119273 L-0.00339066932,591.969702 L1402.74144,591.967273 Z M1.04767465e-06,746.589044 C48.2320116,788.06547 183.898678,808.803683 407.000001,808.803683 C788.504292,800.363981 1086.98757,609.819296 1402.74144,591.967273 L1399.99961,592.137273 L1400,592 L4.12796908e-10,592 Z" id="Combined-Shape"></path>
-                </g>
-            </g>
-        </g>
+    <g id="Swoop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M-5,232 L-5,149 L0.0106761566,154.598774 C23.2266939,173.494216 60.8898018,187.627959 113,197 C191.165297,211.058062 239.82264,214.805195 350.758007,216 C461.693374,217.194805 511.099644,212 577.240569,202 C621.33452,195.333333 664.092289,186.666667 705.513879,176 C799.046501,152 854.163938,137.333333 870.866192,132 C932.330486,112 982.437248,96 1021.18648,84 C1120.11604,53.5423168 1191.26764,33.5423168 1234.64128,24 C1278.01492,14.4576832 1334.13449,6.45768321 1403,0 L1403,232" id="Path-2" fill="#FFFFFF"></path>
     </g>
 </svg>

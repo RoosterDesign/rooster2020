@@ -20,6 +20,7 @@ export default props => {
 
       <img
         src={masheadSwoop}
+        alt="Rooster Design Ltd"
         className={
           props.noSwoop
             ? [styles.mastheadSwoop, styles.isHidden].join(" ")
