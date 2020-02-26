@@ -164,12 +164,16 @@
 
 @include mq(desktop-lg) {
 
-    .contactForm {
-        margin-top: -250px;
-    }
-
     .formGroup {
         margin-bottom: 50px;
+    }
+
+}
+
+@include mq(full) {
+
+    .contactForm {
+        margin-top: -300px;
     }
 
 }
