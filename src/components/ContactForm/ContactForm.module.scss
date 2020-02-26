@@ -1,7 +1,7 @@
 .contactForm {
     background: #fff;
-    margin: 0;
-    padding: 0;
+    margin: -30px 0 0;
+    padding: 30px 0 0;
 }
 
 .formGroup {
@@ -52,15 +52,11 @@
     cursor: pointer;
     font-size: 2rem;
     font-family: 'HalisR-Medium', 'serif';
-    // height: 70px;
     height: 60px;
-    // line-height: 70px;
     line-height: 60px;
-    // margin-top: 40px;
     margin-top: 30px;
     padding: 0;
     outline: none;
-    // width: 250px;
     width: 100%;
 }
 
@@ -76,7 +72,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        margin-top: -225px;
+        margin: -225px 0 0;
         padding: 40px;
     }
 

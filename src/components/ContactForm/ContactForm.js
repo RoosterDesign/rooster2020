@@ -1,4 +1,5 @@
 import React from "react"
+import scrollTo from "gatsby-plugin-smoothscroll"
 import styles from "./ContactForm.module.scss"
 
 export default () => (
@@ -20,6 +21,7 @@ export default () => (
             className={styles.formInput}
             type="text"
             name="name"
+            onFocus={() => scrollTo("form")}
             required
           />
         </label>
@@ -32,6 +34,7 @@ export default () => (
             className={styles.formInput}
             type="email"
             name="email"
+            onFocus={() => scrollTo("form")}
             required
           />
         </label>
@@ -43,6 +46,7 @@ export default () => (
           <textarea
             className={styles.formTextarea}
             name="message"
+            onFocus={() => scrollTo("form")}
             required
           ></textarea>
         </label>
