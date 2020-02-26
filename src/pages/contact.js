@@ -23,16 +23,13 @@ export default ({ data }) => {
           <p>
             To find out more about my services or to check my availability for
             contract work, please fill out the form below providing as much
-            details as possible, alternatively email me at{" "}
-            <a
+            details as possible, alternatively email me at <a
               href="mailto:info@roosterdesign.co.uk"
               target="_blank"
               rel="noopener noreferrer"
             >
               info@roosterdesign.co.uk
-            </a>{" "}
-            or connect with me on{" "}
-            <a
+            </a> or connect with me on <a
               href="https://www.linkedin.com/in/roosterdesign/"
               target="_blank"
               rel="noopener noreferrer"
