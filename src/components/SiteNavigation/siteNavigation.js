@@ -4,8 +4,12 @@ import SiteNavigationItem from "./SiteNavigationItem/SiteNavigationItem"
 import styles from "./SiteNavigation.module.scss"
 
 class SiteNavigation extends Component {
-  state = {
-    navOpen: false,
+  constructor(props) {
+    super(props)
+    this.body = document.body
+    this.state = {
+      navOpen: false,
+    }
   }
 
   toggleNav = () => {
@@ -13,7 +17,6 @@ class SiteNavigation extends Component {
   }
 
   render() {
-    console.info(this.state.navOpen)
     const { data } = this.props
     const siteLinks = data.allSite.edges[0].node.siteMetadata.menuLinks.map(
       (item, index) => <SiteNavigationItem key={index} item={item} />
@@ -21,12 +24,12 @@ class SiteNavigation extends Component {
 
     let burgerClass, navMaskClass, navClass
     if (this.state.navOpen) {
-      document.body.classList.add("navOpen")
+      this.body.classList.add("navOpen")
       burgerClass = [styles.hamburger, styles.hamburgerOpen].join(" ")
       navMaskClass = [styles.navMask, styles.navMaskOpen].join(" ")
       navClass = [styles.siteNavigation, styles.siteNavigationOpen].join(" ")
     } else {
-      document.body.classList.remove("navOpen")
+      this.body.classList.remove("navOpen")
       burgerClass = styles.hamburger
       navMaskClass = styles.navMask
       navClass = styles.siteNavigation
@@ -34,13 +37,19 @@ class SiteNavigation extends Component {
 
     return (
       <>
-        <div className={burgerClass} onClick={this.toggleNav}>
+        <div
+          role="button"
+          tabIndex="0"
+          className={burgerClass}
+          onClick={this.toggleNav}
+          onKeyDown={this.toggleNav}
+        >
           <div className={styles.hamburgerInner}></div>
         </div>
         <div className={navClass}>
           <ul className={styles.siteNavigationList}>{siteLinks}</ul>
         </div>
-        <div className={navMaskClass} onClick={this.toggleNav}></div>
+        <div className={navMaskClass}></div>
       </>
     )
   }
