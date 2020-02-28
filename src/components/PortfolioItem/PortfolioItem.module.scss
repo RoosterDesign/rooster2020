@@ -2,15 +2,14 @@
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: $borderRadius;
+  border-radius: 3px;
   height: 0;
   margin-bottom: 16px;
   overflow: hidden;
-  padding-bottom: 56.25%;
+  padding-bottom: 28.125%;
   transition: box-shadow .3s ease;
-  width: 100%;
+  width: calc(50% - 5px);
 }
-
 
 .portfolioThumbnailMask {
   background: linear-gradient(180deg, #D138BB 0%, #742CE4 98%);
@@ -40,8 +39,8 @@
 
 @include mq(tablet) {
   .portfolioThumbnail {
+    border-radius: 5px;
     margin-bottom: 16px;
-    padding-bottom: 28.125%;
     width: calc(50% - 8px);
   }
 }
