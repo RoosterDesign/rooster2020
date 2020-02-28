@@ -1,15 +1,134 @@
-.siteNavigation {
+.navMask {
   display: none;
+}
+
+.siteNavigation {
+  display: block;
 }
 
 .siteNavigationList {
   list-style: none;
   margin: 0;
   padding: 0;
+  position: relative;
+  z-index: 1;
 }
+
+.hamburger {
+  display: none;
+}
+
+// Media Queries
 
 @include mq(tablet) {
   .siteNavigation {
     display: block;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .hamburger {
+    cursor: pointer;
+    display: block;
+    height: 24px;
+    position: absolute;
+    right: 16px;
+    text-transform: none;
+    top: 16px;
+    // transition-timing-function: linear;
+    // transition-duration: 0.15s;
+    // transition-property: opacity, filter;
+    width: 34px;
+    z-index: 99;
+  }
+
+  .hamburgerOpen {
+    position: fixed;
+    transition: transform 0.3s ease;
+    transform: translateX(-$mobileNavWidth);
+  }
+
+  .hamburgerInner,
+  .hamburgerInner:after,
+  .hamburgerInner:before {
+    position: absolute;
+    width: 34px;
+    height: 4px;
+    transition-timing-function: ease;
+    transition-duration: 0.15s;
+    transition-property: transform;
+    border-radius: 4px;
+    background-color: #fff;
+  }
+
+  .hamburgerInner {
+    top: 10px;
+  }
+
+  .hamburgerInner:after,
+  .hamburgerInner:before {
+    display: block;
+    content: "";
+  }
+
+  .hamburgerInner:before {
+    top: -10px;
+  }
+
+  .hamburgerInner:after {
+    bottom: -10px;
+  }
+
+  .hamburgerOpen .hamburgerInner:before {
+    transform: translate3d(7px, 2px, 0) rotate(45deg) scaleX(0.7);
+  }
+
+  .hamburgerOpen .hamburgerInner:after {
+    transform: translate3d(7px, -2px, 0) rotate(-45deg) scaleX(0.7);
+  }
+
+  .navMask {
+    background: #000;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    width: 0;
+    z-index: 98;
+  }
+
+  .navMaskOpen {
+    opacity: 0.5;
+    height: 100%;
+    width: 100%;
+  }
+
+  .siteNavigation {
+    background: $mobileNavBg;
+    height: 100%;
+    padding: 100px 40px 40px;
+    position: fixed;
+    right: -$mobileNavWidth;
+    top: 0;
+    transition: right 0.3s ease;
+    width: $mobileNavWidth;
+    z-index: 99;
+  }
+
+  .siteNavigationOpen {
+    right: 0;
+  }
+
+  .siteNavigation:after {
+    bottom: -15px;
+    content: "";
+    display: block;
+    left: 0;
+    position: absolute;
+    right: -15px;
+    top: -15px;
   }
 }

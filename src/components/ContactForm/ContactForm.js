@@ -41,7 +41,7 @@ export default () => (
       </div>
 
       <div className={styles.formGroupFull}>
-        <label for="message" className={styles.formLabel}>
+        <label className={styles.formLabel}>
           Message
           <textarea
             className={styles.formTextarea}

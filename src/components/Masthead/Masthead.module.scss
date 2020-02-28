@@ -3,7 +3,7 @@
   overflow: hidden;
   position: relative;
   text-align: center;
-  z-index: 1;
+  // z-index: 2;
 }
 
 .masthead.isHomepage {
@@ -11,14 +11,14 @@
   overflow: visible;
 }
 
-.masthead>div {
+.masthead > div {
   // min-height: 100vh;
   display: flex;
   flex-direction: column;
   padding-top: 30px;
 }
 
-.masthead.isHomepage>div {
+.masthead.isHomepage > div {
   min-height: 100vh;
   // padding-top: 40px;
 }
@@ -51,37 +51,33 @@
 }
 
 @include mq(mobile-lg) {
-  .masthead>div {
+  .masthead > div {
     padding-top: 30px;
   }
 
   .masthead.isHomepage .mastheadContent {
     margin-top: -30px;
   }
-
 }
 
 @include mq(mobile-xlg) {
-
   .masthead.isHomepage .mastheadContent {
     margin-top: -40px;
   }
-
 }
 
 @include mq(tablet) {
-
   .masthead {
     text-align: left;
   }
 
-  .masthead>div {
+  .masthead > div {
     height: auto;
     min-height: 660px;
     padding-top: 30px;
   }
 
-  .masthead.isHomepage>div {
+  .masthead.isHomepage > div {
     min-height: 100vh;
   }
 
@@ -107,11 +103,10 @@
   // .masthead.isHomepage .mastheadSwoop {
   //   display: none;
   // }
-
 }
 
 @include mq(tablet-lg) {
-  .masthead>div {
+  .masthead > div {
     min-height: 640px;
   }
 
@@ -127,29 +122,25 @@
     padding-top: 50px;
     padding-bottom: 75px;
   }
-
 }
 
 @include mq(desktop) {
-
-  .masthead>div {
+  .masthead > div {
     min-height: 725px;
     padding-top: 50px;
   }
 
-  .masthead.isHomepage>div {
+  .masthead.isHomepage > div {
     height: calc(100vh - 30px);
   }
 
   .masthead.isHomepage .mastheadContent {
     margin-top: -100px;
   }
-
 }
 
 @include mq(desktop-md) {
-
-  .masthead>div {
+  .masthead > div {
     min-height: 800px;
     padding-bottom: 0;
   }
@@ -158,21 +149,16 @@
     padding-top: 75px;
     padding-bottom: 70px;
   }
-
 }
 
 @include mq(desktop-lg) {
-
   .masthead.isHomepage .mastheadContent {
     margin-top: -150px;
   }
-
 }
 
 @include mq(full) {
-
-  .masthead>div {
+  .masthead > div {
     min-height: 850px;
   }
-
 }

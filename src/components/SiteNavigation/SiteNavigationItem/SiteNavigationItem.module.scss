@@ -1,74 +1,93 @@
 .siteNavigationItem {
-    display: inline-block;
-    font-family: 'HalisR-Book', 'serif';
-    margin: 0 20px 0 0;
-    padding: 0;
+  display: block;
+  font-family: "HalisR-Book", "serif";
+  margin: 0 0 35px;
+  padding: 0;
+  text-align: left;
 }
 
 .siteNavigationItem:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 .siteNavigationLink {
-    color: #fff;
-    display: block;
-    opacity: .6;
-    position: relative;
-    text-decoration: none;
-    transition: opacity .2s ease;
+  color: #fff;
+  display: block;
+  font-size: 1.8rem;
+  line-height: 1;
+  opacity: 0.67;
+  padding-left: 20px;
+  position: relative;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
 }
 
 .siteNavigationLink:after {
-    background: #fff;
-    border-radius: 1px;
-    bottom: 0;
-    content: '';
-    display: block;
-    height: 2px;
-    opacity: 0;
-    position: absolute;
-    transition: all .2s ease;
-    width: 100%;
+  background: #fff;
+  border-radius: 2px;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 22px;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: -1px;
+  transition: all 0.2s ease;
+  width: 4px;
+}
+
+.siteNavigationLink:hover,
+.siteNavigationLinkActive {
+  color: #fff !important;
+  opacity: 1 !important;
+}
+
+.siteNavigationLinkActive:after {
+  opacity: 1;
 }
 
 @include mq(tablet) {
-    .siteNavigationItem {
-        margin-right: 30px;
-    }
+  .siteNavigationItem {
+    display: inline-block;
+    margin: 0 30px 0 0;
+  }
 
-    .siteNavigationLink {
-        font-size: 1.4rem;
-        height: 45px;
-        line-height: 45px;
-    }
+  .siteNavigationLink {
+    font-size: 1.4rem;
+    height: 45px;
+    line-height: 45px;
+    padding-left: 0;
+    opacity: 0.6;
+  }
 
-    .siteNavigationLink:hover,
-    .siteNavigationLinkActive {
-        color: #fff;
-        opacity: 1;
-    }
+  .siteNavigationLink:after {
+    border-radius: 1px;
+    height: 2px;
+    top: auto;
+    width: 100%;
+  }
 
-    .siteNavigationLink:hover:after,
-    .siteNavigationLinkActive:after {
-        bottom: 5px;
-        opacity: 1;
-    }
+  .siteNavigationLink:hover:after,
+  .siteNavigationLinkActive:after {
+    bottom: 5px;
+    opacity: 1;
+  }
 }
 
 @include mq(tablet-lg) {
-    .siteNavigationItem {
-        margin-right: 40px;
-    }
+  .siteNavigationItem {
+    margin-right: 40px;
+  }
 
-    .siteNavigationLink {
-        font-size: 1.6rem;
-    }
-
+  .siteNavigationLink {
+    font-size: 1.6rem;
+  }
 }
 
 @include mq(desktop-md) {
-    .siteNavigationLink {
-        height: 55px;
-        line-height: 55px;
-    }
+  .siteNavigationLink {
+    height: 55px;
+    line-height: 55px;
+  }
 }

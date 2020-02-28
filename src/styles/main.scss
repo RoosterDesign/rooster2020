@@ -16,6 +16,9 @@ html {
 
 body {
   background: $bodyBg;
+  position: relative;
+  right: 0;
+  transition: right 0.3s ease;
 }
 
 .wf-loading {
@@ -34,14 +37,13 @@ h6 {
 
 h4 {
   font-size: 2.4rem;
-  letter-spacing: -.15rem;
+  letter-spacing: -0.15rem;
   margin-top: 30px;
   margin-bottom: 15px;
 
   &:first-child {
     margin-top: 0;
   }
-
 }
 
 p {
@@ -61,7 +63,6 @@ strong {
   font-family: "HalisR-Medium", "serif";
 }
 
-
 a {
   color: $linkColour;
   text-decoration: underline;
@@ -73,7 +74,6 @@ a:hover {
 }
 
 .is-homepage {
-
   h2,
   h3,
   h4,
@@ -85,7 +85,6 @@ a:hover {
   p {
     color: $homeBodyColour;
   }
-
 }
 
 .container {
@@ -108,17 +107,20 @@ body.is-homepage .block {
 
 // Media Queries
 
-@include mq(mobile-lg) {
+@media only screen and (max-width: 767px) {
+  body.navOpen {
+    right: $mobileNavWidth;
+  }
+}
 
+@include mq(mobile-lg) {
   .block,
   body.is-homepage .block {
     padding-bottom: 100px;
   }
-
 }
 
 @include mq(tablet) {
-
   h4 {
     font-size: 3.6rem;
     margin-top: 60px;
@@ -134,19 +136,15 @@ body.is-homepage .block {
   body.is-homepage .block {
     padding-bottom: 150px;
   }
-
 }
 
 @include mq(tablet-lg) {
-
   .container {
     max-width: 950px;
   }
-
 }
 
 @include mq(desktop) {
-
   body {
     padding: 30px 30px 0;
   }
@@ -163,11 +161,9 @@ body.is-homepage .block {
   body.is-homepage .block {
     padding-bottom: 200px;
   }
-
 }
 
 @include mq(desktop-md) {
-
   .container {
     max-width: 1300px;
   }
@@ -179,13 +175,10 @@ body.is-homepage .block {
   body.is-homepage .block {
     padding-bottom: 300px;
   }
-
 }
 
 @include mq(desktop-lg) {
-
   .container {
     max-width: 1400px;
   }
-
 }

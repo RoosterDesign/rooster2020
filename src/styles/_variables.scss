@@ -1,5 +1,5 @@
 $borderRadius: 15px;
-$lightPurple: #722BE1;
+$lightPurple: #722be1;
 $bodyBg: #0e0e0f;
 $homeHeadingColour: #fff;
 $headingColour: $lightPurple;
@@ -18,7 +18,6 @@ $btnBg--hover: darken($lightPurple, 15%);
 $linkColour: $lightPurple;
 $linkColour--hover: #000;
 
-
 $bodyFontSize--mobile: 1.5rem;
 $bodyFontSize--mobile-lg: 1.6rem;
 $bodyFontSize--mobile-xlg: 1.7rem;
@@ -28,3 +27,7 @@ $bodyFontSize--desktop-lg: 2rem;
 
 $formLabelColour: $lightPurple;
 $formInputColour: $bodyColour;
+
+$mobileNavWidth: 250px;
+$mobileNavBg: $lightPurple;
+// $mobileNavBg: #fff;
