@@ -4,12 +4,8 @@ import SiteNavigationItem from "./SiteNavigationItem/SiteNavigationItem"
 import styles from "./SiteNavigation.module.scss"
 
 class SiteNavigation extends Component {
-  constructor(props) {
-    super(props)
-    this.body = document.body
-    this.state = {
-      navOpen: false,
-    }
+  state = {
+    navOpen: false,
   }
 
   toggleNav = () => {
@@ -24,12 +20,10 @@ class SiteNavigation extends Component {
 
     let burgerClass, navMaskClass, navClass
     if (this.state.navOpen) {
-      this.body.classList.add("navOpen")
       burgerClass = [styles.hamburger, styles.hamburgerOpen].join(" ")
       navMaskClass = [styles.navMask, styles.navMaskOpen].join(" ")
       navClass = [styles.siteNavigation, styles.siteNavigationOpen].join(" ")
     } else {
-      this.body.classList.remove("navOpen")
       burgerClass = styles.hamburger
       navMaskClass = styles.navMask
       navClass = styles.siteNavigation
