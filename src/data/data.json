@@ -2,53 +2,53 @@
   {
     "serviceOverview": {
       "title": "What I do",
-      "intro": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi natus itaque consequatur labore, nostrum hic suscipit, distinctio temporibus quod ipsum voluptatum incidunt quisquam sit dignissimos, quia autem doloribus esse quas?</p>",
+      "intro": "<p>A meticulous, highly skilled UI/UX Designer and Senior Front End Developer with 12+ years of commercial experience in designing and building interactive responsive websites and software applications.</p>",
       "articles": [
         {
           "title": "Outsourcing",
           "image": "outsourcing.jpg",
-          "body": "Are you finding yourself with limited time or resource? Outsource your projects to Rooster Design to help ease the load."
+          "body": "Are you finding yourself with limited time or resource? I can help ease the load."
         },
         {
           "title": "Contracting",
           "image": "contracting.jpg",
-          "body": "I am always on the lookout for UI/UX Designer or Front End Developer contracts in and around the West Midlands area."
+          "body": "I am always on the lookout for my next role as a Senior Front End Developer."
         },
         {
           "title": "Freelance",
           "image": "freelance.jpg",
-          "body": "Are you looking to redo your current website or start a new project? Rooster Design can bring your ideas to life."
+          "body": "I can help your small business refresh your current website or start a new project."
         }
       ]
     },
     "clients": {
       "title": "Who I work with",
-      "intro": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi natus itaque consequatur labore, nostrum hic suscipit, distinctio temporibus quod ipsum voluptatum incidunt quisquam sit dignissimos, quia autem doloribus esse quas?</p>"
+      "intro": "<p>Throughout my contracting and freelancing career I have worked with a number of different agencies and organisations. Below are just a few of the clients I have worked with in the past.</p>"
     },
     "whyChooseMe": {
       "title": "Why choose me?",
-      "intro": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi natus itaque consequatur labore, nostrum hic suscipit, distinctio temporibus quod ipsum voluptatum incidunt quisquam sit dignissimos, quia autem doloribus esse quas?</p>",
+      "intro": "<p>I am a highly adaptable, creative problem solver, with keen desire to improve and develop new skills. I am quick to respond to an ever changing landscape and used to working in a fast paced environment and offer a wealth of knowledge and experience from my work across several different sectors.</p>",
       "articles": [
         {
           "title": "Adaptable",
           "image": "adaptable.jpg",
-          "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi natus itaque consequatur labore."
+          "body": "I adapt very quickly to fit in with your business, meaning you spend more time on what's important to you."
         },
         {
           "title": "Reliable",
           "image": "reliable.jpg",
-          "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi natus itaque consequatur labore."
+          "body": "I am trusted by award winning agencies to deliver products that meets their exacting standards."
         },
         {
           "title": "Pioneering",
           "image": "pioneering.jpg",
-          "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi natus itaque consequatur labore."
+          "body": "I am always learning new development technologies and design practices to better improve on my knowledge."
         }
       ]
     },
     "skills": {
       "title": "What I use",
-      "intro": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sollicitudin interdum turpis, sed rutrum mauris varius sit amet. Nulla commodo nunc nec lorem venenatis, non consequat nulla elementum. Integer at erat rhoncus, varius mi sed.</p>",
+      "intro": "<p>I am always learning new skills and technologies through my own projects, freelancing and online tutorials and courses. I find this helps with settling in to new contract roles and being able to bring new development practices to the table.</p>",
       "logos": [
         {
           "image": "skill1.png",
@@ -138,7 +138,7 @@
     },
     "cv": {
       "title": "Curriculum Vitae",
-      "intro": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sollicitudin interdum turpis, sed rutrum mauris varius sit amet. Nulla commodo nunc nec lorem venenatis, non consequat nulla elementum. Integer at erat rhoncus, varius mi sed.</p>",
+      "intro": "<p>I am highly creative, passionate, hard-working freelance UI/UX Designer and Front End Developer with over 12 years commercial experience. I am open to contracting opportunities and you can download my CV's below. References and examples of my work are available upon request.</p>",
       "btn": {
         "label1": "Download my CV",
         "label2": "Senior Front End Developer",
@@ -147,11 +147,11 @@
     },
     "homePageContent": {
       "mastheadTitle": "UI/UX Designer &<br/> Front End Developer",
-      "mastheadBody": "Based in Leamington Spa, Warwickshire, Rooster Design Ltd offer digital services for agencies looking to outsource projects, in-house contract opportunities as well as individuals and businesses looking to create a web presence."
+      "mastheadBody": "Based in Leamington Spa, Warwickshire, I offer digital design and development services for agencies looking to outsource projects, work as a full-time contractor for large organisations and agencies, as well as individuals and small businesses looking to create a web presence."
     },
     "aboutPageContent": {
       "mastheadTitle": "Who am I?",
-      "mastheadBody": "Based in Leamington Spa, Warwickshire, I offer a range of digital services, as both a full-time contractor and highly skilled freelancer. With over ten years of experience in both UI/UX Design and Front End Development I can take projects through from initial conception, right through to development and beyond, working as either a lone-gun or as part of a team, I fit into your current working structure seamlessly."
+      "mastheadBody": "Based in Leamington Spa, Warwickshire, I offer a range of digital services, as both a full-time contractor and highly skilled freelancer. With over 12 years of experience in both UI/UX Design and Front End Development I can take projects through from initial conception, right through to development and beyond, working as either a lone-gun or as part of a team, I fit into your current working structure seamlessly."
     },
     "servicesPageContent": {
       "mastheadTitle": "What I do",
