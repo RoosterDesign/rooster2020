@@ -82,39 +82,12 @@
 @import url("//hello.myfonts.net/count/3ab11f");
 
 @font-face {
-  font-family: "HalisR-Black";
-  src: url("3AB11F_0_0.eot");
-  src: url("3AB11F_0_0.eot?#iefix") format("embedded-opentype"),
-    url("3AB11F_0_0.woff2") format("woff2"),
-    url("3AB11F_0_0.woff") format("woff"),
-    url("3AB11F_0_0.ttf") format("truetype");
-}
-
-@font-face {
   font-family: "HalisR-Bold";
   src: url("3AB11F_1_0.eot");
   src: url("3AB11F_1_0.eot?#iefix") format("embedded-opentype"),
     url("3AB11F_1_0.woff2") format("woff2"),
     url("3AB11F_1_0.woff") format("woff"),
     url("3AB11F_1_0.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "HalisR-Book";
-  src: url("3AB11F_2_0.eot");
-  src: url("3AB11F_2_0.eot?#iefix") format("embedded-opentype"),
-    url("3AB11F_2_0.woff2") format("woff2"),
-    url("3AB11F_2_0.woff") format("woff"),
-    url("3AB11F_2_0.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "HalisR-Light";
-  src: url("3AB11F_3_0.eot");
-  src: url("3AB11F_3_0.eot?#iefix") format("embedded-opentype"),
-    url("3AB11F_3_0.woff2") format("woff2"),
-    url("3AB11F_3_0.woff") format("woff"),
-    url("3AB11F_3_0.ttf") format("truetype");
 }
 
 @font-face {
@@ -133,94 +106,4 @@
     url("3AB11F_5_0.woff2") format("woff2"),
     url("3AB11F_5_0.woff") format("woff"),
     url("3AB11F_5_0.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "HalisR-Regular";
-  src: url("3AB11F_6_0.eot");
-  src: url("3AB11F_6_0.eot?#iefix") format("embedded-opentype"),
-    url("3AB11F_6_0.woff2") format("woff2"),
-    url("3AB11F_6_0.woff") format("woff"),
-    url("3AB11F_6_0.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "HalisR-SBlack";
-  src: url("3AB11F_7_0.eot");
-  src: url("3AB11F_7_0.eot?#iefix") format("embedded-opentype"),
-    url("3AB11F_7_0.woff2") format("woff2"),
-    url("3AB11F_7_0.woff") format("woff"),
-    url("3AB11F_7_0.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "HalisR-SBold";
-  src: url("3AB11F_8_0.eot");
-  src: url("3AB11F_8_0.eot?#iefix") format("embedded-opentype"),
-    url("3AB11F_8_0.woff2") format("woff2"),
-    url("3AB11F_8_0.woff") format("woff"),
-    url("3AB11F_8_0.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "HalisR-SExtraLight";
-  src: url("3AB11F_9_0.eot");
-  src: url("3AB11F_9_0.eot?#iefix") format("embedded-opentype"),
-    url("3AB11F_9_0.woff2") format("woff2"),
-    url("3AB11F_9_0.woff") format("woff"),
-    url("3AB11F_9_0.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "HalisR-SBook";
-  src: url("3AB11F_A_0.eot");
-  src: url("3AB11F_A_0.eot?#iefix") format("embedded-opentype"),
-    url("3AB11F_A_0.woff2") format("woff2"),
-    url("3AB11F_A_0.woff") format("woff"),
-    url("3AB11F_A_0.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "HalisR-SLight";
-  src: url("3AB11F_B_0.eot");
-  src: url("3AB11F_B_0.eot?#iefix") format("embedded-opentype"),
-    url("3AB11F_B_0.woff2") format("woff2"),
-    url("3AB11F_B_0.woff") format("woff"),
-    url("3AB11F_B_0.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "HalisR-SMedium";
-  src: url("3AB11F_C_0.eot");
-  src: url("3AB11F_C_0.eot?#iefix") format("embedded-opentype"),
-    url("3AB11F_C_0.woff2") format("woff2"),
-    url("3AB11F_C_0.woff") format("woff"),
-    url("3AB11F_C_0.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "HalisR-SRegular";
-  src: url("3AB11F_D_0.eot");
-  src: url("3AB11F_D_0.eot?#iefix") format("embedded-opentype"),
-    url("3AB11F_D_0.woff2") format("woff2"),
-    url("3AB11F_D_0.woff") format("woff"),
-    url("3AB11F_D_0.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "HalisR-SThin";
-  src: url("3AB11F_E_0.eot");
-  src: url("3AB11F_E_0.eot?#iefix") format("embedded-opentype"),
-    url("3AB11F_E_0.woff2") format("woff2"),
-    url("3AB11F_E_0.woff") format("woff"),
-    url("3AB11F_E_0.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "HalisR-Thin";
-  src: url("3AB11F_F_0.eot");
-  src: url("3AB11F_F_0.eot?#iefix") format("embedded-opentype"),
-    url("3AB11F_F_0.woff2") format("woff2"),
-    url("3AB11F_F_0.woff") format("woff"),
-    url("3AB11F_F_0.ttf") format("truetype");
 }
