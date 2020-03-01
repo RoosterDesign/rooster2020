@@ -4,6 +4,7 @@ import styles from "./ToTop.module.scss"
 
 export default () => (
   <div
+    aria-label="To top of page"
     role="button"
     tabIndex="0"
     className={styles.toTop}
