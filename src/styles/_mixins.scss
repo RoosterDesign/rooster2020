@@ -63,3 +63,72 @@ $breakpoints: (mobile-lg: 375px,
   }
 
 }
+
+@mixin pageLoadAnimation($speed: 1.2s, $offset: 20px) {
+  -webkit-animation: fadein $speed;
+  -moz-animation: fadein $speed;
+  -ms-animation: fadein $speed;
+  -o-animation: fadein $speed;
+  animation: fadein $speed;
+
+  @keyframes fadein {
+    from {
+      opacity: 0;
+      transform: translateY($offset);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @-moz-keyframes fadein {
+    from {
+      opacity: 0;
+      transform: translateY($offset);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @-webkit-keyframes fadein {
+    from {
+      opacity: 0;
+      transform: translateY($offset);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @-ms-keyframes fadein {
+    from {
+      opacity: 0;
+      transform: translateY($offset);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @-o-keyframes fadein {
+    from {
+      opacity: 0;
+      transform: translateY($offset);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+}

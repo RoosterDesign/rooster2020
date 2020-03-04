@@ -16,6 +16,7 @@ html {
 
 body {
   background: $bodyBg;
+  font-family: "HalisR-ExtraLight", "arial";
   position: relative;
   right: 0;
   transition: right 0.3s ease;
@@ -23,6 +24,7 @@ body {
 
 .wf-loading {
   visibility: hidden;
+  opacity: 0;
 }
 
 h1,
@@ -60,7 +62,7 @@ img {
 }
 
 strong {
-  font-family: "HalisR-Medium", "serif";
+  font-family: "HalisR-Medium", "arial";
 }
 
 a {
@@ -74,6 +76,7 @@ a:hover {
 }
 
 .is-homepage {
+
   h2,
   h3,
   h4,
@@ -94,6 +97,7 @@ a:hover {
 }
 
 .block {
+  // @include pageLoadAnimation;
   padding-bottom: 75px;
 }
 
@@ -114,6 +118,7 @@ body.is-homepage .block {
 }
 
 @include mq(mobile-lg) {
+
   .block,
   body.is-homepage .block {
     padding-bottom: 100px;
@@ -147,6 +152,7 @@ body.is-homepage .block {
 @include mq(desktop) {
   body {
     padding: 30px 30px 0;
+    transition: none;
   }
 
   .container {

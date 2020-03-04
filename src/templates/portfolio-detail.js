@@ -49,7 +49,7 @@ export default ({ data }) => {
 
   const BackLink = styled(Link)`
     color: #722be1;
-    font-family: "HalisR-Medium", "serif";
+    font-family: "HalisR-Medium", "arial";
     font-size: 1.5rem;
     letter-spacing: -0.05rem;
     text-decoration: none;

@@ -131,7 +131,12 @@ module.exports = {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
         custom: {
-          families: ["HalisR-Bold", "HalisR-ExtraLight", "HalisR-Medium"],
+          families: [
+            "HalisR-Bold",
+            "HalisR-Book",
+            "HalisR-ExtraLight",
+            "HalisR-Medium",
+          ],
           urls: [`/fonts/fonts.css`],
         },
       },

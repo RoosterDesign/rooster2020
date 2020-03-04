@@ -1,4 +1,5 @@
 .serviceItem {
+    // @include pageLoadAnimation;
     margin-bottom: 40px;
     text-align: center;
 
@@ -20,7 +21,7 @@ p {
 
 p.title {
     color: $headingColour;
-    font-family: 'HalisR-Bold', 'serif';
+    font-family: 'HalisR-Bold', 'arial';
     font-size: 3rem;
     letter-spacing: -0.15rem;
     margin-bottom: 10px;
