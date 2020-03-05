@@ -6,7 +6,6 @@
 
 .mastheadTitle.isHomepage {
   font-size: 3.2rem;
-  margin-top: -50px;
 }
 
 .mastheadTitle br {
@@ -21,7 +20,6 @@
 
   .mastheadTitle.isHomepage {
     font-size: 3.8rem;
-    margin-top: -30px;
   }
 
 }
@@ -79,6 +77,11 @@
 @include mq(desktop-lg) {
   .mastheadTitle.isHomepage {
     font-size: 12rem;
-    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (min-width: 1500px) and (min-height: 1000px) {
+  .mastheadTitle.isHomepage {
+    font-size: 10rem;
   }
 }

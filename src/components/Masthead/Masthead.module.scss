@@ -140,7 +140,8 @@
 
 @include mq(desktop-md) {
   .masthead>div {
-    min-height: 800px;
+    // min-height: 800px;
+    min-height: 775px;
     padding-bottom: 0;
   }
 
@@ -159,5 +160,11 @@
 @include mq(full) {
   .masthead>div {
     min-height: 850px;
+  }
+}
+
+@media only screen and (min-width: 1500px) and (min-height: 1000px) {
+  .masthead.isHomepage .mastheadContent {
+    margin-top: 0;
   }
 }

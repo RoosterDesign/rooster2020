@@ -38,6 +38,20 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        custom: {
+          families: [
+            "HalisR-Bold",
+            "HalisR-Book",
+            "HalisR-ExtraLight",
+            "HalisR-Medium",
+          ],
+          urls: [`/fonts/fonts.css`],
+        },
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Rooster Design`,
@@ -127,20 +141,6 @@ module.exports = {
         },
       },
     },
-    // {
-    //   resolve: "gatsby-plugin-web-font-loader",
-    //   options: {
-    //     custom: {
-    //       families: [
-    //         "HalisR-Bold",
-    //         "HalisR-Book",
-    //         "HalisR-ExtraLight",
-    //         "HalisR-Medium",
-    //       ],
-    //       urls: [`/fonts/fonts.css`],
-    //     },
-    //   },
-    // },
     `gatsby-plugin-smoothscroll`,
     `gatsby-plugin-styled-components`,
     // "gatsby-plugin-preload-link-crossorigin",
