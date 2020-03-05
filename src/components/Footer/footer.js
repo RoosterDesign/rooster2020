@@ -9,7 +9,7 @@ export default () => (
     <div className="container">
       <p>
         ©2019 Rooster Design <br />
-        <Link to="/privacy" className={styles.siteFooterLink} rel="preload">
+        <Link to="/privacy" className={styles.siteFooterLink}>
           Privacy &amp; Legal
         </Link>
         <a
