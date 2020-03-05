@@ -23,7 +23,11 @@ export default props => {
   }
 
   const NavLink = props => (
-    <Link getProps={(href, location) => isActive(href, location)} {...props} />
+    <Link
+      getProps={(href, location) => isActive(href, location)}
+      {...props}
+      rel="preload"
+    />
   )
 
   return (

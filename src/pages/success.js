@@ -21,7 +21,10 @@ export default () => (
       <MastheadBody>
         <p>
           Thank you for your enquiry, we will be in touch soon.{" "}
-          <Link to="/">Click here</Link> to return to the homepage.
+          <Link to="/" rel="preload">
+            Click here
+          </Link>{" "}
+          to return to the homepage.
         </p>
       </MastheadBody>
     </Masthead>

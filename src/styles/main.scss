@@ -22,10 +22,9 @@ body {
   transition: right 0.3s ease;
 }
 
-.wf-loading {
-  visibility: hidden;
-  opacity: 0;
-}
+// .wf-loading {
+//   visibility: hidden;
+// }
 
 h1,
 h2,
@@ -76,7 +75,6 @@ a:hover {
 }
 
 .is-homepage {
-
   h2,
   h3,
   h4,
@@ -118,7 +116,6 @@ body.is-homepage .block {
 }
 
 @include mq(mobile-lg) {
-
   .block,
   body.is-homepage .block {
     padding-bottom: 100px;

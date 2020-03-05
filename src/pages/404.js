@@ -31,9 +31,11 @@ export default () => (
         <p>
           <strong>Please try one of the following</strong>
           <br />
-          <Link to="/">Return to the homepage</Link>
+          <Link to="/" rel="preload">
+            Return to the homepage
+          </Link>
           <br />
-          <Link to="/contact">
+          <Link to="/contact" rel="preload">
             If you still encounter problems, then please contact us.
           </Link>
         </p>

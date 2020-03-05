@@ -7,7 +7,7 @@ export default props => {
   const link = "/portfolio/" + props.slug
   return (
     <BackgroundImage fluid={props.img} className={styles.portfolioThumbnail}>
-      <Link className={styles.portfolioThumbnailLink} to={link}>
+      <Link className={styles.portfolioThumbnailLink} to={link} rel="preload">
         <div className={styles.portfolioThumbnailLinkContent}>
           <h2>{props.title}</h2>
           <p>{props.synopsis}</p>

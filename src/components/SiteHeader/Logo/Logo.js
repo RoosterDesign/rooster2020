@@ -4,7 +4,7 @@ import logo from "../../../images/header/logo.svg"
 import styles from "./Logo.module.scss"
 
 export default () => (
-  <Link to="/" className={styles.logo}>
+  <Link to="/" className={styles.logo} rel="preload">
     <img src={logo} alt="Rooster Design" />
   </Link>
 )
