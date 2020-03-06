@@ -25,13 +25,27 @@
 .formInput,
 .formTextarea {
     border: 1px solid #CDCDCD;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0);
     color: $formInputColour;
     display: block;
     font-family: 'HalisR-ExtraLight', 'arial';
     font-size: 1.6rem;
     margin-top: 10px;
     outline: none;
+    transition: border .2s ease, box-shadow .2s ease;
     width: 100%;
+}
+
+.formInput:hover,
+.formTextarea:hover {
+    border-color: #949494;
+}
+
+.formInput:focus,
+.formTextarea:focus {
+    border-color: $lightPurple;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .2);
 }
 
 .formInput {
@@ -48,13 +62,13 @@
 .btn {
     // @include pageLoadAnimation;
     background: $btnBg;
-    border-radius: 35px;
+    border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
     border: none;
     color: #fff;
     cursor: pointer;
     font-size: 2rem;
-    font-family: 'HalisR-Medium', 'arial';
+    font-family: 'HalisR-Book', 'arial';
     height: 60px;
     line-height: 60px;
     margin-top: 30px;
@@ -150,7 +164,7 @@
     .btn {
         height: 70px;
         line-height: 70px;
-        margin-top: 50px;
+        margin-top: 40px;
     }
 
 }
@@ -166,6 +180,10 @@
 }
 
 @include mq(desktop-lg) {
+
+    .contactForm {
+        margin-top: -250px;
+    }
 
     .formGroup {
         margin-bottom: 50px;

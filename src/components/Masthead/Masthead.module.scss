@@ -124,6 +124,7 @@
 }
 
 @include mq(desktop) {
+
   .masthead>div {
     min-height: 725px;
     padding-top: 50px;
@@ -136,9 +137,11 @@
   .masthead.isHomepage .mastheadContent {
     margin-top: -100px;
   }
+
 }
 
 @include mq(desktop-md) {
+
   .masthead>div {
     // min-height: 800px;
     min-height: 775px;
@@ -149,22 +152,25 @@
     padding-top: 75px;
     padding-bottom: 70px;
   }
+
 }
 
 @include mq(desktop-lg) {
+
   .masthead.isHomepage .mastheadContent {
     margin-top: -150px;
   }
-}
 
-@include mq(full) {
   .masthead>div {
     min-height: 800px;
   }
+
 }
 
 @include mqLaptop {
+
   .masthead.isHomepage .mastheadContent {
     margin-top: -10px;
   }
+
 }

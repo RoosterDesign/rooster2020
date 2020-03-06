@@ -12,8 +12,7 @@ $siteHeaderHeight--mobileXlg: 200px;
 $siteHeaderHeight--desktop: 220px;
 
 $btnBg: $lightPurple;
-$btnBg--hover: darken($lightPurple, 15%);
-// $btnBg--hover: lighten($btnBg, 10%);
+$btnBg--hover: #5018a8;
 
 $linkColour: $lightPurple;
 $linkColour--hover: #000;
@@ -30,4 +29,3 @@ $formInputColour: $bodyColour;
 
 $mobileNavWidth: 250px;
 $mobileNavBg: $lightPurple;
-// $mobileNavBg: #fff;

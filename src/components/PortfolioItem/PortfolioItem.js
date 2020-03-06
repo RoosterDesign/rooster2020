@@ -6,7 +6,11 @@ import styles from "./PortfolioItem.module.scss"
 export default props => {
   const link = "/portfolio/" + props.slug
   return (
-    <BackgroundImage fluid={props.img} className={styles.portfolioThumbnail}>
+    <BackgroundImage
+      fluid={props.img}
+      className={styles.portfolioThumbnail}
+      id={props.slug}
+    >
       <Link className={styles.portfolioThumbnailLink} to={link} rel="preload">
         <div className={styles.portfolioThumbnailLinkContent}>
           <h2>{props.title}</h2>

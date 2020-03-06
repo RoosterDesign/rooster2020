@@ -1,6 +1,5 @@
 import React from "react"
 import Helmet from "react-helmet"
-
 import { graphql } from "gatsby"
 import styled from "styled-components"
 import Masthead from "../components/Masthead/Masthead"
@@ -82,7 +81,7 @@ export const query = graphql`
         node {
           name
           childImageSharp {
-            fluid(maxWidth: 580, quality: 75) {
+            fluid(maxWidth: 580, quality: 85) {
               ...GatsbyImageSharpFluid_withWebp
             }
           }

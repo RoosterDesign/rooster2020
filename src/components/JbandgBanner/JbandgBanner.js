@@ -13,7 +13,7 @@ export default () => (
         combined experience and creates beautiful, intuitive experiences for
         small to medium sized businesses. We offer bespoke design and
         development solutions which range from brochure sites, to online shops
-        and software applications.
+        utilising our own headless e-commerce tool and software applications.
         <br />
         <br />
         <a

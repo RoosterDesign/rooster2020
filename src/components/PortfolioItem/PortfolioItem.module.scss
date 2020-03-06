@@ -7,20 +7,22 @@
   height: 0;
   margin-bottom: 16px;
   overflow: hidden;
-  padding-bottom: 28.125%;
-  transition: box-shadow .3s ease;
-  width: calc(50% - 5px);
+  // padding-bottom: 28.125%;
+  padding-bottom: 56.25%;
+  transition: box-shadow 0.3s ease;
+  // width: calc(50% - 5px);
+  width: 100%;
 }
 
 .portfolioThumbnailMask {
-  background: linear-gradient(180deg, #D138BB 0%, #742CE4 98%);
+  background: linear-gradient(180deg, #d138bb 0%, #742ce4 98%);
   display: block;
   height: 100%;
   left: 0;
   opacity: 0;
   position: absolute;
   top: 0;
-  transition: opacity .3s ease;
+  transition: opacity 0.3s ease;
   width: 100%;
 }
 
@@ -28,7 +30,7 @@
   height: 100%;
   overflow: hidden;
   position: absolute;
-  transition: background-color .3s ease;
+  transition: background-color 0.3s ease;
   width: 100%;
 }
 
@@ -42,6 +44,7 @@
   .portfolioThumbnail {
     border-radius: 5px;
     margin-bottom: 16px;
+    padding-bottom: 28.125%;
     width: calc(50% - 8px);
   }
 }
@@ -54,7 +57,6 @@
 }
 
 @include mq(desktop) {
-
   .portfolioThumbnail {
     margin-bottom: 40px;
     width: calc(50% - 20px);
@@ -66,7 +68,7 @@
     opacity: 0;
     position: absolute;
     padding: 0 40px 40px;
-    transition: bottom .3s ease, opacity .5s ease;
+    transition: bottom 0.3s ease, opacity 0.5s ease;
   }
 
   .portfolioThumbnailLinkContent h2 {
@@ -84,20 +86,17 @@
   }
 
   .portfolioThumbnail:hover {
-    box-shadow: 0 0 50px rgba(0, 0, 0, .45);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.45);
   }
 
   .portfolioThumbnailLink:hover {
-
     .portfolioThumbnailMask {
-      opacity: .8;
+      opacity: 0.8;
     }
 
     .portfolioThumbnailLinkContent {
       bottom: 0;
       opacity: 1;
     }
-
   }
-
 }
