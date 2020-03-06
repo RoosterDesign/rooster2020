@@ -9,8 +9,6 @@ import MastheadBody from "../components/Masthead/MastheadBody/MastheadBody"
 import Layout from "../components/Layout/Layout"
 
 export default ({ data }) => {
-  localStorage.removeItem("anchor")
-
   const { title, description, url } = data.portfolioJson
   const imageData = data.images.edges
 
