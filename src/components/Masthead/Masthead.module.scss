@@ -159,12 +159,12 @@
 
 @include mq(full) {
   .masthead>div {
-    min-height: 850px;
+    min-height: 800px;
   }
 }
 
-@media only screen and (min-width: 1500px) and (min-height: 1000px) {
+@include mqLaptop {
   .masthead.isHomepage .mastheadContent {
-    margin-top: 0;
+    margin-top: -10px;
   }
 }

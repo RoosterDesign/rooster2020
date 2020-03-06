@@ -56,10 +56,11 @@ export default ({ data, location }) => {
     }
     @media (min-width: 1500px) {
       box-shadow: 0 0 70px 10px rgba(0, 0, 0, 0.3);
-      margin: -400px 0 100px;
+      margin: -380px 0 100px;
       padding: 40px 30px;
     }
     @media (min-width: 1920px) {
+      margin-top: -400px;
       padding: 50px 30px;
     }
   `
