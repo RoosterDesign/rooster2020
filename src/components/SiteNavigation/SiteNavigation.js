@@ -38,7 +38,13 @@ class SiteNavigation extends Component {
           onClick={this.toggleNav}
           onKeyDown={this.toggleNav}
         >
-          <div className={styles.hamburgerInner}></div>
+          <div
+            className={styles.hamburgerInner}
+            role="button"
+            tabIndex="0"
+            onClick={this.toggleNav}
+            onKeyDown={this.toggleNav}
+          ></div>
         </div>
         <div className={navClass}>
           <ul className={styles.siteNavigationList}>{siteLinks}</ul>

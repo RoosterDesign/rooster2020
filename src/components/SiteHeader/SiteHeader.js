@@ -1,6 +1,6 @@
 import React from "react"
 import Logo from "./Logo/Logo"
-import SiteNavigation from "../SiteNavigation/siteNavigation"
+import SiteNavigation from "../SiteNavigation/SiteNavigation"
 import styles from "./SiteHeader.module.scss"
 
 export default () => (
