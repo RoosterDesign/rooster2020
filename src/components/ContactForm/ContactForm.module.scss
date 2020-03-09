@@ -1,238 +1,222 @@
 .contactForm {
-    background: #fff;
-    margin: -30px 0 0;
-    padding: 30px 0 0;
+  background: #fff;
+  margin: -30px 0 0;
+  padding: 30px 0 0;
 }
 
 .formGroup {
-    // @include pageLoadAnimation;
-    margin-bottom: 20px;
+  // @include pageLoadAnimation;
+  margin-bottom: 20px;
 }
 
 .formGroupFull {
-    // @include pageLoadAnimation;
-    width: 100%;
+  // @include pageLoadAnimation;
+  width: 100%;
 }
 
 .formLabel {
-    color: $formLabelColour;
-    font-family: 'HalisR-Medium', 'arial';
-    font-size: 1.8rem;
-    display: block;
-    margin: 0;
+  color: $formLabelColour;
+  font-family: "HalisR-Medium", "arial";
+  font-size: 1.8rem;
+  display: block;
+  margin: 0;
 }
 
 .formInput,
 .formTextarea {
-    border: 1px solid #CDCDCD;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0);
-    color: $formInputColour;
-    display: block;
-    font-family: 'HalisR-ExtraLight', 'arial';
-    font-size: 1.6rem;
-    margin-top: 10px;
-    outline: none;
-    transition: border .2s ease, box-shadow .2s ease;
-    width: 100%;
+  border: 1px solid #cdcdcd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+  color: $formInputColour;
+  display: block;
+  font-family: "HalisR-ExtraLight", "arial";
+  font-size: 1.6rem;
+  margin-top: 10px;
+  outline: none;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+  width: 100%;
 }
 
 .formInput:hover,
 .formTextarea:hover {
-    border-color: #949494;
+  border-color: #949494;
 }
 
 .formInput:focus,
 .formTextarea:focus {
-    border-color: $lightPurple;
-    box-shadow: 0 0 30px rgba(0, 0, 0, .2);
+  border-color: $lightPurple;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
 }
 
 .formInput {
-    height: 50px;
-    padding: 0 10px;
+  height: 50px;
+  padding: 0 10px;
 }
 
 .formTextarea {
-    height: 150px;
-    resize: none;
-    padding: 10px;
+  height: 150px;
+  resize: none;
+  padding: 10px;
 }
 
 .btn {
-    // @include pageLoadAnimation;
-    background: $btnBg;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
-    border: none;
-    color: #fff;
-    cursor: pointer;
-    font-size: 2rem;
-    font-family: 'HalisR-Book', 'arial';
-    height: 60px;
-    line-height: 60px;
-    margin-top: 30px;
-    padding: 0;
-    outline: none;
-    width: 100%;
+  // @include pageLoadAnimation;
+  background: $btnBg;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 2rem;
+  font-family: "HalisR-Book", "arial";
+  height: 60px;
+  line-height: 60px;
+  margin-top: 30px;
+  padding: 0;
+  outline: none;
+  width: 100%;
 }
 
 .btn:hover {
-    background: $btnBg--hover;
+  background: $btnBg--hover;
 }
 
 @include mq(tablet) {
+  .contactForm {
+    border-radius: 15px;
+    box-shadow: 0 0 40px 5px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: -240px 0 0;
+    padding: 40px;
+  }
 
-    .contactForm {
-        border-radius: 15px;
-        box-shadow: 0 0 40px 5px rgba(0, 0, 0, 0.25);
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin: -225px 0 0;
-        padding: 40px;
-    }
+  .formGroup {
+    margin-bottom: 30px;
+    width: calc(50% - 15px);
+  }
 
-    .formGroup {
-        margin-bottom: 30px;
-        width: calc(50% - 20px);
-    }
+  .formLabel {
+    font-size: 2rem;
+  }
 
-    .formLabel {
-        font-size: 2rem;
-    }
+  .formInput,
+  .formTextarea {
+    font-size: 1.8rem;
+  }
 
-    .formInput,
-    .formTextarea {
-        font-size: 1.8rem;
-    }
+  .formInput {
+    padding: 0 15px;
+  }
 
-    .formInput {
-        padding: 0 15px;
-    }
+  .formTextarea {
+    height: 200px;
+    padding: 15px;
+  }
 
-    .formTextarea {
-        height: 200px;
-        padding: 15px;
-    }
-
-    .btn {
-        width: 250px;
-    }
-
+  .btn {
+    width: 250px;
+  }
 }
 
 @include mq(tablet-lg) {
+  .contactForm {
+    box-shadow: 0 0 70px 10px rgba(0, 0, 0, 0.3);
+    margin-top: -170px;
+  }
 
-    .contactForm {
-        box-shadow: 0 0 70px 10px rgba(0, 0, 0, 0.3);
-        margin-top: -150px;
-    }
-
+  .formGroup {
+    width: calc(50% - 20px);
+  }
 }
 
 @include mq(desktop) {
+  .contactForm {
+    margin-top: -245px;
+  }
 
-    .contactForm {
-        margin-top: -225px;
-    }
+  .formGroup {
+    margin-bottom: 40px;
+    width: calc(50% - 30px);
+  }
 
-    .formGroup {
-        margin-bottom: 40px;
-        width: calc(50% - 30px);
-    }
+  .formLabel {
+    font-size: 2.4rem;
+  }
 
-    .formLabel {
-        font-size: 2.4rem;
-    }
+  .formInput,
+  .formTextarea {
+    font-size: 2rem;
+  }
 
-    .formInput,
-    .formTextarea {
-        font-size: 2rem;
-    }
+  .formInput {
+    height: 60px;
+    padding: 0 20px;
+  }
 
-    .formInput {
-        height: 60px;
-        padding: 0 20px;
-    }
+  .formTextarea {
+    height: 250px;
+    padding: 20px;
+  }
 
-    .formTextarea {
-        height: 250px;
-        padding: 20px;
-    }
-
-    .btn {
-        height: 70px;
-        line-height: 70px;
-        margin-top: 40px;
-    }
-
+  .btn {
+    height: 70px;
+    line-height: 70px;
+    margin-top: 40px;
+  }
 }
 
 @include mq(desktop-md) {
-
-    .contactForm {
-        box-shadow: 0 0 70px 10px rgba(0, 0, 0, 0.3);
-        margin-top: -225px;
-        padding: 60px;
-    }
-
+  .contactForm {
+    box-shadow: 0 0 70px 10px rgba(0, 0, 0, 0.3);
+    margin-top: -265px;
+    padding: 60px;
+  }
 }
 
 @include mq(desktop-lg) {
+  .contactForm {
+    margin-top: -275px;
+  }
 
-    .contactForm {
-        margin-top: -250px;
-    }
-
-    .formGroup {
-        margin-bottom: 50px;
-    }
-
-}
-
-@include mq(full) {
-
-    .contactForm {
-        margin-top: -250px;
-    }
-
+  .formGroup {
+    margin-bottom: 50px;
+  }
 }
 
 @include mqLaptop {
+  .contactForm {
+    padding: 25px 35px 35px;
+  }
 
-    .contactForm {
-        padding: 25px 35px 35px;
-    }
+  .formGroup {
+    margin-bottom: 30px;
+    width: calc(50% - 20px);
+  }
 
-    .formGroup {
-        margin-bottom: 30px;
-        width: calc(50% - 20px);
-    }
+  .formLabel {
+    font-size: 2.2rem;
+  }
 
-    .formLabel {
-        font-size: 2.2rem;
-    }
+  .formInput,
+  .formTextarea {
+    font-size: 1.8rem;
+  }
 
-    .formInput,
-    .formTextarea {
-        font-size: 1.8rem;
-    }
+  .formInput {
+    height: 50px;
+    padding: 0 15px;
+  }
 
-    .formInput {
-        height: 50px;
-        padding: 0 15px;
-    }
+  .formTextarea {
+    height: 200px;
+    padding: 15px;
+  }
 
-    .formTextarea {
-        height: 200px;
-        padding: 15px;
-    }
-
-    .btn {
-        height: 60px;
-        line-height: 60px;
-        margin-top: 35px;
-    }
-
+  .btn {
+    height: 60px;
+    line-height: 60px;
+    margin-top: 35px;
+  }
 }

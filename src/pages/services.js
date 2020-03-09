@@ -42,25 +42,25 @@ export default ({ data, location }) => {
       box-shadow: 0 0 40px 5px rgba(0, 0, 0, 0.25);
       display: flex;
       justify-content: space-between;
-      margin: -330px 0 50px;
+      margin: -350px 0 50px;
       padding: 30px 8px;
     }
     @media (min-width: 992px) {
       box-shadow: 0 0 70px 10px rgba(0, 0, 0, 0.3);
-      margin: -290px 0 80px;
+      margin: -310px 0 80px;
       padding: 30px 15px;
     }
     @media (min-width: 1250px) {
-      margin-top: -375px;
+      margin-top: -405px;
       padding: 35px 20px;
     }
     @media (min-width: 1500px) {
       box-shadow: 0 0 70px 10px rgba(0, 0, 0, 0.3);
-      margin: -380px 0 100px;
+      margin: -405px 0 100px;
       padding: 40px 30px;
     }
     @media (min-width: 1920px) {
-      margin-top: -400px;
+      margin-top: -430px;
       padding: 50px 30px;
     }
   `

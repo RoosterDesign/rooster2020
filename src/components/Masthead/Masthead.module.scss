@@ -11,13 +11,13 @@
   overflow: visible;
 }
 
-.masthead>div {
+.masthead > div {
   display: flex;
   flex-direction: column;
   padding-top: 30px;
 }
 
-.masthead.isHomepage>div {
+.masthead.isHomepage > div {
   min-height: 100vh;
 }
 
@@ -50,7 +50,7 @@
 }
 
 @include mq(mobile-lg) {
-  .masthead>div {
+  .masthead > div {
     padding-top: 30px;
   }
 
@@ -70,13 +70,13 @@
     text-align: left;
   }
 
-  .masthead>div {
+  .masthead > div {
     height: auto;
     min-height: 660px;
     padding-top: 30px;
   }
 
-  .masthead.isHomepage>div {
+  .masthead.isHomepage > div {
     min-height: 100vh;
   }
 
@@ -105,7 +105,7 @@
 }
 
 @include mq(tablet-lg) {
-  .masthead>div {
+  .masthead > div {
     min-height: 640px;
   }
 
@@ -124,13 +124,12 @@
 }
 
 @include mq(desktop) {
-
-  .masthead>div {
+  .masthead > div {
     min-height: 725px;
     padding-top: 50px;
   }
 
-  .masthead.isHomepage>div {
+  .masthead.isHomepage > div {
     height: calc(100vh - 30px);
   }
 
@@ -138,11 +137,13 @@
     margin-top: -100px;
   }
 
+  .masthead .mastheadContent p {
+    width: 80%;
+  }
 }
 
 @include mq(desktop-md) {
-
-  .masthead>div {
+  .masthead > div {
     // min-height: 800px;
     min-height: 775px;
     padding-bottom: 0;
@@ -153,24 +154,29 @@
     padding-bottom: 70px;
   }
 
+  .masthead .mastheadContent p {
+    width: 70%;
+  }
 }
 
 @include mq(desktop-lg) {
-
   .masthead.isHomepage .mastheadContent {
     margin-top: -150px;
   }
 
-  .masthead>div {
+  .masthead > div {
     min-height: 800px;
   }
-
 }
 
 @include mqLaptop {
-
   .masthead.isHomepage .mastheadContent {
     margin-top: -10px;
   }
+}
 
+@include mqLaptop--lg {
+  .masthead.isHomepage .mastheadContent {
+    margin-top: -50px;
+  }
 }

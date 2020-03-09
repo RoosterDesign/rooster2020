@@ -2,6 +2,7 @@
   color: #fff;
   font-size: 3.6rem;
   letter-spacing: -0.2rem;
+  line-height: 1.2;
 }
 
 .mastheadTitle.isHomepage {
@@ -13,7 +14,6 @@
 }
 
 @include mq(mobile-lg) {
-
   .mastheadTitle {
     font-size: 3.8rem;
   }
@@ -21,7 +21,6 @@
   .mastheadTitle.isHomepage {
     font-size: 3.8rem;
   }
-
 }
 
 @include mq(mobile-xlg) {
@@ -31,14 +30,15 @@
 }
 
 @include mq(tablet) {
-
   .mastheadTitle {
     font-size: 7rem;
     letter-spacing: -0.3rem;
+    line-height: 1;
   }
 
   .mastheadTitle.isHomepage {
     font-size: 7rem;
+    line-height: 1.1;
   }
 
   .mastheadTitle br {
@@ -47,23 +47,18 @@
 }
 
 @include mq(tablet-lg) {
-
   .mastheadTitle {
     font-size: 8rem;
   }
-
 }
 
 @include mq(desktop) {
-
   .mastheadTitle.isHomepage {
     font-size: 9rem;
   }
-
 }
 
 @include mq(desktop-md) {
-
   .mastheadTitle {
     font-size: 10rem;
     letter-spacing: -0.5rem;
