@@ -1,6 +1,6 @@
 /**
  * @license
- * MyFonts Webfont Build ID 3846431, 2019-12-11T03:46:31-0500
+ * MyFonts Webfont Build ID 3877864, 2020-03-09T10:47:32-0400
  * 
  * The fonts listed in this notice are subject to the End User License
  * Agreement(s) entered into by the website owner. All other parties are 
@@ -8,20 +8,12 @@
  * 
  * You may obtain a valid license at the URLs below.
  * 
- * Webfont: HalisR-Black by Ahmet Altun
- * URL: https://www.myfonts.com/fonts/ahmet-altun/halis-rounded/black/
- * Copyright: Copyright (c) 2013 by Ahmet Altun. All rights reserved.
- * 
  * Webfont: HalisR-Bold by Ahmet Altun
  * URL: https://www.myfonts.com/fonts/ahmet-altun/halis-rounded/bold/
  * Copyright: Copyright (c) 2013 by Ahmet Altun. All rights reserved.
  * 
  * Webfont: HalisR-Book by Ahmet Altun
  * URL: https://www.myfonts.com/fonts/ahmet-altun/halis-rounded/book/
- * Copyright: Copyright (c) 2013 by Ahmet Altun. All rights reserved.
- * 
- * Webfont: HalisR-Light by Ahmet Altun
- * URL: https://www.myfonts.com/fonts/ahmet-altun/halis-rounded/light/
  * Copyright: Copyright (c) 2013 by Ahmet Altun. All rights reserved.
  * 
  * Webfont: HalisR-ExtraLight by Ahmet Altun
@@ -32,87 +24,37 @@
  * URL: https://www.myfonts.com/fonts/ahmet-altun/halis-rounded/medium/
  * Copyright: Copyright (c) 2013 by Ahmet Altun. All rights reserved.
  * 
- * Webfont: HalisR-Regular by Ahmet Altun
- * URL: https://www.myfonts.com/fonts/ahmet-altun/halis-rounded/regular/
- * Copyright: Copyright (c) 2013 by Ahmet Altun. All rights reserved.
- * 
- * Webfont: HalisR-SBlack by Ahmet Altun
- * URL: https://www.myfonts.com/fonts/ahmet-altun/halis-rounded/sc-black/
- * Copyright: Copyright (c) 2013 by Ahmet Altun. All rights reserved.
- * 
- * Webfont: HalisR-SBold by Ahmet Altun
- * URL: https://www.myfonts.com/fonts/ahmet-altun/halis-rounded/sc-bold/
- * Copyright: Copyright (c) 2013 by Ahmet Altun. All rights reserved.
- * 
- * Webfont: HalisR-SExtraLight by Ahmet Altun
- * URL: https://www.myfonts.com/fonts/ahmet-altun/halis-rounded/sc-ex-light/
- * Copyright: Copyright (c) 2013 by Ahmet Altun. All rights reserved.
- * 
- * Webfont: HalisR-SBook by Ahmet Altun
- * URL: https://www.myfonts.com/fonts/ahmet-altun/halis-rounded/sc-book/
- * Copyright: Copyright (c) 2013 by Ahmet Altun. All rights reserved.
- * 
- * Webfont: HalisR-SLight by Ahmet Altun
- * URL: https://www.myfonts.com/fonts/ahmet-altun/halis-rounded/sc-light/
- * Copyright: Copyright (c) 2013 by Ahmet Altun. All rights reserved.
- * 
- * Webfont: HalisR-SMedium by Ahmet Altun
- * URL: https://www.myfonts.com/fonts/ahmet-altun/halis-rounded/sc-medium/
- * Copyright: Copyright (c) 2013 by Ahmet Altun. All rights reserved.
- * 
- * Webfont: HalisR-SRegular by Ahmet Altun
- * URL: https://www.myfonts.com/fonts/ahmet-altun/halis-rounded/sc-regular/
- * Copyright: Copyright (c) 2013 by Ahmet Altun. All rights reserved.
- * 
- * Webfont: HalisR-SThin by Ahmet Altun
- * URL: https://www.myfonts.com/fonts/ahmet-altun/halis-rounded/sc-thin/
- * Copyright: Copyright (c) 2013 by Ahmet Altun. All rights reserved.
- * 
- * Webfont: HalisR-Thin by Ahmet Altun
- * URL: https://www.myfonts.com/fonts/ahmet-altun/halis-rounded/thin/
- * Copyright: Copyright (c) 2013 by Ahmet Altun. All rights reserved.
  * 
  * 
- * Licensed pageviews: 500,000
- * 
- * © 2019 MyFonts Inc
+ * © 2020 MyFonts Inc
 */
 
 /* @import must be at top of file, otherwise CSS will not work */
-@import url("//hello.myfonts.net/count/3ab11f");
+@import url("//hello.myfonts.net/count/3b2be8");
 
 @font-face {
-  font-family: "HalisR-Bold";
-  src: url("3AB11F_1_0.eot");
-  src: url("3AB11F_1_0.eot?#iefix") format("embedded-opentype"),
-    url("3AB11F_1_0.woff2") format("woff2"),
-    url("3AB11F_1_0.woff") format("woff"),
-    url("3AB11F_1_0.ttf") format("truetype");
+  font-family: 'HalisR-Bold';
+  src: url('3B2BE8_0_0.eot');
+  src: url('3B2BE8_0_0.eot?#iefix') format('embedded-opentype'), url('3B2BE8_0_0.woff2') format('woff2'), url('3B2BE8_0_0.woff') format('woff'), url('3B2BE8_0_0.ttf') format('truetype');
 }
 
-@font-face {
-  font-family: "HalisR-ExtraLight";
-  src: url("3AB11F_4_0.eot");
-  src: url("3AB11F_4_0.eot?#iefix") format("embedded-opentype"),
-    url("3AB11F_4_0.woff2") format("woff2"),
-    url("3AB11F_4_0.woff") format("woff"),
-    url("3AB11F_4_0.ttf") format("truetype");
-}
 
 @font-face {
-  font-family: "HalisR-Book";
-  src: url("3B2518_0_0.eot");
-  src: url("3B2518_0_0.eot?#iefix") format("embedded-opentype"),
-    url("3B2518_0_0.woff2") format("woff2"),
-    url("3B2518_0_0.woff") format("woff"),
-    url("3B2518_0_0.ttf") format("truetype");
+  font-family: 'HalisR-Book';
+  src: url('3B2BE8_1_0.eot');
+  src: url('3B2BE8_1_0.eot?#iefix') format('embedded-opentype'), url('3B2BE8_1_0.woff2') format('woff2'), url('3B2BE8_1_0.woff') format('woff'), url('3B2BE8_1_0.ttf') format('truetype');
 }
 
+
 @font-face {
-  font-family: "HalisR-Medium";
-  src: url("3AB11F_5_0.eot");
-  src: url("3AB11F_5_0.eot?#iefix") format("embedded-opentype"),
-    url("3AB11F_5_0.woff2") format("woff2"),
-    url("3AB11F_5_0.woff") format("woff"),
-    url("3AB11F_5_0.ttf") format("truetype");
+  font-family: 'HalisR-ExtraLight';
+  src: url('3B2BE8_2_0.eot');
+  src: url('3B2BE8_2_0.eot?#iefix') format('embedded-opentype'), url('3B2BE8_2_0.woff2') format('woff2'), url('3B2BE8_2_0.woff') format('woff'), url('3B2BE8_2_0.ttf') format('truetype');
+}
+
+
+@font-face {
+  font-family: 'HalisR-Medium';
+  src: url('3B2BE8_3_0.eot');
+  src: url('3B2BE8_3_0.eot?#iefix') format('embedded-opentype'), url('3B2BE8_3_0.woff2') format('woff2'), url('3B2BE8_3_0.woff') format('woff'), url('3B2BE8_3_0.ttf') format('truetype');
 }

@@ -1,4 +1,5 @@
 import "./src/styles/main.scss"
+require("//hello.myfonts.net/count/3ab11f")
 
 // ES5 way
 // exports.onClientEntry = () => {
