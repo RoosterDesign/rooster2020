@@ -51,88 +51,88 @@
       "intro": "<p>I am always learning new skills and technologies through my own projects, freelancing and online tutorials and courses. I find this helps with settling in to new contract roles and being able to bring new development practices to the table.</p>",
       "logos": [
         {
-          "image": "skill1.png",
+          "image": "html5.png",
           "name": "HTML5"
         },
         {
-          "image": "skill1.png",
+          "image": "css3.png",
           "name": "CSS3"
         },
         {
-          "image": "skill1.png",
-          "name": "HTML5"
+          "image": "javascript.png",
+          "name": "Vanilla JavaScript"
         },
         {
-          "image": "skill1.png",
-          "name": "CSS3"
+          "image": "react.png",
+          "name": "React"
         },
         {
-          "image": "skill1.png",
-          "name": "HTML5"
+          "image": "webpack.png",
+          "name": "Webpack"
         },
         {
-          "image": "skill1.png",
-          "name": "CSS3"
+          "image": "angular.png",
+          "name": "Angular"
         },
         {
-          "image": "skill1.png",
-          "name": "HTML5"
+          "image": "vue.png",
+          "name": "Vue"
         },
         {
-          "image": "skill1.png",
-          "name": "CSS3"
+          "image": "umbraco.png",
+          "name": "Umbraco"
         },
         {
-          "image": "skill1.png",
-          "name": "HTML5"
+          "image": "sketch.png",
+          "name": "Sketch"
         },
         {
-          "image": "skill1.png",
-          "name": "CSS3"
+          "image": "scss.png",
+          "name": "SCSS"
         },
         {
-          "image": "skill1.png",
-          "name": "HTML5"
+          "image": "redux.png",
+          "name": "Redux"
         },
         {
-          "image": "skill1.png",
-          "name": "CSS3"
+          "image": "wordpress.png",
+          "name": "Wordpress"
         },
         {
-          "image": "skill1.png",
-          "name": "HTML5"
+          "image": "php.png",
+          "name": "PHP"
         },
         {
-          "image": "skill1.png",
-          "name": "CSS3"
+          "image": "photoshop.png",
+          "name": "Photoshop"
         },
         {
-          "image": "skill1.png",
-          "name": "HTML5"
+          "image": "less.png",
+          "name": "LESS"
         },
         {
-          "image": "skill1.png",
-          "name": "CSS3"
+          "image": "jquery.png",
+          "name": "jQuery"
         },
         {
-          "image": "skill1.png",
-          "name": "HTML5"
+          "image": "gulp.png",
+          "name": "Gulp"
         },
         {
-          "image": "skill1.png",
-          "name": "CSS3"
+          "image": "graphql.png",
+          "name": "GraphQL"
         },
         {
-          "image": "skill1.png",
-          "name": "HTML5"
+          "image": "git.png",
+          "name": "Git"
         },
         {
-          "image": "skill1.png",
-          "name": "CSS3"
+          "image": "gatsby.png",
+          "name": "Gatsby"
         },
         {
-          "image": "skill1.png",
-          "name": "HTML5"
+          "image": "babel.png",
+          "name": "Babel"
         }
       ]
     },
@@ -159,17 +159,17 @@
         {
           "title": "Outsourcing",
           "body": "<p>Sometimes either there is no time or no resource to complete all projects on time at a high standard. By outsourcing your projects to me, this frees you up to concentrate on more important matters. You can be safe in the knowledge that the product will be delivered to your exacting standards on time.</p><p>I offer a range of skills and have experience working on large brands so whether you are a small design agency or a large software house, I can help. All of my work is conducted using latest development technologies and with strict web and browser standards in mind. I also have a wealth of experience working with CMS and E-Commerce solutions. Pixel perfect is my middle name.</p><p>If you are a business looking to outsource a particular piece of work, please get in touch today.</p>",
-          "image": "service1.png"
+          "image": "outsourcing.jpg"
         },
         {
           "title": "Contracting",
           "body": "<p>I am also available as a contractor, working either as a UI/UX Designer working on innovative designs or as a frontend developer pushing boundaries with new technology though HTML5/CSS3 and responsive web design. I also have experience working with Vanilla Javascript and frameworks such as React, Gatsby, Angular and Vue.</p><p>I have worked in-house at award winning design agencies and multinational companies and integrate seamlessly with your working practices and ethos and adapt very quickly - I have experience working on both ASP.NET MVC and JAVA platforms.</p><p>Due to my dual skillset of design and development I find that I am uniquely positioned for contract work, where time is money and having both design and development resource, for the price of one, is of great advantage.</p>",
-          "image": "service1.png"
+          "image": "contracting.jpg"
         },
         {
           "title": "Freelance",
           "body": "<p>Over the years I have worked with a number of small businesses and individuals in order to help them create an online web presence and help boost their business activities.</p><p>Utilising various content management systems such as Umbraco and Wordpress I have allowed the client the ability to maintain and update their websites themselves, helping to keep their ongoing maintenance costs down. I have also worked with many e-commerce integrations and more recently developed a headless e-commerce platform known as 'Rex'.</p><p>As well as my corporate responsibilities I am always open to freelance projects. I find working with my own clients offers me it's own unique challenges and has helped drive forward my learning of new skills and techniques.</p><p>If you are looking for a new online presence or feel it is time to update your current website, don't hesitate to get in touch.</p>",
-          "image": "service1.png"
+          "image": "freelance.jpg"
         }
       ]
     },

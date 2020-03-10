@@ -9,12 +9,15 @@ export default props => {
   const logosData = useStaticQuery(
     graphql`
       query {
-        images: allFile(filter: { sourceInstanceName: { eq: "clientLogos" } }) {
+        images: allFile(
+          sort: { fields: name }
+          filter: { sourceInstanceName: { eq: "clientLogos" } }
+        ) {
           edges {
             node {
               name
               childImageSharp {
-                fluid(maxWidth: 305, quality: 75) {
+                fluid(maxWidth: 610, quality: 85) {
                   ...GatsbyImageSharpFluid_withWebp
                 }
               }

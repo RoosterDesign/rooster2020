@@ -51,12 +51,12 @@ export default ({ data, location }) => {
       padding: 30px 15px;
     }
     @media (min-width: 1250px) {
-      margin-top: -405px;
+      margin-top: -400px;
       padding: 35px 20px;
     }
     @media (min-width: 1500px) {
       box-shadow: 0 0 70px 10px rgba(0, 0, 0, 0.3);
-      margin: -405px 0 100px;
+      margin-bottom: 100px;
       padding: 40px 30px;
     }
     @media (min-width: 1920px) {

@@ -70,9 +70,9 @@
   font-size: 2rem;
   font-family: "HalisR-Book", "arial";
   height: 60px;
-  line-height: 60px;
+  line-height: 1;
   margin-top: 30px;
-  padding: 0;
+  padding: 5px 0 0;
   outline: none;
   width: 100%;
 }
@@ -162,7 +162,6 @@
 
   .btn {
     height: 70px;
-    line-height: 70px;
     margin-top: 40px;
   }
 }
@@ -216,7 +215,6 @@
 
   .btn {
     height: 60px;
-    line-height: 60px;
     margin-top: 35px;
   }
 }
