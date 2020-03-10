@@ -6,12 +6,14 @@ import MastheadTitle from "../components/Masthead/MastheadTitle/MastheadTitle"
 import MastheadBody from "../components/Masthead/MastheadBody/MastheadBody"
 import Layout from "../components/Layout/Layout"
 import ArticlesBlock from "../components/ArticlesBlock/ArticlesBlock"
+import SkillsBlock from "../components/SkillsBlock/SkillsBlock"
 import ClientLogosBlock from "../components/ClientLogosBlock/ClientLogosBlock"
 
 export default ({ data, location }) => {
   const {
     homePageContent,
     clients,
+    skills,
     serviceOverview,
     whyChooseMe,
   } = data.dataJson
@@ -42,6 +44,7 @@ export default ({ data, location }) => {
       </Masthead>
 
       <ArticlesBlock content={serviceOverview} />
+      <SkillsBlock content={skills} />
       <ClientLogosBlock content={clients} />
       <ArticlesBlock content={whyChooseMe} />
     </Layout>
@@ -58,6 +61,14 @@ export const query = graphql`
       clients {
         title
         intro
+      }
+      skills {
+        title
+        intro
+        logos {
+          image
+          name
+        }
       }
       serviceOverview {
         title
