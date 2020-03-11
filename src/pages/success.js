@@ -8,13 +8,14 @@ import Layout from "../components/Layout/Layout"
 
 export default () => (
   <Layout>
-    <Helmet
-      bodyAttributes={{
-        class: "is-success",
-      }}
-    >
-    <title>Freelance Frontend Developer UI/UX Designer based in Leamington Spa</title>
-    <meta name="description" content="Freelance Frontend Developer and UI/UX Designer offering outsourcing and contracting services across Warwickshire and West Midlands." />
+    <Helmet>
+      <title>
+        Freelance Frontend Developer UI/UX Designer based in Leamington Spa
+      </title>
+      <meta
+        name="description"
+        content="Freelance Frontend Developer and UI/UX Designer offering outsourcing and contracting services across Warwickshire and West Midlands."
+      />
     </Helmet>
     <Masthead noSwoop>
       <MastheadTitle mastheadTitle="Thanks" />

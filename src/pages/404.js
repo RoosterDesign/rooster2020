@@ -10,17 +10,22 @@ import { Link } from "gatsby"
 export default () => (
   <Layout>
     <Helmet>
-    <title>Freelance Frontend Developer UI/UX Designer based in Leamington Spa</title>
-    <meta name="description" content="Freelance Frontend Developer and UI/UX Designer offering outsourcing and contracting services across Warwickshire and West Midlands." />
+      <title>
+        Freelance Frontend Developer UI/UX Designer based in Leamington Spa
+      </title>
+      <meta
+        name="description"
+        content="Freelance Frontend Developer and UI/UX Designer offering outsourcing and contracting services across Warwickshire and West Midlands."
+      />
     </Helmet>
-    <Masthead>
+    <Masthead noSwoop>
       <MastheadTitle mastheadTitle="Oh, bugger!" />
       <MastheadBody>
-        <p>
+        <p style={{ marginTop: "20px" }}>
           There's been a bit of an issue, i'm afraid we can't find this page! It
           has been lost into the ether.
         </p>
-        <p>
+        <p style={{ marginTop: "20px" }}>
           <strong>This might be because:</strong>
           <br />
           You may have typed the web address incorrectly. Please check the
@@ -28,15 +33,16 @@ export default () => (
           or spaces, or tt is possible that the page you were looking for may
           have been moved, updated or deleted.
         </p>
-        <p>
+        <p style={{ marginTop: "20px", marginBottom: "50px" }}>
           <strong>Please try one of the following</strong>
           <br />
           <Link to="/" rel="preload">
             Return to the homepage
           </Link>
           <br />
+          If you still encounter problems, then please{" "}
           <Link to="/contact" rel="preload">
-            If you still encounter problems, then please contact us.
+            contact us.
           </Link>
         </p>
       </MastheadBody>
