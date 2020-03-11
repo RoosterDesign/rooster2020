@@ -10,8 +10,8 @@ import { Link } from "gatsby"
 export default () => (
   <Layout>
     <Helmet>
-      <title>Error 404</title>
-      <meta name="description" content="Helmet application" />
+    <title>Freelance Frontend Developer UI/UX Designer based in Leamington Spa</title>
+    <meta name="description" content="Freelance Frontend Developer and UI/UX Designer offering outsourcing and contracting services across Warwickshire and West Midlands." />
     </Helmet>
     <Masthead>
       <MastheadTitle mastheadTitle="Oh, bugger!" />

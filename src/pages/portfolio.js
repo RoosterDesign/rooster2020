@@ -39,8 +39,8 @@ export default ({ data, location }) => {
   return (
     <Layout location={location}>
       <Helmet>
-        <title>Portfolio Page</title>
-        <meta name="description" content="Helmet application" />
+      <title>Rooster Design Portfolio</title>
+      <meta name="description" content="Freelance Front End Developer and UI/UX Designer offering outsourcing and contracting services across Warwickshire and West Midlands." />
       </Helmet>
       <Masthead>
         <MastheadTitle mastheadTitle={portfolioPageContent.mastheadTitle} />

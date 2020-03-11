@@ -33,8 +33,8 @@ export default () => {
   return (
     <Layout>
       <Helmet>
-        <title>Privacy Page</title>
-        <meta name="description" content="Helmet application" />
+        <title>Freelance Frontend Developer and UI/UX Designer based in Leamington Spa</title>
+        <meta name="description" content="Freelance Frontend Developer and UI/UX Designer offering outsourcing and contracting services across Warwickshire and West Midlands." />
       </Helmet>
       <Masthead>
         <MastheadTitle mastheadTitle="Privacy" />

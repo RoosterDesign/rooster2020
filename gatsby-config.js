@@ -145,5 +145,16 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     // "gatsby-plugin-preload-link-crossorigin",
     `gatsby-plugin-netlify`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-47630581-1",
+        head: true,
+        anonymize: true,
+        respectDNT: true,
+        exclude: [],
+        pageTransitionDelay: 0,
+      },
+    },
   ],
 }

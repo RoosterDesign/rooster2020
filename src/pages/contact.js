@@ -14,8 +14,8 @@ export default ({ data }) => {
   return (
     <Layout>
       <Helmet>
-        <title>Contact Page</title>
-        <meta name="description" content="Helmet application" />
+      <title>Contact Rooster Design</title>
+      <meta name="description" content="Freelance Frontend Developer and UI/UX Designer offering outsourcing and contracting services across Warwickshire and West Midlands." />
       </Helmet>
       <Masthead>
         <MastheadTitle mastheadTitle={contactPageContent.mastheadTitle} />
