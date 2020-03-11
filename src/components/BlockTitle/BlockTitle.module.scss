@@ -1,25 +1,11 @@
 .blockTitle {
   font-size: 3rem;
   letter-spacing: -0.15rem;
+  line-height: 1;
   margin-bottom: 15px;
   text-align: center;
 }
 
-// @include mq(mobile-lg) {
-
-//   .blockTitle {
-//     font-size: 3.6rem;
-//   }
-
-// }
-
-// @include mq(mobile-xlg) {
-
-//   .blockTitle {
-//     font-size: 4rem;
-//   }
-
-// }
 
 @include mq(tablet) {
 
@@ -45,7 +31,7 @@
 
   .blockTitle {
     font-size: 7rem;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
   }
 
 }

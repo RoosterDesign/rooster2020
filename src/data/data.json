@@ -30,19 +30,19 @@
       "intro": "<p>I am a highly adaptable, creative problem solver, with keen desire to improve and develop new skills. I am quick to respond to an ever changing landscape and used to working in a fast paced environment and offer a wealth of knowledge and experience from my work across several different sectors.</p>",
       "articles": [
         {
+          "title": "Dual Skilled",
+          "image": "dual-skilled.jpg",
+          "body": "I am proficient and experienced in both UI/UX design as well as Frontend Development which is highly beneficial."
+        },
+        {
           "title": "Adaptable",
           "image": "adaptable.jpg",
-          "body": "I adapt very quickly to fit in with your business, meaning you spend more time on what's important to you."
+          "body": "I adapt quickly to fit in with your business, meaning you spend more time on what's important to you."
         },
         {
           "title": "Reliable",
           "image": "reliable.jpg",
           "body": "I am trusted by award winning agencies to deliver products that meets their exacting standards."
-        },
-        {
-          "title": "Pioneering",
-          "image": "pioneering.jpg",
-          "body": "I am always learning new development technologies and design practices to better improve on my knowledge."
         }
       ]
     },
