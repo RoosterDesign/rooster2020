@@ -55,20 +55,32 @@
           "name": "HTML5"
         },
         {
+          "image": "javascript.png",
+          "name": "Vanilla JavaScript"
+        },
+        {
+          "image": "jquery.png",
+          "name": "jQuery"
+        },
+        {
           "image": "css3.png",
           "name": "CSS3"
         },
         {
-          "image": "javascript.png",
-          "name": "Vanilla JavaScript"
+          "image": "scss.png",
+          "name": "SCSS"
+        },
+        {
+          "image": "less.png",
+          "name": "LESS"
         },
         {
           "image": "react.png",
           "name": "React"
         },
         {
-          "image": "webpack.png",
-          "name": "Webpack"
+          "image": "gatsby.png",
+          "name": "Gatsby"
         },
         {
           "image": "angular.png",
@@ -79,20 +91,34 @@
           "name": "Vue"
         },
         {
-          "image": "umbraco.png",
-          "name": "Umbraco"
-        },
-        {
-          "image": "sketch.png",
-          "name": "Sketch"
-        },
-        {
-          "image": "scss.png",
-          "name": "SCSS"
-        },
-        {
           "image": "redux.png",
           "name": "Redux"
+        },
+        {
+          "image": "graphql.png",
+          "name": "GraphQL"
+        },
+        {
+          "image": "webpack.png",
+          "name": "Webpack"
+        },
+        {
+          "image": "babel.png",
+          "name": "Babel"
+        },
+        {
+          "image": "gulp.png",
+          "name": "Gulp"
+        },
+
+        {
+          "image": "git.png",
+          "name": "Git"
+        },
+
+        {
+          "image": "umbraco.png",
+          "name": "Umbraco"
         },
         {
           "image": "wordpress.png",
@@ -103,36 +129,12 @@
           "name": "PHP"
         },
         {
+          "image": "sketch.png",
+          "name": "Sketch"
+        },
+        {
           "image": "photoshop.png",
           "name": "Photoshop"
-        },
-        {
-          "image": "less.png",
-          "name": "LESS"
-        },
-        {
-          "image": "jquery.png",
-          "name": "jQuery"
-        },
-        {
-          "image": "gulp.png",
-          "name": "Gulp"
-        },
-        {
-          "image": "graphql.png",
-          "name": "GraphQL"
-        },
-        {
-          "image": "git.png",
-          "name": "Git"
-        },
-        {
-          "image": "gatsby.png",
-          "name": "Gatsby"
-        },
-        {
-          "image": "babel.png",
-          "name": "Babel"
         }
       ]
     },
