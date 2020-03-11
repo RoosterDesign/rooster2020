@@ -51,7 +51,7 @@ export default ({ data, location }) => {
       padding: 30px 15px;
     }
     @media (min-width: 1250px) {
-      margin-top: -400px;
+      margin-top: -390px;
       padding: 35px 20px;
     }
     @media (min-width: 1500px) {
@@ -60,7 +60,7 @@ export default ({ data, location }) => {
       padding: 40px 30px;
     }
     @media (min-width: 1920px) {
-      margin-top: -430px;
+      margin-top: -415px;
       padding: 50px 30px;
     }
   `

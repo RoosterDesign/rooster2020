@@ -25,7 +25,7 @@ export default ({ data }) => {
     height: 60px;
     line-height: 60px;
     margin: 20px 0 30px;
-    padding: 2px 0 0;
+    padding: 0;
     text-align: center;
     text-decoration: none;
     width: 100%;

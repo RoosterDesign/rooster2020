@@ -50,9 +50,7 @@
 }
 
 @include mq(desktop-md) {
-  // .mastheadBody {
-  //   margin-top: 15px;
-  // }
+
 
   .mastheadBody p {
     font-size: 2.2rem;
@@ -67,11 +65,19 @@
   .mastheadBody.isHomepage p {
     font-size: 2.8rem;
   }
+
+  .mastheadBody {
+    margin-top: 25px;
+  }
 }
 
 @include mqLaptop {
   .mastheadBody.isHomepage p {
     font-size: 2rem;
+  }
+
+  .mastheadBody {
+    margin-top: 15px;
   }
 }
 
