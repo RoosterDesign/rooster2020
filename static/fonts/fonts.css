@@ -1,6 +1,6 @@
 /**
  * @license
- * MyFonts Webfont Build ID 3877864, 2020-03-09T10:47:32-0400
+ * MyFonts Webfont Build ID 3878883, 2020-03-11T06:27:06-0400
  * 
  * The fonts listed in this notice are subject to the End User License
  * Agreement(s) entered into by the website owner. All other parties are 
@@ -10,51 +10,42 @@
  * 
  * Webfont: HalisR-Bold by Ahmet Altun
  * URL: https://www.myfonts.com/fonts/ahmet-altun/halis-rounded/bold/
- * Copyright: Copyright (c) 2013 by Ahmet Altun. All rights reserved.
  * 
  * Webfont: HalisR-Book by Ahmet Altun
  * URL: https://www.myfonts.com/fonts/ahmet-altun/halis-rounded/book/
- * Copyright: Copyright (c) 2013 by Ahmet Altun. All rights reserved.
- * 
- * Webfont: HalisR-ExtraLight by Ahmet Altun
- * URL: https://www.myfonts.com/fonts/ahmet-altun/halis-rounded/ex-light/
- * Copyright: Copyright (c) 2012 by Ahmet Altun. All rights reserved.
  * 
  * Webfont: HalisR-Medium by Ahmet Altun
  * URL: https://www.myfonts.com/fonts/ahmet-altun/halis-rounded/medium/
- * Copyright: Copyright (c) 2013 by Ahmet Altun. All rights reserved.
  * 
  * 
+ * Webfonts copyright: Copyright (c) 2013 by Ahmet Altun. All rights reserved.
  * 
  * © 2020 MyFonts Inc
 */
 
 /* @import must be at top of file, otherwise CSS will not work */
-@import url("//hello.myfonts.net/count/3b2be8");
+@import url("//hello.myfonts.net/count/3b2fe7");
 
 @font-face {
   font-family: 'HalisR-Bold';
-  src: url('3B2BE8_0_0.eot');
-  src: url('3B2BE8_0_0.eot?#iefix') format('embedded-opentype'), url('3B2BE8_0_0.woff2') format('woff2'), url('3B2BE8_0_0.woff') format('woff'), url('3B2BE8_0_0.ttf') format('truetype');
+  src: url('3b2fe7_0_0.eot');
+  src: url('3b2fe7_0_0.eot?#iefix') format('embedded-opentype'), url('3b2fe7_0_0.woff2') format('woff2'), url('3b2fe7_0_0.woff') format('woff'), url('3b2fe7_0_0.ttf') format('truetype');
 }
-
 
 @font-face {
   font-family: 'HalisR-Book';
-  src: url('3B2BE8_1_0.eot');
-  src: url('3B2BE8_1_0.eot?#iefix') format('embedded-opentype'), url('3B2BE8_1_0.woff2') format('woff2'), url('3B2BE8_1_0.woff') format('woff'), url('3B2BE8_1_0.ttf') format('truetype');
+  src: url('3b2fe7_1_0.eot');
+  src: url('3b2fe7_1_0.eot?#iefix') format('embedded-opentype'), url('3b2fe7_1_0.woff2') format('woff2'), url('3b2fe7_1_0.woff') format('woff'), url('3b2fe7_1_0.ttf') format('truetype');
 }
-
 
 @font-face {
   font-family: 'HalisR-ExtraLight';
-  src: url('3B2BE8_2_0.eot');
-  src: url('3B2BE8_2_0.eot?#iefix') format('embedded-opentype'), url('3B2BE8_2_0.woff2') format('woff2'), url('3B2BE8_2_0.woff') format('woff'), url('3B2BE8_2_0.ttf') format('truetype');
+  src: url('3B2FE7_2_0.eot');
+  src: url('3B2FE7_2_0.eot?#iefix') format('embedded-opentype'), url('3B2FE7_2_0.woff2') format('woff2'), url('3B2FE7_2_0.woff') format('woff'), url('3B2FE7_2_0.ttf') format('truetype');
 }
-
 
 @font-face {
   font-family: 'HalisR-Medium';
-  src: url('3B2BE8_3_0.eot');
-  src: url('3B2BE8_3_0.eot?#iefix') format('embedded-opentype'), url('3B2BE8_3_0.woff2') format('woff2'), url('3B2BE8_3_0.woff') format('woff'), url('3B2BE8_3_0.ttf') format('truetype');
+  src: url('3B2FE7_3_0.eot');
+  src: url('3B2FE7_3_0.eot?#iefix') format('embedded-opentype'), url('3B2FE7_3_0.woff2') format('woff2'), url('3B2FE7_3_0.woff') format('woff'), url('3B2FE7_3_0.ttf') format('truetype');
 }
