@@ -2,7 +2,7 @@
   {
     "serviceOverview": {
       "title": "What I do",
-      "intro": "<p>A meticulous, highly skilled UI/UX Designer and Senior Frontend Developer with 12+ years of commercial experience in designing and building interactive responsive websites and software applications.</p>",
+      "intro": "<p>A meticulous, highly skilled UI/UX Designer and Senior Front End Developer with 12+ years of commercial experience in designing and building interactive responsive websites and software applications.</p>",
       "articles": [
         {
           "title": "Outsourcing",
@@ -12,7 +12,7 @@
         {
           "title": "Contracting",
           "image": "contracting.jpg",
-          "body": "I am always on the lookout for my next role as a Senior Frontend Developer."
+          "body": "I am always on the lookout for my next role as a Senior Front End Developer."
         },
         {
           "title": "Freelance",
@@ -32,7 +32,7 @@
         {
           "title": "Dual Skilled",
           "image": "dual-skilled.jpg",
-          "body": "I am proficient and experienced in both UI/UX design as well as Frontend Development which is highly beneficial."
+          "body": "I am proficient and experienced in both UI/UX design as well as Front End Development which is highly beneficial."
         },
         {
           "title": "Adaptable",
@@ -140,20 +140,20 @@
     },
     "cv": {
       "title": "Curriculum Vitae",
-      "intro": "<p>I am highly creative, passionate, hard-working freelance UI/UX Designer and Frontend Developer with over 12 years commercial experience. I am open to contracting opportunities and you can download my CV's below. References and examples of my work are available upon request.</p>",
+      "intro": "<p>I am highly creative, passionate, hard-working freelance UI/UX Designer and Front End Developer with over 12 years commercial experience. I am open to contracting opportunities and you can download my CV's below. References and examples of my work are available upon request.</p>",
       "btn": {
         "label1": "Download my CV",
-        "label2": "Senior Frontend Developer",
+        "label2": "Senior Front End Developer",
         "fileInfo": ".pdf - 380kb"
       }
     },
     "homePageContent": {
-      "mastheadTitle": "UI/UX Designer &<br/> Frontend Developer",
+      "mastheadTitle": "UI/UX Designer &<br/> Front End Developer",
       "mastheadBody": "Based in Leamington Spa, Warwickshire, I offer digital design and development services for agencies looking to outsource projects, work as a full-time contractor for large organisations and agencies, as well as individuals and small businesses looking to create a web presence."
     },
     "aboutPageContent": {
       "mastheadTitle": "Who am I?",
-      "mastheadBody": "Based in Leamington Spa, Warwickshire, I offer a range of digital services, as both a full-time contractor and highly skilled freelancer. With over 12 years of experience in both UI/UX Design and Frontend Development I can take projects through from initial conception, right through to development and beyond, working as either a lone-gun or as part of a team, I fit into your current working structure seamlessly."
+      "mastheadBody": "Based in Leamington Spa, Warwickshire, I offer a range of digital services, as both a full-time contractor and highly skilled freelancer. With over 12 years of experience in both UI/UX Design and Front End Development I can take projects through from initial conception, right through to development and beyond, working as either a lone-gun or as part of a team, I fit into your current working structure seamlessly."
     },
     "servicesPageContent": {
       "mastheadTitle": "What I do",
@@ -165,7 +165,7 @@
         },
         {
           "title": "Contracting",
-          "body": "<p>I am also available as a contractor, working either as a UI/UX Designer working on innovative designs or as a frontend developer pushing boundaries with new technology though HTML5/CSS3 and responsive web design. I also have experience working with Vanilla Javascript and frameworks such as React, Gatsby, Angular and Vue.</p><p>I have worked in-house at award winning design agencies and multinational companies and integrate seamlessly with your working practices and ethos and adapt very quickly - I have experience working on both ASP.NET MVC and JAVA platforms.</p><p>Due to my dual skillset of design and development I find that I am uniquely positioned for contract work, where time is money and having both design and development resource, for the price of one, is of great advantage.</p>",
+          "body": "<p>I am also available as a contractor, working either as a UI/UX Designer working on innovative designs or as a Front End Developer pushing boundaries with new technology though HTML5/CSS3 and responsive web design. I also have experience working with Vanilla Javascript and frameworks such as React, Gatsby, Angular and Vue.</p><p>I have worked in-house at award winning design agencies and multinational companies and integrate seamlessly with your working practices and ethos and adapt very quickly - I have experience working on both ASP.NET MVC and JAVA platforms.</p><p>Due to my dual skillset of design and development I find that I am uniquely positioned for contract work, where time is money and having both design and development resource, for the price of one, is of great advantage.</p>",
           "image": "contracting.jpg"
         },
         {
@@ -177,7 +177,7 @@
     },
     "portfolioPageContent": {
       "mastheadTitle": "My work",
-      "mastheadBody": "Below you will find a selection of some past projects I have worked on. They showcase both my UI Design and Frontend Development work. Due to the sensitive nature of some of my previous contract work, I am unable to share specific work I was involved with. Specific examples are available upon request, including code repositories for JavasScript framework projects I have developed."
+      "mastheadBody": "Below you will find a selection of some past projects I have worked on. They showcase both my UI Design and Front End Development work. Due to the sensitive nature of some of my previous contract work, I am unable to share specific work I was involved with. Specific examples are available upon request, including code repositories for JavasScript framework projects I have developed."
     },
     "contactPageContent": {
       "mastheadTitle": "Contact"

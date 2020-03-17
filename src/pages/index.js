@@ -26,10 +26,10 @@ export default ({ data, location }) => {
         }}
       >
         <title>
-          Freelance Frontend Developer and UI/UX Designer based in Leamington
+          Freelance Front End Developer and UI/UX Designer based in Leamington
           Spa, Warwickshire
         </title>
-        <meta name="description" content="Freelance Frontend Developer and UI/UX Designer offering outsourcing and contracting services across Warwickshire and West Midlands." />
+        <meta name="description" content="Freelance Front End Developer and UI/UX Designer offering outsourcing and contracting services across Warwickshire and West Midlands." />
       </Helmet>
 
       <Masthead isHomepage noSwoop>

@@ -69,7 +69,7 @@ export default ({ data, location }) => {
     <Layout location={location}>
       <Helmet>
       <title>Rooster Design Services</title>
-      <meta name="description" content="Freelance Frontend Developer and UI/UX Designer offering outsourcing and contracting services across Warwickshire and West Midlands." />
+      <meta name="description" content="Freelance Front End Developer and UI/UX Designer offering outsourcing and contracting services across Warwickshire and West Midlands." />
       </Helmet>
       <Masthead>
         <MastheadTitle mastheadTitle={servicesPageContent.mastheadTitle} />

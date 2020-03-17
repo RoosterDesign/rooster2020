@@ -25,6 +25,7 @@ export default ({ data, location }) => {
         img={imageData[imageIndex].node.childImageSharp.fluid}
         slug={portfolioItem.node.slug}
         title={portfolioItem.node.title}
+        flag={portfolioItem.node.flag}
         synopsis={portfolioItem.node.synopsis}
       />
     )
@@ -39,8 +40,11 @@ export default ({ data, location }) => {
   return (
     <Layout location={location}>
       <Helmet>
-      <title>Rooster Design Portfolio</title>
-      <meta name="description" content="Freelance Front End Developer and UI/UX Designer offering outsourcing and contracting services across Warwickshire and West Midlands." />
+        <title>Rooster Design Portfolio</title>
+        <meta
+          name="description"
+          content="Freelance Front End Developer and UI/UX Designer offering outsourcing and contracting services across Warwickshire and West Midlands."
+        />
       </Helmet>
       <Masthead>
         <MastheadTitle mastheadTitle={portfolioPageContent.mastheadTitle} />
@@ -93,6 +97,7 @@ export const query = graphql`
         node {
           slug
           title
+          flag
           synopsis
         }
       }

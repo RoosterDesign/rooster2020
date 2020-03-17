@@ -11,11 +11,11 @@ export default () => (
   <Layout>
     <Helmet>
       <title>
-        Freelance Frontend Developer UI/UX Designer based in Leamington Spa
+        Freelance Front End Developer UI/UX Designer based in Leamington Spa
       </title>
       <meta
         name="description"
-        content="Freelance Frontend Developer and UI/UX Designer offering outsourcing and contracting services across Warwickshire and West Midlands."
+        content="Freelance Front End Developer and UI/UX Designer offering outsourcing and contracting services across Warwickshire and West Midlands."
       />
     </Helmet>
     <Masthead noSwoop>

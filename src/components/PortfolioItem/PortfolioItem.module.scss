@@ -35,6 +35,46 @@
   width: 100%;
 }
 
+.portfolioThumbnailFlag {
+  color: #fff;
+  font-family: "HalisR-Medium", "arial";
+  font-size: 10px;
+  left: -69px;
+  padding: 0 20px;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  top: 20px;
+  line-height: 25px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  width: 200px;
+
+  @include mq(desktop) {
+    font-size: 12px;
+    left: -64px;
+    line-height: 30px;
+    top: 22px;
+  }
+}
+
+.design {
+  background: #2980b9;
+}
+
+.dev {
+  background: #c0392b;
+}
+
+.both {
+  background: $lightPurple;
+}
+
+
+
+
+
+
 .portfolioThumbnailLinkContent {
   display: none;
   position: relative;
