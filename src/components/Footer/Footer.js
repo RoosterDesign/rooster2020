@@ -8,7 +8,7 @@ export default () => (
     <ToTop />
     <div className="container">
       <p>
-        ©2019 Rooster Design <br />
+        ©{new Date().getFullYear()} Rooster Design <br />
         <Link to="/privacy" className={styles.siteFooterLink}>
           Privacy &amp; Legal
         </Link>
