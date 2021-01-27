@@ -12,14 +12,18 @@ import PageContent from "../components/PageContent/PageContent"
 import ClientLogosBlock from "../components/ClientLogosBlock/ClientLogosBlock"
 import SkillsBlock from "../components/SkillsBlock/SkillsBlock"
 import CvBlock from "../components/CvBlock/CvBlock"
+import CodeExamplesBlock from "../components/CodeExamplesBlock/CodeExamplesBlock"
 
 export default ({ data, location }) => {
-  const { aboutPageContent, clients, skills, cv } = data.dataJson
+  const { aboutPageContent, clients, skills, cv, codeExamples } = data.dataJson
   return (
     <Layout location={location}>
       <Helmet>
         <title>About Rooster Design</title>
-        <meta name="description" content="Freelance Front End Developer and UI/UX Designer offering outsourcing and contracting services across Warwickshire and West Midlands." />
+        <meta
+          name="description"
+          content="Freelance Front End Developer and UI/UX Designer offering outsourcing and contracting services across Warwickshire and West Midlands."
+        />
       </Helmet>
       <Masthead>
         <MastheadTitle mastheadTitle={aboutPageContent.mastheadTitle} />
@@ -33,6 +37,7 @@ export default ({ data, location }) => {
         <SkillsBlock content={skills} />
         <ClientLogosBlock content={clients} />
         <CvBlock content={cv} />
+        <CodeExamplesBlock content={codeExamples} />
       </PageContent>
     </Layout>
   )
@@ -64,6 +69,15 @@ export const query = graphql`
           label1
           label2
           fileInfo
+        }
+      }
+      codeExamples {
+        title
+        intro
+        repos {
+          name
+          tech
+          url
         }
       }
     }

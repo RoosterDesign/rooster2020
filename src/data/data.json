@@ -145,7 +145,23 @@
         "label1": "Download my CV",
         "label2": "Senior Front End Developer",
         "fileInfo": ".pdf - 380kb"
-      }
+      }      
+    },
+    "codeExamples": {
+      "title": "Code Examples",
+      "intro": "Although I'm unable to share code examples from my contracting work, below you can find links to Git repos with code from my freelance and personal projects.",
+      "repos": [
+        {
+          "name": "Rooster Design",
+          "tech": "React, GatsbyJS",
+          "url": "https://github.com/RoosterDesign/rooster2020"
+        },
+        {
+          "name": "Workout App",
+          "tech": "React, Firebase",
+          "url": "https://github.com/RoosterDesign/workout-app-react"
+        }
+      ]
     },
     "homePageContent": {
       "mastheadTitle": "UI/UX Designer &<br/> Front End Developer",
