@@ -20,7 +20,6 @@ export default props => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                {console.info(repo)}
                 <img src={githubIcon} alt={repo.name} className={styles.icon} />
                 <span className={styles.name}>
                   {repo.name} <br /> <small>{repo.tech}</small>
