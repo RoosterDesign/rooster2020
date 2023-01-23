@@ -51,6 +51,7 @@ export default ({ data }) => {
 
   const PortfolioDetailImage = styled(Img)`
     border-radius: 5px;
+    box-shadow: 0 0 40px 20px rgba(0, 0, 0, 0.2);
     display: block;
     height: auto;
     margin: 0 auto 16px;

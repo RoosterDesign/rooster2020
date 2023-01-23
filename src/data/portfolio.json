@@ -1,11 +1,11 @@
 [
   {
-    "title": "jbandg",
-    "slug": "jbandg",
+    "title": "5 Pump Court",
+    "slug": "5-pump-court",
     "flag": "both",
-    "description": "Ran by myself and a fellow developer, jbandg boasts over 20 years combined experience and creates beautiful, intuitive experiences for small to medium sized businesses. Our current website was long overdue a redesign so I set about designing and building a new look site that matched our modern design philosophy using the latest in technology and UI trends.",
-    "synopsis": "Ran by myself and a fellow developer, jbandg boasts over 20 years combined experience and creates beautiful, intuitive experiences for small to medium sized businesses.",
-    "url": "https://www.jbandg.co.uk"
+    "description": "5 Pump Court is a progressive, diverse multidisciplinary set with specialist teams and expert advocates in civil, family and criminal law. I was responsible for the design of their new website as well as being the lead Front End Developer during its build and integration with an Umbraco CMS.",
+    "synopsis": "5 Pump Court is a progressive, diverse multidisciplinary set with specialist teams and expert advocates in civil, family and criminal law.",
+    "url": "https://www.5pumpcourt.com/"
   },
   {
     "title": "The Spa Leamington",
@@ -14,6 +14,22 @@
     "description": "The Spa Leamington is a luxury day spa and salon based in the heart of Royal Leamington Spa, offering a range of high end beauty treatments and therapies, and attract high profile clientèle from across the county. I was responsible for the redesign and development of their existing website to bring it up to modern design standards.",
     "synopsis": "The Spa Leamington is a luxury day spa and salon based in the heart of Royal Leamington Spa, offering a range of high end beauty treatments and therapies, and attract high profile clientèle from across the county.",
     "url": "https://www.thespaleamington.com/"
+  },
+  {
+    "title": "The Spa Leamington Shop",
+    "slug": "the-spa-leamington-shop",
+    "flag": "dev",
+    "description": "The Spa Leamington is a luxury day spa and salon based in the heart of Royal Leamington Spa. We were tasked with creating an Shopify e-commerce site for one of our clients.",
+    "synopsis": "The Spa Leamington is a luxury day spa and salon based in the heart of Royal Leamington Spa. We were tasked with creating an Shopify e-commerce site for one of our clients.",
+    "url": "https://www.thespaleamington.com/"
+  },
+  {
+    "title": "Studio 42",
+    "slug": "studio-42",
+    "flag": "both",
+    "description": "Ran by myself and a fellow developer, Studio 42 boasts over 20 years combined experience and creates beautiful, intuitive experiences for small to medium sized businesses. Our current website was long overdue a redesign so I set about designing and building a new look site that matched our modern design philosophy using the latest in technology and UI trends.",
+    "synopsis": "Ran by myself and a fellow developer, Studio 42 boasts over 20 years combined experience and creates beautiful, intuitive experiences for small to medium sized businesses.",
+    "url": ""
   },
   {
     "title": "Muk Retail",
@@ -80,14 +96,6 @@
     "url": "https://www.thechemicalengineer.com/"
   },
   {
-    "title": "Screenskills",
-    "slug": "screenskills",
-    "flag": "both",
-    "description": "ScreenSkills were a client at a technology house I was contracting at and I was in charge of coming up with their new designs for their website refresh. Once these designs had been approved I lead the Front End Development team to build out the application alongside ASP.NET C# developers.",
-    "synopsis": "ScreenSkills is the industry-led skills body for the UK's screen-based creative industries - animation, film, games, television including children's TV and high-end drama, VFX and immersive technology.",
-    "url": "https://www.screenskills.com/"
-  },
-  {
     "title": "ProfessionPost",
     "slug": "professionpost",
     "flag": "both",
@@ -134,13 +142,5 @@
     "description": "Through one of my agency contacts I was outsourced the build of Squabs new website based on a Wordpress CMS backend. I was supplied with a number of completed high-fidelity designs from the agency and turned these into a fully working website. As often the case a design for every page wasn't provided so using what I had been sent I was tasked with completing the missing page designs.",
     "synopsis": "Squab is a friendly, family run firm offering storage and removal services to both households and business clients in Warwickshire and the surrounding areas.",
     "url": "https://www.squab.co.uk/"
-  },
-  {
-    "title": "Church Street Auctions",
-    "slug": "church-street-auctions",
-    "flag": "both",
-    "description": "Church Street Auctions are based in Tewkesbury, Gloucestershire. I was approached to design and develop their first website. The new site had to be fully content managed so I based the build on the popular Wordpress CMS. The site had to be easy to navigate, on brand, responsive and modern to match the businesses identity.",
-    "synopsis": "Church Street Auctions are an Auction house based in Tewkesbury, Gloucestershire.",
-    "url": "http://www.churchstreet-auctions.co.uk/"
   }
 ]
